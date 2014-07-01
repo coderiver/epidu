@@ -1,0 +1,82 @@
+.article
+	padding: 0 25px 0 0 
+	font-size: 12px
+	line-height: 1.2
+	+arial
+	p
+		margin-bottom: 9px
+	h1,h1,h2,h3,h4,h5,h6
+		font-weight: normal
+	h1
+		margin: 0 0 40px
+		font-size: 35px
+		+fl
+		line-height: 1
+	h2
+		font-size: 22px  
+		margin: 40px 0 14px
+		+fl
+	h3
+		font-size: 18px
+		+fb
+		margin: 38px 0 20px
+	h4
+		font-size: 16px
+		margin: 26px 0 18px
+	h5
+		font-size: 14px
+		margin: 24px 0 16px
+	h6
+		font-size: 12px
+		margin: 22px 0 14px
+	img
+		margin: 10px 0 27px   
+		max-width: 100%  
+		height: auto
+		border-radius: 5px	
+	hr
+		margin: 16px 0 38px
+		border: 0
+		height: 1px
+		background: #dcdcdc 
+	blockquote
+		position: relative
+		padding-left: 35px
+		font-size: 12px
+		&:before
+			content: "\f071"
+			position: absolute
+			left: 0
+			top: 4px
+			+fa
+			font-size: 19px 
+	ul
+		margin-bottom: 30px
+		li
+			position: relative
+			padding-left: 50px
+			&:before
+				content: ""
+				position: absolute
+				left: 20px
+				top: 6px
+				width: 6px
+				height: 6px
+				//background: $orange 
+				border-radius: 50%  
+	ol
+		margin-bottom: 30px
+		counter-reset: list2
+		li
+			position: relative
+			padding-left: 50px
+			&:before
+				content: ""
+				position: absolute
+				left: 20px
+				top: 0
+				font-size: 12px
+				font-weight: bold
+				//color: $orange  
+				counter-increment: list2  
+				content: counter(list2) ". "

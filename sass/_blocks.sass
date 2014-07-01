@@ -1,0 +1,175 @@
+.has-open-popup
+	overflow: hidden
+	body
+		overflow: hidden
+
+
+.btn-action
+	display: inline-block
+	padding: 12px 24px 13px
+	border-radius: 5px
+	// background: $blue
+	color: #fff
+	font-size: 14px
+	+fm
+	font-weight: normal
+	+font-smoothing
+	+box
+	+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
+	+background-image(linear-gradient(bottom, #00abf1 0%, #00b3ff 100%))
+	+tr(background .2s linear)
+	text-decoration: none
+	color: #fff 
+	&:hover
+		background: #00b3ff
+		color: #fff 
+		+background-image(linear-gradient(top, #00abf1 0%, #00b3ff 100%))
+	&:active
+		position: relative
+		top: 1px 
+		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+.btn-action_width
+	padding: 12px 60px 13px	
+.btn-submit
+	display: inline-block
+	padding: 12px 24px 13px
+	border-radius: 5px
+	color: #fff
+	font-size: 14px
+	font-weight: normal
+	+font-smoothing
+	+fm
+	+box	
+	+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
+	background: #87b900
+	+g(#87b900,#739d00)
+	+tr(background .2s linear)
+	text-decoration: none
+	color: #fff 
+	.fa
+		margin-right: 7px
+		vertical-align: middle
+		font-size: 16px
+	&:hover
+		background: #87b900
+		+g(#739d00,#87b900)
+	&:active
+		position: relative
+		top: 1px 
+		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+.btn-link
+	display: inline-block
+	padding: 12px 24px 13px
+	border-radius: 5px
+	color: #fff
+	font-size: 14px
+	+fm
+	+box	
+	font-weight: normal
+	+font-smoothing
+	+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
+	// background: $rose
+	+g(#fe0066,#d50055)
+	+tr(background .2s linear)
+	text-decoration: none
+	color: #fff  
+	.fa
+		margin-right: 7px
+		vertical-align: middle
+		font-size: 16px
+	&:hover
+		// background: $rose
+		color: #fff 
+		+g(#d50055,#fe0066)
+	&:active
+		position: relative
+		top: 1px 
+		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+		 
+.is-liquid
+	width: 100%
+	padding-left: 0
+	padding-right: 0
+	text-align: center
+
+
+.tooltip
+	display: none
+	position: absolute
+	top: auto
+	padding-bottom: 15px
+	width: 148px
+	margin-left: -62px
+	text-align: center
+	z-index: 1000
+.tooltip__in
+	position: relative
+	display: inline-block
+	padding: 11px 16px
+	font-size: 13px
+	+box
+	text-align: left
+	line-height: 12px
+	background: #fff 
+	border-radius: 10px
+	background: rgba(255,255,255,.95)
+	+box-shadow(0 0 6px rgba(#000, .6))
+
+
+.choose
+	display: inline-block
+	margin: 15px 0 5px 
+	width: 166px
+	position: relative
+	text-align: left
+	.fa
+		position: absolute
+		top: 15px
+		background: none
+		font-size: 16px
+	.fa-plus-circle
+		right: 17px
+	.fa-minus-circle
+		right: 40px
+.choose__main
+	border: 1px solid
+	padding-left: 22px
+	height: 40px
+	line-height: 40px
+	border-radius: 20px
+	font-size: 18px
+	text-shadow: 0 1px 0 #fff
+		
+
+
+.select
+	position: relative		
+	select
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		margin: 0
+		opacity: 0
+.select-simple
+	display: inline-block
+	position: relative  
+	&:hover
+		.select-simple__link
+			span
+				border-color: transparent   
+	select
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		top: 0
+		left: 0
+		min-width: 100%
+		height: 100%
+		margin: 0
+		opacity: 0
+		padding: 0 5px 
+

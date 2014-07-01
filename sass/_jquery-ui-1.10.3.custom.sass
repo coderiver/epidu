@@ -1,0 +1,123 @@
+.ui-widget-content
+	position: relative
+.ui-slider-horizontal
+	position: absolute
+	left: 0
+	right: 5px
+	top: 4px
+	height: 10px
+	border: 1px solid #d1d1d1
+	+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+	border-radius: 5px
+	+box
+	background: #fff
+	
+
+.ui-slider__main
+	margin-bottom: 3px
+	position: relative  
+	height: 15px
+	+box  
+.ui-slider_width 
+	.ui-slider__main
+		width: 100%
+.ui-slider__min
+	margin-left: -10px
+.ui-slider__max
+	margin-left: -10px
+	
+
+.ui-slider-handle
+	position: absolute
+	z-index: 2
+	top: -7px
+	width: 20px
+	height: 20px
+	background: #f2f2f2
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	+box-shadow(0 1px 4px rgba(0,0,0,.35), inset 0 1px 0 #fff)
+
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	left: 1px
+	// 	top: 5px
+		//+s(dots)
+	// &:hover
+	// 	span
+	// 		display: block
+	// span
+	// 	display: none
+	// 	position: absolute
+	// 	left: 50%
+	// 	top: -35px
+	// 	margin-left: -35px !important
+	// 	width: 70px
+	// 	height: 23px
+	// 	line-height: 23px
+	// 	color: #5c5c5c
+	// 	font-size: 12px
+	// 	font-weight: bold
+	// 	text-shadow: 0 1px 0 #fff
+	// 	text-align: center  
+	// 	border-bottom: 1px solid #c5c6ca 
+	// 	+border-radius(3px)
+	// 	background: #d1d1d1
+	// 	+box-shadow(0 2px 4px rgba(0,0,0,.11))
+	// 	+g(#f7f7f9, #e2e4e9)
+	// 	&:before
+	// 		content: ""
+	// 		position: absolute
+	// 		left: 50%
+	// 		margin-left: -5px
+	// 		bottom: -5px
+	// 		z-index: 2
+	// 		+arr(10,5,#e2e4e9,b) 
+	// 	&:after
+	// 		content: ""
+	// 		position: absolute
+	// 		left: 50%
+	// 		margin-left: -6px
+	// 		bottom: -6px
+	// 		z-index: 1
+	// 		+arr(12,6,#c5c6ca,b) 
+	
+
+.ui-slider-range
+	position: absolute
+	z-index: 1
+	top: 0
+	left: 0 
+	height: 8px
+	background: url(../img/progress.png) 0 0 repeat
+	border-radius: 5px
+
+
+
+
+
+.ui-slider__top
+	margin-bottom: 12px
+	color: #5c584b 
+	font-size: 12px
+	span, .input
+		display: inline-block
+		vertical-align: middle
+	.input
+		height: 28px
+		width: 73px
+		padding: 0 7px
+		font-size: 13px 
+		font-weight: bold
+
+.ui-slider__range
+	position: relative
+	margin-bottom: -4px
+	font-size: 14px
+	+fm
+	+clr
+	.ui-slider__from
+		float: left
+	.ui-slider__to
+		float: right

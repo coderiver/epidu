@@ -1,55 +1,117 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book", Arial, sans-serif 
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
-body
++font(roboto-regular, roboto-regular)  
++font(roboto-medium, roboto-medium)  
++font(roboto-bold, roboto-bold)  
++font(roboto-italic, roboto-italic)   
++font(robotocondensed-bold, robotocondensed-bold)   
++font(roboto-light, roboto-light)   
+=fr
+	font-family: "roboto-regular", Arial, sans-serif 
+=fm
+	font-family: "roboto-medium", Arial, sans-serif
+=fb
+	font-family: "roboto-bold", Arial, sans-serif 
+=fi
+	font-family: "roboto-italic", Arial, sans-serif 
+=fbc
+	font-family: "robotocondensed-bold", Arial, sans-serif
+=fl
+	font-family: "roboto-light", Arial, sans-serif 
+=arial
 	font-family: Arial, sans-serif 
-	font-size: 12px 
-	line-height: 1.4
+=fa
+	font-family: FontAwesome
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	
+$blue: #00a6c9
+$blue_d: #016d84
 
+$black: #232323
+$border: #d8d8d8  
 
-// common blocks      
+$light: #f4f4f4
+
+$green: #b0c400
+$gray: #555555
+$gray: #888
+$gray_l: #a4a3a3
+
+html
+	+scrollbar
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #d1d1d1
+	+scrollbar-thumb
+		background: $blue_d
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		+border-radius(4px) 
+
+	+selection
+		background: rgba(0,0,0,.1) 
+body   
+	min-width: 1024px
+	font-size: 13px
+	+fr
+	color: $black 
+	line-height: 1.2
+	background: #fff 
+	+font-smoothing
+a
+	text-decoration: none
+	color: $blue
+	+tr(color .2s linear)
+	&:hover
+		color: #0096d4 
+
+.l-container
+	margin: 0 auto  
+	width: 1000px
+	+box
+.to-center
+	text-align: center
+.wrap
+	+clr
+	clear: both
+.wrapper
+	overflow: hidden
+
+.out
+	position: relative
+	//margin: 0 0 -60px
+	//min-height: 100%
+	//height: auto !important
+	//height: 100%	  
+// .push
+// 	clear: both
+// 	height: 60px
+.header
+	position: relative
+	background: $light 
+	.l-container
+		padding: 0 20px 
+		+clr
+.header__left
+	float: left
+	padding: 13px 0  11px 
+	+clr
+.header__right
+	float: right
+	+clr
+.header__logo
+	float: left
+	white-space: nowrap
+	a,span
+		display: inline-block
+		vertical-align: middle
+	a
+		margin-right: 10px
+		+s(logo)
+	span
+		width: 91px
+		white-space: normal
+		font-size: 13px
+		color: #636464 
+		text-shadow: 0 1px 0 #fff
