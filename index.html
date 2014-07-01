@@ -13,6 +13,7 @@
 
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- BEGIN header -->
 	<header class="header">
 		<div class="l-container">
 			<div class="header__left">
@@ -25,24 +26,170 @@
 			<div class="header__right">
 				<div class="header__enter">
 					<ul class="header__enter-links">
-						<li><a href="#">Войти <i class="fa fa-sign-in"></i></a></li>
-						<li><a href="#">Зарегистрироваться</a></li>
+						<li><a href="#">Войти<i class="fa fa-sign-in"></i></a></li>
+						<li><a href="#">Зарегистрироваться<i class="fa fa-user"></i></a></li>
 					</ul>
 				</div>  
 				<div class="header__lang js-drop">
-					<a href="#" class="js-drop-link">Русский<i class="fa fa-caret-down"></i></a>
-					<ul class="drop-list js-drop-list" style="display: none;">
-						<li><a href="#" class="drop-list__item">Русский</a></li>
-						<li><a href="#" class="drop-list__item">English</a></li>
-						<li><a href="#" class="drop-list__item">Eesti</a></li>
-						<li><a href="#" class="drop-list__item">Suomi</a></li>
-						<li><a href="#" class="drop-list__item">Latvijas</a></li>
-						<li><a href="#" class="drop-list__item">Lietuvos</a></li>
+					<a href="#" class="header__lang-link js-drop-link">
+						<span>Русский</span><i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">English</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Eesti</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Русский</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Soumi</a>
+						</li>
 					</ul>
 				</div>
 			</div>                  
 		</div>
 	</header>
+	<!-- END header -->
+	<!-- BEGIN slider -->
+	<div class="slider">
+		<div class="js-fotorama" data-width="100%" data-height="100%" data-minheight="622px" data-transitionduration="500" data-autoplay="5000">
+			<div class="slider__item">
+				<div class="slider__box">
+					<div class="slider__title">Найдите услуги и место </div>
+					для проведения праздника
+				</div>
+				<div class="slider__img">
+					<img src="img/slide1.jpg" alt="">
+				</div>
+			</div> 
+			<div class="slider__item">
+				<div class="slider__box">
+					<div class="slider__title">Найдите услуги и место </div>
+					для проведения праздника
+				</div>
+				<div class="slider__img">
+					<img src="img/slide2.jpg" alt="">
+				</div>
+			</div> 
+		</div>
+	</div>  
+	<!-- END slider -->
+	<!-- BEGIN promo -->
+	<div class="promo">	
+		<div class="l-container">
+			<div class="promo__col">
+				<div class="promo__head">
+					<strong>Организуйте праздник!</strong>
+					лучшие предложения всего в паре кликов
+				</div>
+				<div class="promo__descr">
+					<p>Часто в жизни перед нами встает вопрос с организацией праздника для себя или своих близких. Порой сложно найти подходящее место, чтобы отпраздновать день рождения или музыкантов для свадьбы.</p>
+					<p>Именно поэтому мы создали уникальный сервис e-pidu.ee, где вы можете с легкостью организовать свой праздник за считанные минуты!</p>
+				</div>
+			</div>
+			<div class="promo__col">
+				<div class="promo__descr">
+					<p><strong>Выберите, какой праздник вы собираетесь организовать или создайте свой собственный</strong>
+				</div>
+				<ul class="list">
+					<li>Выбирайте лучшие места и услуги для проведения вашего праздника</li>
+					<li>Планируйте праздники, согласно вашему бюджету, и многим другим критериям</li>
+					<li>Сохраняйте праздники и обсуждайте детали со всеми друзьями!</li>
+				</ul>
+				<div class="to-right">
+					<a href="#" class="external-link" target="_blank">Узнать как работает e-pidu?  <i class="fa fa-external-link"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END promo -->
+	<!-- BEGIN categ-wrap -->
+	<div class="categ-wrap">
+		<div class="categ-wrap__title">Какой праздник вы хотите организовать?</div>
+		<div class="l-container">	
+			<a href="#" class="categ">
+				<img src="img/cat-wedding.png" alt="wedding">
+				<span class="categ__title">
+					<span>Свадьба</span>
+				</span>
+			</a>
+			<a href="#" class="categ">
+				<img src="img/cat-birthday.png" alt="birthday">
+				<span class="categ__title">
+					<span>День рождения</span>
+				</span>
+			</a>
+			<a href="#" class="categ">
+				<img src="img/cat-graduation.png" alt="graduation">
+				<span class="categ__title">
+					<span>Выпускной</span>
+				</span>
+			</a>
+			<a href="#" class="categ">
+				<img src="img/cat-corp.png" alt="corp">
+				<span class="categ__title">
+					<span>Корпоратив</span>
+				</span>
+			</a>
+			<a href="#" class="categ">
+				<img src="img/cat-free.png" alt="free">
+				<span class="categ__title">
+					<span>Свободное время</span>
+				</span>
+			</a>
+			<a href="#" class="categ">
+				<span class="categ__icon">
+					<i class="fa fa-heart-o"></i>
+				</span>
+				<span class="categ__title">
+					<span>Другой праздник</span>
+				</span>
+			</a>
+		</div>
+	</div>
+	<!-- END categ-wrap -->
+	<!-- BEGIN footer -->
+	<div class="footer">
+		<div class="l-container">
+			<div class="footer__col">
+				<div class="footer__title">
+					Поддержка
+				</div>
+				<ul>
+					<li>+372 99 88 7766</li>
+					<li><a href="#">Задать вопрос</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title">
+					e-pidu в социальных сетях
+				</div>
+				<div class="soc">
+					<a href="#" class="soc__fb"></a>
+					<a href="#" class="soc__tw"></a>
+					<a href="#" class="soc__vk"></a>
+				</div>
+			</div>
+			<div class="footer__col">
+				<ul class="soc">
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Условия использования сайта</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<ul class="soc">
+					<li><a href="#">© e-pidu.ee 2014</a></li>
+					<li><a href="#">Designed by Aprol Designs</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END footer -->
 </div>
 <!-- END out-->
 

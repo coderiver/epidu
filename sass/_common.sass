@@ -23,6 +23,8 @@
 	line-height: 1
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
+=ts
+	text-shadow: 0 1px 0 #fff
 	
 $blue: #00a6c9
 $blue_d: #016d84
@@ -58,13 +60,12 @@ body
 	color: $black 
 	line-height: 1.2
 	background: #fff 
-	+font-smoothing
+	+font-smoothing    
 a
 	text-decoration: none
-	color: $blue
-	+tr(color .2s linear)
+	color: $blue_d
 	&:hover
-		color: #0096d4 
+		color: #026073  
 
 .l-container
 	margin: 0 auto  
@@ -89,13 +90,15 @@ a
 // 	height: 60px
 .header
 	position: relative
+	z-index: 3
 	background: $light 
+	box-shadow: 0 1px 6px rgba(0,0,0,.39)
 	.l-container
 		padding: 0 20px 
 		+clr
 .header__left
 	float: left
-	padding: 13px 0  11px 
+	padding: 13px 0 9px
 	+clr
 .header__right
 	float: right
@@ -114,4 +117,56 @@ a
 		white-space: normal
 		font-size: 13px
 		color: #636464 
-		text-shadow: 0 1px 0 #fff
+		+ts
+.header__enter
+	float: left
+	border-right: 1px solid $border 
+	padding: 19px 22px
+.header__enter-links
+	display: inline-block
+	vertical-align: middle
+	li
+		line-height: 1.2
+		margin-top: 8px
+		&:first-child
+			margin-top: 0
+	a
+		+ts
+	.fa
+		margin-left: 6px
+.header__lang
+	position: relative
+	float: left
+	.dropdown
+		right: 0
+		&:before
+			right: 3px   
+.header__lang-link	
+	display: inline-block
+	padding: 19px 10px 10px 19px
+	+ts 
+	&:hover,
+	&.is-active
+		span
+			border-color: transparent 
+	span
+		border-bottom: 1px dotted 
+	.fa
+		margin-left: 16px  
+		
+.footer
+	border-top: 1px solid $border
+	padding: 35px 25px 45px  
+	background: $light  
+	+clr
+	+ts
+.footer__col
+	float: left
+	margin-left: 55px
+	&:first-child
+		margin-left: 0
+.footer__title	
+	margin-bottom: 17px
+	font-size: 21px
+	color: #505050
+	+fb 

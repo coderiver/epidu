@@ -29,8 +29,8 @@ head.ready(function() {
 		infinite: true,
 		speed: 300,
 		touchMove: true,
-		//arrows: true,
-		dots: true,
+		arrows: true,
+		dots: false,
 		autoplay: true,
   		autoplaySpeed: 5000,
 		onInit: function(){
@@ -67,20 +67,7 @@ head.ready(function() {
 		event.stopPropagation();
 	});
 
-	function listHeight() {	
-		var list = $(".js-window-list");
-		list.each(function(){
-			var height_el = $(this).find("li").height();
-   			var length = $(this).find("li").length;
-   			var height = height_el*length;
-   			if (height > $(this).outerHeight()) {
-   				$(this).addClass("has-scroll");
-   			}
-   			else {
-   				$(this).removeClass("has-scroll");
-   			}
-		});
-   	}
+
 
 	$(".js-window-link").on("click", function(event){
 		var left = $(this).offset().left + $(this).outerWidth();
@@ -119,14 +106,7 @@ head.ready(function() {
 		event.stopPropagation();
 	});
 
-	$(".js-price-list a").on("click", function(event){
-		var price = $(this).attr("data-price");
-		$(".js-price-list a").removeClass("is-active");
-		$(this).addClass("is-active");
-		$(".js-input-price").focus().val(price);
-		event.stopPropagation();	
-		return false;
-	});
+
 
 	//rating
 	if ($('.js-rating').length > 0) {
@@ -465,206 +445,14 @@ head.ready(function() {
 	}
 	ui_slider_age();
 
-	$(".js-btn-favorite").on("click",function(){
-		$(this).toggleClass("is-active");
-		return false;
-	});
-
-	$(".js-scroll").scroll(function(){
-    	var top = $(this).scrollTop();
-		if (top > 0) {
-			$(this).parents(".js-result").addClass("has-fixed-filter has-not-filters");
-		}
-		else {
-			$(this).parents(".js-result").removeClass("has-fixed-filter has-not-filters");
-		}
-    }); 
-
-    function fixedSort() {
-    	if ($(".js-sort").length) {  
-    		var top = $(".js-sort").offset().top;
-	    	if ($(document).scrollTop() > top) {
-	    		$(".js-sort").parents(".result").addClass("is-fixed-sort");
-	    	}
-	    	else {
-	    		$(".js-sort").parents(".result").removeClass("is-fixed-sort");
-	    	}
-    	}
-    	
-    }
-    fixedSort();
-
-    $("body").on("click",".js-show-filter",function(){
-		$(this).parents(".js-result").removeClass("has-not-filters");
-		return false;
-	});
-	$(window).scroll(function(){
-    	scroller();
-    	fixedSort();
-    }); 
-
-	$(".js-map-key").on("click",function(){
-		if ($(this).hasClass("is-active")) {
-			$(this).removeClass("is-active")
-			$(this).find("span").removeAttr("hidden");
-			$(this).find(".js-map-key-off").attr("hidden","");
-			$(".js-map").removeClass("is-inactive").find(".google-map").slideDown(200);
-		}
-		else {
-			$(this).addClass("is-active")
-			$(this).find("span").removeAttr("hidden");
-			$(this).find(".js-map-key-on").attr("hidden","");
-			$(".js-map").addClass("is-inactive").find(".google-map").slideUp(200);
-		}
-		return false;  
-	});
-	$(".js-ask").hide();
-	$(".js-ask-btn").on("click",function(){
-		$(".js-ask").slideToggle(200);
-		return false;
-	});
-	$(".js-card").on("click",function(){
-		$(".js-card").removeClass("is-active");
-		$(this).addClass("is-active");
-		return false;
-	});
-	$(".js-payment-radio").on("click",function(){
-		$(".js-payment-radio").removeClass("is-active");
-		$(this).addClass("is-active");
-		//$(this).find("input").trigger("click");
-		return false;
-
-	});
-
-  	if ($(".js-fancybox").length) {
-        $(".js-fancybox").fancybox({
-            openEffect  : 'elastic',
-            closeEffect : 'elastic',
-            nextEffect : 'fade',
-            prevEffect : 'fade',
-            padding: 0,
-            helpers: {
-                overlay: {
-                  locked: false
-                }
-            },
-            beforeShow: function() {
-                //$("body").addClass("has-open-popup");   
-            },
-            afterClose: function() {
-                //$("body").removeClass("has-open-popup");  
-            },
-            
-        });
-    }
-
- //    function validate() {
-	// 	$(".js-validate").each(function(){
-	// 		if ($(this).length > 0) {
-	// 			$(this).validate({
-	// 				errorClass: "has-error",
-	// 				rules: {
-	// 					sum: {
-	// 						minlength: 1,
-	// 						digit: true,
-	// 						required: true,
-	// 					},
-	// 					firstname: "required",
-	// 					lastname: "required",
-	// 					username: {
-	// 						required: true,
-	// 						minlength: 2
-	// 					},
-	// 					password: {
-	// 						required: true,
-	// 						minlength: 5
-	// 					},
-	// 					confirm_password: {
-	// 						required: true,
-	// 						minlength: 5,
-	// 						equalTo: "#password"
-	// 					},
-	// 					email: {
-	// 						required: true,
-	// 						email: true
-	// 					},
-	// 					tel: {
-	// 						required: true,
-	// 						minlength: 2,
-	// 					},
-	// 					address: {
-	// 						minlength: 2
-	// 					},
-	// 					message: {
-	// 						minlength: 4
-	// 					}
-	// 				},
-	// 				messages: {
-	// 					sum: "Только цыфры",
-	// 					firstname: "Вас так зовут?",
-	// 					lastname: "У вас такая фамилия?",
-	// 					password: {
-	// 						required: "Пароли не совпадают",
-	// 						minlength: "Минимум 5 символов"
-	// 					},
-	// 					confirm_password: {
-	// 						required: "Пароли не совпадают",
-	// 						minlength: "Минимум 5 символов",
-	// 						equalTo: "Пароли не совпадают"
-	// 					},
-	// 					email: "Неверный формат",
-	// 					address: "Это Ваш адрес?",
-	// 					tel: {
-	// 						required: "Телефон с ошибкой",
-	// 						phoneUS: "Please enter a valid phone number: (e.g. 19999999999 or 9999999999)"
-	// 					},
-	// 					message: {
-	// 						required: "Это Ваш вопрос?",
-	// 						minlength: "Это Ваш вопрос?"
-	// 					}
-	// 				}
-	// 			});
-	// 		}
-	// 	});
-	// }
-		
-	// validate();
 
 	$(".js-digits-only").keypress(function (e) {
 	    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 	        return false;
 	    }
    	});
-   	$(".js-show-window").on("click",function(){
-		$(this).parent().find(".js-window").fadeToggle(200);
-		return false;
 
-	});
    
-
-
-   $(".js-message-key").on("click",function(){
-		$(this).parents(".user-box").find(".js-message").slideToggle(200);
-		$(this).parents(".task").find(".js-message").slideToggle(200);
-		return false;
-
-	});
-   $(".js-message-close").on("click",function(){
-		$(this).parents(".user-box").find(".js-message").slideUp(200);
-		$(this).parents(".task").find(".js-message").slideUp(200);
-		return false;
-	});
-   $(".js-show-task").on("click",function(){
-		$(this).parents(".user-box").find(".js-task").slideToggle(200);
-		
-		var section = $(this).attr("href");
-		var top = $('.js-task').offset().top;
-		$('html, body').animate({
-            scrollTop: top
-        }, 500);
-        return false;
-	});
-
    $(".js-select select").on("change",function(){
 		var	val = $(this).val();
 		$(this).parent().find(".js-select-text").text(val);
@@ -700,5 +488,6 @@ head.ready(function() {
         });
     }
     accordion();
+    //$(".fotorama__active .slider__box").animate({ top: '100px' }, 600, 'easeOutBounce', function () {})
 	
 });
