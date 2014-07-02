@@ -1,28 +1,45 @@
 .article
-	padding: 0 25px 0 0 
-	font-size: 12px
-	line-height: 1.2
-	+arial
+	padding: 4px 22px
+	font-size: 13px
+	line-height: 1.4
+	+fr
 	p
-		margin-bottom: 9px
+		margin-bottom: 7px
+	b,strong
+		font-weight: normal
+		+fb
+	i,em
+		font-style: normal
+		+fi
+	.fa
+		+fa
+		margin-left: 5px
+	a
+		color: $blue_d
+		+tr
+		&:hover
+			text-decoration: underline
+			color: $blue 
 	h1,h1,h2,h3,h4,h5,h6
 		font-weight: normal
 	h1
-		margin: 0 0 40px
-		font-size: 35px
-		+fl
+		margin: 0 0 27px
+		font-size: 30px
+		+fb
 		line-height: 1
 	h2
-		font-size: 22px  
-		margin: 40px 0 14px
-		+fl
-	h3
-		font-size: 18px
+		font-size: 21px  
+		margin: 30px 0 14px
 		+fb
-		margin: 38px 0 20px
+		line-height: 1.1
+	h3
+		font-size: 20px
+		+fr
+		margin: 25px 0 13px
 	h4
-		font-size: 16px
-		margin: 26px 0 18px
+		font-size: 15px
+		+fb 
+		margin: 24px 0 18px
 	h5
 		font-size: 14px
 		margin: 24px 0 16px
@@ -35,10 +52,16 @@
 		height: auto
 		border-radius: 5px	
 	hr
-		margin: 16px 0 38px
+		margin: 21px -22px 24px 0
+		display: block
+		width: 100% 
+		padding-right: 22px
 		border: 0
 		height: 1px
-		background: #dcdcdc 
+		background: url(../img/border.png) 0 100% repeat-x
+		&.hr
+			background-image: none
+			background: #d8d8d8 
 	blockquote
 		position: relative
 		padding-left: 35px
@@ -51,32 +74,35 @@
 			+fa
 			font-size: 19px 
 	ul
-		margin-bottom: 30px
+		margin: 18px 0 
+		line-height: 1.2
+		font-size: 13px
 		li
 			position: relative
-			padding-left: 50px
+			margin-bottom: 5px
+			padding-left: 30px
 			&:before
-				content: ""
+				content: "\f00c" 
 				position: absolute
-				left: 20px
-				top: 6px
-				width: 6px
-				height: 6px
-				//background: $orange 
-				border-radius: 50%  
-	ol
-		margin-bottom: 30px
-		counter-reset: list2
-		li
-			position: relative
-			padding-left: 50px
-			&:before
-				content: ""
-				position: absolute
-				left: 20px
+				left: 0
 				top: 0
-				font-size: 12px
-				font-weight: bold
-				//color: $orange  
-				counter-increment: list2  
-				content: counter(list2) ". "
+				font-size: 19px
+				color: #b0c400
+				+ts
+				+fa
+	ol
+		margin: 18px 0 
+		li
+			position: relative
+			margin-bottom: 5px
+			padding-left: 30px
+			&:before
+				content: "" 
+				position: absolute
+				left: 14px
+				top: 7px
+				width: 5px
+				height: 5px
+				background: #929292 
+				border-radius: 50% 
+				+ts
