@@ -108,8 +108,8 @@ head.ready(function() {
 
 	function showDatePicker() {
 		$(".js-date-group").each(function(){
-			var date_from = $(this).find(".js-date-from");
-			var date_to = $(this).find(".js-date-to");
+			var date_from = $(this).find(".js-date-from input");
+			var date_to = $(this).find(".js-date-to input");
 
 			if (date_from.length) {
 				date_from.datepicker({
@@ -156,6 +156,9 @@ head.ready(function() {
 	}
 	showDatePicker();
 		
+	$(".js-date-from .fa").on("click",function(){
+		$(this).parent().find(".input").focus();
+	});
 
 	//rating
 	if ($('.js-rating').length > 0) {
