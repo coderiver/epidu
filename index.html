@@ -26,8 +26,8 @@
 			<div class="header__right">
 				<div class="header__enter">
 					<ul class="header__enter-links">
-						<li><a href="#">Войти<i class="fa fa-sign-in"></i></a></li>
-						<li><a href="#">Регистрация<i class="fa fa-user"></i></a></li>
+						<li><a href="js-popup-reg-enter" class="js-popup-link">Войти<i class="fa fa-sign-in"></i></a></li>
+						<li><a href="js-popup-reg-enter" class="js-popup-link">Регистрация<i class="fa fa-user"></i></a></li>
 					</ul>
 				</div>  
 				<div class="header__lang js-drop">
@@ -301,7 +301,76 @@
 	<!-- END footer -->
 </div>
 <!-- END out-->
-
+<div class="overlay js-overlay">
+	<div class="popup popup_reg js-popup js-popup-reg-enter">
+		<div class="popup__head">
+			<div class="popup__col">
+				<div class="popup__title">Логин</div>
+			</div>
+			<div class="popup__col">
+				<div class="popup__title">Регистрация</div>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup__col">
+				<div class="soc-enter">
+					<div class="soc-enter__title">
+						Авторизация через социальные сети:
+					</div>
+					<div class="soc-enter__link">
+						<a href="#" class="soc-enter__fb"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="soc-enter__vk"><i class="fa fa-vk"></i></a>
+						<a href="#" class="soc-enter__gp"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+				<div class="field">
+					<div class="field__title">
+						Авторизация по e-mail:
+					</div>
+					<div class="field__body">
+						<div class="input-wrap input-wrap_half">
+							<input class="input" type="email" placeholder="e-mail">
+						</div>
+						<div class="input-wrap input-wrap_half">
+							<input class="input" type="password" placeholder="пароль">
+						</div>
+					</div>
+				</div>
+				<button class="btn-submit is-liquid is-big-btn" type="submit">Войти<i class="fa fa-sign-in"></i></button>
+			</div>
+			<div class="popup__col">
+				<div class="field">
+					<div class="field__body">
+						<div class="input-wrap">
+							<input class="input" type="text" placeholder="ваше полное имя">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="field__body">
+						<div class="input-wrap">
+							<input class="input" type="email" placeholder="e-mail адрес">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="field__body">
+						<div class="input-wrap input-wrap_half">
+							<input class="input" type="password" placeholder="пароль">
+						</div>
+						<div class="input-wrap input-wrap_half">
+							<input class="input" type="password" placeholder="повторите пароль">
+						</div>
+					</div>
+				</div>
+				<button class="btn-submit is-liquid is-big-btn" type="submit">Зарегистрироваться<i class="fa fa-user"></i></button>
+			</div>
+		</div>
+		<div class="popup__footer">
+			<a href="#">Забыли пароль?</a>
+		</div>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
 </body>

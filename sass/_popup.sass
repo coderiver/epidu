@@ -9,7 +9,7 @@
 	bottom: 0
 	z-index: 200
 	background: #000 
-	background: rgba(#000,.48)
+	background: rgba(#000,.6)
 	overflow: auto
 	+vertical
 	+scrollbar
@@ -29,18 +29,41 @@
 	vertical-align: middle
 	margin: 10px 0
 	background: #fff
-	font-size: 16px
+	font-size: 13px
 	border-radius: 10px
 	text-align: left
 	+box
-	width: 960px 
-	background: $light
+	width: 866px 
+	background: $light url(../img/bg.jpg) 0 0 repeat
 	overflow: hidden
-	border-radius: 5px  
-	+box-shadow(0 0 6px rgba(#000, .3))
-	.btn-close
-		top: 8px
-		right: 8px
+	border-radius: 13px  
+	box-shadow: 0 0 0 5px rgba(100,100,100,.6)
+.popup__head
+	border-bottom: 1px solid #fff
+	padding: 15px 33px 
+	box-shadow: inset 0 -1px 0 $border 
+	+clr
+.popup__col
+	float: right
+	width: 47.6%
+	+box
+	&:first-child
+		float: left
+.popup__title
+	font-size: 22px
+	+fb
+	color: #414141 
+.popup__body
+	+clr
+	padding: 16px 33px
+	+ts   
+.popup__footer
+	padding: 0 52px 24px
+	clear: both
+	+clr
+	a
+		&:hover
+			text-decoration: underline
 .window
 	display: none
 	position: absolute
@@ -54,3 +77,53 @@
 	border-radius: 5px 
 	+box-shadow(0 0 6px rgba(#000,.5))
 	
+.soc-enter
+	font-size: 0
+	padding-bottom: 20px
+	margin: 0 0 14px 
+	border-bottom: 1px dashed #bcbcbc
+.soc-enter__title
+	display: inline-block
+	vertical-align: middle
+	width: 180px
+	font-size: 16px
+	+fb
+.soc-enter__link
+	display: inline-block
+	vertical-align: middle
+	width: 200px
+	text-align: right
+	.fa
+		font-size: 19px
+		color: #fff 
+		vertical-align: middle
+	a
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px 
+		width: 47px
+		height: 47px
+		text-align: center
+		line-height: 47px
+		border-radius: 5px 
+		box-shadow: 0 1px 4px rgba(#000,.5), inset 0 1px 0 rgba(255,255,255,.54)
+		&:active
+			position: relative
+			top: 1px
+			box-shadow: none 
+.soc-enter__fb
+	background: #3b5997
+	+background-image(linear-gradient(bottom, #3b5997 0%, #4e69a1 100%))
+	&:hover
+		background: #4e69a1 
+		+background-image(linear-gradient(top, #3b5997 0%, #4e69a1 100%))
+.soc-enter__vk
+	background: #5a7c9f
+	+background-image(linear-gradient(bottom, #5a7c9f 0%, #4c6e91 100%))
+	&:hover
+		background: #4c6e91 
+		+background-image(linear-gradient(top, #5a7c9f 0%, #4c6e91 100%))
+.soc-enter__gp
+	background: #427fed
+	&:hover
+		background: #3872d9 
