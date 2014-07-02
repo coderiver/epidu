@@ -106,7 +106,56 @@ head.ready(function() {
 		event.stopPropagation();
 	});
 
+	function showDatePicker() {
+		$(".js-date-group").each(function(){
+			var date_from = $(this).find(".js-date-from");
+			var date_to = $(this).find(".js-date-to");
 
+			if (date_from.length) {
+				date_from.datepicker({
+			        dateFormat: 'yy-mm-dd',
+			        firstDay: 1,
+			        changeMonth: true,
+			        changeYear: true,
+			        showOtherMonths: true,
+			        //showTimezone: true,
+			        selectOtherMonths: true,
+			        yearRange: '-10:+3',
+			        //showSecond: true,
+			        showButtonPanel: false,
+			        //timeFormat: 'HH:mm:ss z',
+			        //timeFormat: 'HH:mm:ss',
+			        onClose: function( selectedDate ) {
+				        date_to.datepicker( "option", "minDate", selectedDate );
+				    }
+			    });
+			}
+			if (date_to.length) {
+				date_to.datepicker({
+			        dateFormat: 'yy-mm-dd',
+			        firstDay: 1,
+			        changeMonth: true,
+			        changeYear: true,
+			        showOtherMonths: true,
+			        //showTimezone: true,
+			        selectOtherMonths: true,
+			        yearRange: '-10:+3',
+			        //showSecond: true,
+			        showButtonPanel: false,
+			        //timeFormat: 'HH:mm:ss z',
+			        //timeFormat: 'HH:mm:ss',
+			        //hour: 23,
+			       // minute: 59,
+			        //second: 59,
+			        onClose: function( selectedDate ) {
+				        date_from.datepicker( "option", "maxDate", selectedDate );
+				    }
+			    });
+			}
+		});
+	}
+	showDatePicker();
+		
 
 	//rating
 	if ($('.js-rating').length > 0) {
@@ -202,25 +251,25 @@ head.ready(function() {
 		}
 
 	});
-	$(".js-select-width").multiselect({
-		selectedList: 7,
-		noneSelectedText: $(this).attr("data-placeholder"),
-		header: "",
- 		open: function () {
- 			$(this).multiselect("widget").addClass("is-full-width");
- 		},
- 		close: function () {
- 			$(this).multiselect("widget").removeClass("is-full-width");
- 		}
-	}).on("multiselectclick", function(event, ui) {
-		if ($(this).multiselect("widget").find("input").is(":checked")) {
-			$(this).next().addClass("has-value").removeClass("has-placeholder");
-		}
-		else {
-			$(this).next().addClass("has-placeholder").removeClass("has-value");
-		}
+	// $(".js-select-width").multiselect({
+	// 	selectedList: 7,
+	// 	noneSelectedText: $(this).attr("data-placeholder"),
+	// 	header: "",
+ // 		open: function () {
+ // 			$(this).multiselect("widget").addClass("is-full-width");
+ // 		},
+ // 		close: function () {
+ // 			$(this).multiselect("widget").removeClass("is-full-width");
+ // 		}
+	// }).on("multiselectclick", function(event, ui) {
+	// 	if ($(this).multiselect("widget").find("input").is(":checked")) {
+	// 		$(this).next().addClass("has-value").removeClass("has-placeholder");
+	// 	}
+	// 	else {
+	// 		$(this).next().addClass("has-placeholder").removeClass("has-value");
+	// 	}
 
-	});
+	// });
 	$(".js-select-age").multiselect({
 		selectedList: 1,
 		noneSelectedText: $(this).attr("data-placeholder"),
@@ -301,11 +350,11 @@ head.ready(function() {
 		var checkGroup = $(this).parents(".js-check-group");
 		var checkHidden = checkGroup.find(".js-check-hidden");
 		if ($(this).is(":checked")) {
-			checkHidden.removeAttr("hidden");
+			checkHidden.show();
 			$(this).parent().addClass("is-checked");
 		}
 		else {
-			checkHidden.attr("hidden","");
+			checkHidden.hide();
 			$(this).parent().removeClass("is-checked");
 		}
 	}); 

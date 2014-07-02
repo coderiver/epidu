@@ -1,6 +1,8 @@
 .slider
 	position: relative
 	height: 622px
+	overflow: hidden
+	border-bottom: 1px solid #fff 
 	.fotorama__arr
 		position: absolute
 		left: 50%
@@ -59,12 +61,12 @@
 .promo
 	background: $light 
 	.l-container
-		padding: 50px 0 67px
+		padding: 43px 0 67px
 		+clr
 .promo__descr
 	line-height: 1.38
 	p
-		margin-bottom: 8px  
+		margin-bottom: 11px  
 		strong
 			font-size: 15px
 .promo__col
@@ -73,19 +75,22 @@
 	padding: 0 50px 0 25px
 	width: 50%
 	+box
-	border-left: 1px dotted $border 
+	border-left: 1px dotted #c3c3c3
 	&:first-child
 		border-left: 0
-		border-right: 1px dotted $border
+		border-right: 1px dotted #c3c3c3
+	&:last-child
+		padding-top: 12px
 	.list
 		margin-top: 13px
 .promo__head
-	margin-bottom: 25px
+	margin-bottom: 28px
 	font-size: 20px
 	strong
 		display: block
 		font-weight: normal
 		font-size: 36px
+		line-height: 1.2
 		+fb
 .list
 	line-height: 1.2
@@ -140,6 +145,8 @@
 	box-shadow: 0 1px 10px rgba(0,0,0,.3) 
 	&:hover
 		box-shadow: none 
+	&:nth-child(3n+3)
+		margin-right: 0
 .categ__title
 	position: absolute
 	left: 0
@@ -165,3 +172,55 @@
 	top: 45px
 	color: #646464
 	font-size: 77px 
+	
+
+.search
+	position: absolute
+	left: 50%
+	top: 251px
+	z-index: 2
+	margin-left: -412px
+	box-shadow: 0 0 0 5px rgba(100,100,100,.6)
+	padding: 12px 12px 18px 
+	width: 813px
+	+box
+	border-radius: 13px 
+	background: $light url(../img/bg.jpg) 0 0 repeat 
+	.wrap
+		margin-bottom: 12px
+	.input-wrap__body
+		width: 271px
+	.input-time
+		margin-left: 9px
+		&:first-child
+			margin-left: 0
+	.input-wrap_location
+		margin-left: -90px
+		.input-wrap__body
+			width: 400px
+		.input-wrap__title
+			width: 90px
+.search__left
+	float: left
+	width: 380px
+	.input-wrap__title
+		padding: 0 10px 0 20px 
+		width: 108px
+.search__right
+	float: right
+	width: 400px
+	line-height: 48px
+	height: 48px
+	.checkbox
+		vertical-align: middle
+		padding-left: 10px
+		width: 123px
+		line-height: 1.2
+.search__submit
+	position: relative
+	margin-top: 16px
+	text-align: center
+	a
+		position: absolute
+		right: 0
+		top: 26px

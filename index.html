@@ -27,7 +27,7 @@
 				<div class="header__enter">
 					<ul class="header__enter-links">
 						<li><a href="#">Войти<i class="fa fa-sign-in"></i></a></li>
-						<li><a href="#">Зарегистрироваться<i class="fa fa-user"></i></a></li>
+						<li><a href="#">Регистрация<i class="fa fa-user"></i></a></li>
 					</ul>
 				</div>  
 				<div class="header__lang js-drop">
@@ -74,6 +74,115 @@
 					<img src="img/slide2.jpg" alt="">
 				</div>
 			</div> 
+		</div>
+		<div class="search">
+			<div class="wrap">
+				<div class="search__left">
+					<div class="select">
+						<select class="js-select-single" data-placeholder="Категория услуги">
+                            <option value="Курьерские услуги">Курьерские услуги</option>
+                            <option value="Компьютерная помощь">Компьютерная помощь</option>
+                            <option value="Бытовой ремонт">Бытовой ремонт</option>
+                           <option value="Курьерские услуги">Курьерские услуги</option>
+                            <option value="Компьютерная помощь">Компьютерная помощь</option>
+                            <option value="Бытовой ремонт">Бытовой ремонт</option>
+                            <option value="Курьерские услуги">Курьерские услуги</option>
+                            <option value="Компьютерная помощь">Компьютерная помощь</option>
+                            <option value="Бытовой ремонт">Бытовой ремонт</option>
+                        </select>
+					</div>
+				</div>
+				<div class="search__right">
+					<input type="text" class="input" placeholder="Название услуги или места...">
+				</div>
+			</div>
+			<div class="wrap js-date-group">
+				<div class="search__left">
+					<div class="input-wrap">
+						<div class="input-wrap__title">
+							Начало праздника: 
+						</div>
+						<div class="input-wrap__body">
+							<div class="input-date">
+								<input type="text" class="input input_date js-date-from">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="input-time">
+								<select class="js-select-single">
+		                            <option value="10:00">10:00</option>
+		                            <option value="12:00">12:00</option>
+		                            <option value="13:00">13:00</option>
+		                            <option value="14:00">14:00</option>
+		                            <option value="15:00">15:00</option>
+		                            <option value="16:00">16:00</option>
+		                            <option value="17:00">17:00</option>
+		                            <option value="18:00">18:00</option>
+		                            <option value="19:00">19:00</option>
+		                            <option value="20:00">20:00</option>
+		                        </select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search__right js-check-group">
+					<label class="checkbox js-check">
+						<input type="checkbox">
+						<span>Окончание праздника: </span>
+					</label> 
+					<div class="input-date js-check-hidden" style="display:none">
+						<input type="text" class="input input_date js-date-to">
+						<i class="fa fa-calendar"></i>
+					</div>
+					<div class="input-time js-check-hidden" style="display:none"> 
+						<select class="js-select-single">
+                            <option value="10:00">10:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="search__left">
+					<div class="input-wrap input-wrap_person">
+						<div class="input-wrap__title">
+							Количество человек: 
+						</div>
+						<div class="input-wrap__body">
+							<div class="input-time">
+								<select class="js-select-single">
+		                            <option value="до 10">до 10</option>
+		                            <option value="толпа">толпа</option>
+		                            <option value="вагон">вагон</option>
+		                            <option value="100">100</option>
+		                        </select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search__right">
+					<div class="input-wrap input-wrap_location">
+						<div class="input-wrap__title">
+							Место Проведения: 
+						</div>
+						<div class="input-wrap__body">
+							<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
+							<a class="fa fa-location-arrow" href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search__submit">
+				<button class="btn-submit is-big-btn" type="submit"><i class="fa fa-search"></i>Искать в каталоге</button>
+				<a href="#">Открыть подробный поиск</a>
+			</div>
 		</div>
 	</div>  
 	<!-- END slider -->
@@ -167,10 +276,10 @@
 				<div class="footer__title">
 					e-pidu в социальных сетях
 				</div>
-				<div class="soc">
-					<a href="#" class="soc__fb"></a>
-					<a href="#" class="soc__tw"></a>
-					<a href="#" class="soc__vk"></a>
+				<div class="footer__soc">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-vk"></i></a>
 				</div>
 			</div>
 			<div class="footer__col">
@@ -182,7 +291,7 @@
 				</ul>
 			</div>
 			<div class="footer__col">
-				<ul class="soc">
+				<ul>
 					<li><a href="#">© e-pidu.ee 2014</a></li>
 					<li><a href="#">Designed by Aprol Designs</a></li>
 				</ul>

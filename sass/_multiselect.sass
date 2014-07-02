@@ -2,18 +2,19 @@
 	position: relative
 	overflow: hidden
 	display: block
-	padding: 0 20px 
+	padding: 0 30px 0 20px
 	width: 100% !important
 	margin: 0
-	height: 44px
+	height: 48px
 	+box
-	font-size: 14px
-	+fm
-	border: 1px solid $border
-	border-radius: 5px 
+	font-size: 16px
+	+fr
+	border-radius: 7px 
 	background: #fff
 	text-align: left
-	+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+	+text-overflow
+	box-shadow: 0 1px 0 #fff, inset 0 1px 5px rgba(0,0,0,.64)
+	+background-image(linear-gradient(bottom, rgba(235,235,235,.41) 0%, rgba(255,255,255,.41) 100%))
 	span
 		color: #808080
 	&:after
@@ -38,9 +39,9 @@
 .ui-multiselect span.ui-icon
 	position: absolute     
 	top: 50%
-	right: 10px
-	margin-top: -8px
-	//+s(arr1)
+	right: 16px
+	margin-top: -1px
+	+arr(12,6,#a4a3a3,b)
 .ui-multiselect-single .ui-multiselect-checkboxes input
 	position: absolute !important
 	top: auto !important
@@ -76,13 +77,13 @@
 	position: absolute
 	z-index: 10000
 	text-align: left
-	margin-top: -45px
-	padding: 6px 6px 6px 0 
-	background: #fff 
+	margin-top: -48px
+	padding: 7px 7px 7px 0 
+	background: #f5f5f5
 	max-height: 263px
 	height: auto
 	border-radius: 5px 
-	+box-shadow(0 0 6px rgba(#000,.2))
+	box-shadow: 0 0 0 3px $blue
 	&.is-full-width
 		margin-left: -3px
 		+box
@@ -102,15 +103,15 @@
 	position: relative
 	overflow-x: hidden
 	overflow-y: auto
-	height: 249px
+	padding: 0 9px 0 11px 
+	max-height: 224px
 	+scrollbar
-		width: 8px
-		height: 8px
-		border: 1px solid #d1d1d1
+		width: 6px
+		height: 6px
 		+border-radius(4px)
-		+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+		background: #d1d1d1
 	+scrollbar-thumb
-		background: $blue
+		background: $blue_d
 		+border-radius(4px)
 	+scrollbar-track-piece     
 		+border-radius(4px) 
@@ -118,16 +119,18 @@
 		&:first-child
 			label
 				border-top: 0
+				box-shadow: none
 .ui-multiselect-checkboxes label  
 	position: relative
-	border-top: 1px solid $border 
-	padding: 14px 15px
-	+fm
-	font-size: 14px 
+	border-top: 1px solid #e3e3e3
+	padding: 9px 15px
+	+fr
+	font-size: 16px 
 	cursor: pointer
 	display: block
+	color: $black 
 	+unselectable
-	
+	box-shadow: inset 0 1px 0 #fff
 	input  
 		position: absolute
 		left: 6px
@@ -144,38 +147,38 @@
 					display: block
 				&:after
 					display: none
-	span
-		display: block
-		position: relative
-		padding-left: 28px
-		&:before
-			display: none
-		&:after
-			content: ""
-			position: absolute
-			left: 0
-			top: -1px
-			border: 1px solid $border
-			width: 17px
-			height: 17px
-			border-radius: 3px 
-			background: #fff 
-			+box-shadow(inset 0 0 5px rgba(0,0,0,.1))
-			+box  
-		&:before
-			display: none
-			content: "\f14a"
-			position: absolute
-			left: 0
-			top: -1px
-			font-size: 20px
-			color: $blue 
-			font-family: FontAwesome
-			font-style: normal
-			font-weight: normal
-			line-height: 1
-			-webkit-font-smoothing: antialiased
-			-moz-osx-font-smoothing: grayscale
+	// span
+	// 	display: block
+	// 	position: relative
+	// 	padding-left: 28px
+	// 	&:before
+	// 		display: none
+	// 	&:after
+	// 		content: ""
+	// 		position: absolute
+	// 		left: 0
+	// 		top: -1px
+	// 		border: 1px solid $border
+	// 		width: 17px
+	// 		height: 17px
+	// 		border-radius: 3px 
+	// 		background: #fff 
+	// 		+box-shadow(inset 0 0 5px rgba(0,0,0,.1))
+	// 		+box  
+	// 	&:before
+	// 		display: none
+	// 		content: "\f14a"
+	// 		position: absolute
+	// 		left: 0
+	// 		top: -1px
+	// 		font-size: 20px
+	// 		color: $blue 
+	// 		font-family: FontAwesome
+	// 		font-style: normal
+	// 		font-weight: normal
+	// 		line-height: 1
+	// 		-webkit-font-smoothing: antialiased
+	// 		-moz-osx-font-smoothing: grayscale
 .ui-multiselect-checkboxes li
 	display: list-item
 	

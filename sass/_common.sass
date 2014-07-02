@@ -36,7 +36,7 @@ $light: #f4f4f4
 
 $green: #b0c400
 $gray: #555555
-$gray: #888
+//$gray: #888
 $gray_l: #a4a3a3
 
 html
@@ -98,7 +98,7 @@ a
 		+clr
 .header__left
 	float: left
-	padding: 13px 0 9px
+	padding: 13px 0 10px
 	+clr
 .header__right
 	float: right
@@ -113,6 +113,7 @@ a
 		margin-right: 10px
 		+s(logo)
 	span
+		margin-top: -5px
 		width: 91px
 		white-space: normal
 		font-size: 13px
@@ -121,13 +122,14 @@ a
 .header__enter
 	float: left
 	border-right: 1px solid $border 
-	padding: 19px 22px
+	padding: 19px 28px
+	text-align: right
 .header__enter-links
 	display: inline-block
 	vertical-align: middle
 	li
 		line-height: 1.2
-		margin-top: 8px
+		margin-top: 11px
 		&:first-child
 			margin-top: 0
 	a
@@ -143,7 +145,7 @@ a
 			right: 3px   
 .header__lang-link	
 	display: inline-block
-	padding: 19px 10px 10px 19px
+	padding: 19px 15px 10px 19px
 	+ts 
 	&:hover,
 	&.is-active
@@ -156,17 +158,26 @@ a
 		
 .footer
 	border-top: 1px solid $border
-	padding: 35px 25px 45px  
+
 	background: $light  
-	+clr
 	+ts
+	.l-container
+		padding: 35px 25px 45px   
+		+clr
 .footer__col
 	float: left
 	margin-left: 55px
 	&:first-child
 		margin-left: 0
+	ul
+		li
+			margin-bottom: 5px
 .footer__title	
 	margin-bottom: 17px
 	font-size: 21px
 	color: #505050
 	+fb 
+.footer__soc
+	font-size: 21px
+	a
+		margin-right: 18px
