@@ -178,7 +178,7 @@ head.ready(function() {
 	if ($('.js-rating-small').length > 0) {
 		$('.js-rating-small').each(function(){
 			$(this).raty({
-				width: 62,
+				width: 83,
 				hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
 				starOff: 'img/star-s.png',
 				starOn : 'img/star-s-act.png',
@@ -207,7 +207,7 @@ head.ready(function() {
 	if ($('.js-rating-small-read').length > 0) {
 		$('.js-rating-small-read').each(function(){
 			$(this).raty({
-				width: 62,
+				width: 83,
 				readOnly: true,
 				hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
 				starOff: 'img/star-s.png',
