@@ -67,7 +67,11 @@ head.ready(function() {
 		event.stopPropagation();
 	});
 
-
+	$(".js-categ").on("click", function(){
+		$(this).parent().find(".js-categ").removeClass("is-active");
+		$(this).addClass("is-active");
+		return false;
+	});
 
 	$(".js-window-link").on("click", function(event){
 		var left = $(this).offset().left + $(this).outerWidth();

@@ -84,8 +84,8 @@
 	<!-- END header -->
 	<div class="l-container l-container_small">
 		<div class="page-head">
-			<div class="page-title">Мои праздники</div>
-			<a href="js-popup-holiday" class="btn-action is-big-btn js-popup-link">Создать новый праздник</a>
+			<div class="page-title">Мои объекты</div>
+			<a href="js-popup-object" class="btn-submit is-big-btn js-popup-link">Создать новый объект</a>
 		</div>
 		<div class="object js-removeable">
 			<div class="object__left">
@@ -286,50 +286,44 @@
 </div>
 <!-- END footer -->
 <div class="overlay js-overlay">
-	<div class="popup popup_reg js-popup js-popup-holiday">
+	<div class="popup js-popup js-popup-object">
 		<!-- BEGIN categ-wrap -->
 		<div class="categ-wrap">
-			<div class="categ-wrap__title">Какой праздник вы хотите организовать?</div>
+			<div class="categ-wrap__title">Сколько объектов вы хотите создать?</div>
 			<div class="wrap">	
-				<a href="#" class="categ">
-					<img src="img/cat-wedding.png" alt="wedding">
-					<span class="categ__title">
-						<span>Свадьба</span>
-					</span>
-				</a>
-				<a href="#" class="categ">
-					<img src="img/cat-birthday.png" alt="birthday">
-					<span class="categ__title">
-						<span>День рождения</span>
-					</span>
-				</a>
-				<a href="#" class="categ">
-					<img src="img/cat-graduation.png" alt="graduation">
-					<span class="categ__title">
-						<span>Выпускной</span>
-					</span>
-				</a>
-				<a href="#" class="categ">
-					<img src="img/cat-corp.png" alt="corp">
-					<span class="categ__title">
-						<span>Корпоратив</span>
-					</span>
-				</a>
-				<a href="#" class="categ">
-					<img src="img/cat-free.png" alt="free">
-					<span class="categ__title">
-						<span>Свободное время</span>
-					</span>
-				</a>
-				<a href="#" class="categ">
+				<a href="#" class="categ js-categ categ_obj">
 					<span class="categ__icon">
-						<i class="fa fa-heart-o"></i>
+						1-2
 					</span>
 					<span class="categ__title">
-						<span>Другой праздник</span>
+						<span>10 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						3-5
+					</span>
+					<span class="categ__title">
+						<span>18 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						6-10
+					</span>
+					<span class="categ__title">
+						<span>24 € в месяц <em>за все объекты</em></span>
 					</span>
 				</a>
 			</div>
+		</div>
+		<div class="popup__text">
+			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
+			<ul class="list list_blue">
+				<li>на 1 месяц</li>
+				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
+				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
+			</ul> 
 		</div>
 		<!-- END categ-wrap -->
 		<button class="btn-close js-popup-close" type="btn"></button>

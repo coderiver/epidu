@@ -94,22 +94,7 @@
 		font-size: 36px
 		line-height: 1.2
 		+fb
-.list
-	line-height: 1.2
-	font-size: 13px
-	li
-		position: relative
-		margin-bottom: 5px
-		padding-left: 30px
-		&:before
-			content: "\f00c" 
-			position: absolute
-			left: 0
-			top: 0
-			font-size: 19px
-			color: #b0c400
-			+ts
-			+fa
+
 .to-right
 	text-align: right
 	
@@ -149,33 +134,51 @@
 		box-shadow: none 
 	&:nth-child(3n+3)
 		margin-right: 0
-.categ__title
-	position: absolute
-	left: 0
-	bottom: 17px
-	right: 0
-	z-index: 2
-	height: 53px
-	line-height: 47px
-	text-align: center
-	color: #fff
-	font-size: 16px
-	+fb
-	background: $green 
-	text-align: center
-	span
-		display: inline-block
-		vertical-align: middle
-		line-height: 1.2
-.categ__icon
-	position: absolute
-	left: 0
-	right: 0
-	top: 45px
-	color: #646464
-	font-size: 77px 
+	&__title
+		position: absolute
+		left: 0
+		bottom: 17px
+		right: 0
+		z-index: 2
+		height: 53px
+		line-height: 47px
+		text-align: center
+		color: #fff
+		font-size: 16px
+		+fb
+		background: $green 
+		text-align: center
+		span
+			display: inline-block
+			vertical-align: middle
+			line-height: 1.2
+	&__icon
+		position: absolute
+		left: 0
+		right: 0
+		top: 45px
+		color: #434343 
+		font-size: 70px
+		.fa
+			font-size: 77px
+			color: #646464
+.categ_obj	
+	border-color: #c5c5c5
+	box-shadow: none
+	&:hover
+		box-shadow: 0 2px 5px rgba(0,0,0,.1) 
+	&.is-active
+		border-color: $blue
+		box-shadow: 0 2px 5px rgba(0,0,0,.1) 
+	.categ__title
+		padding: 0 50px 
+		background: $blue 
+		em
+			display: block
+			font-size: 13px
+			+fr
+			font-style: normal
 	
-
 .search
 	position: absolute
 	left: 50%

@@ -251,3 +251,31 @@
 	display: inline-block
 	vertical-align: middle
 	height: 15px	
+	
+.list
+	line-height: 1.2
+	font-size: 13px
+	li
+		position: relative
+		margin-bottom: 5px
+		padding-left: 30px
+		&:before
+			content: "\f00c" 
+			position: absolute
+			left: 0
+			top: 0
+			font-size: 19px
+			color: #b0c400
+			+ts
+			+fa
+	strong
+		display: inline-block
+		padding: 6px 8px 
+		font-weight: normal
+		+fb
+		border-radius: 4px 
+		background: $green 
+.list_blue
+	li 
+		&:before
+			color: $blue 
