@@ -381,9 +381,13 @@ head.ready(function() {
 	}); 
 
 	$("body").on("click",".js-remove-btn",function(){
-		$(this).parents(".js-removeable").remove();
+		$(this).parents(".js-removeable").addClass("is-remove-ready");
+	    setTimeout(function(){
+	    	$(".is-remove-ready").remove();
+	    }, 200);
+		//$(this).parents(".js-removeable").remove();
 		return false;
-	});
+	}); 
 
 	$("body").on("click",".js-add-btn",function(){
 		var new_el = $(this).attr("data-hidden");

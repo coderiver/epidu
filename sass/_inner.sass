@@ -220,6 +220,8 @@
 		background: #f4f4f4  
 		
 .object
+	position: relative
+	left: 0
 	margin: 6px 0 
 	display: table
 	width: 100%
@@ -228,11 +230,15 @@
 	font-size: 13px
 	color: $black
 	+fr
+	+tr(all .2s linear)
 	border-radius: 5px 
 	&.is-inactive
 		.object__left,
 		.object__middle
 			opacity: .5
+	&.is-remove-ready
+		opacity: 0
+		left: -500px
 	&__left
 		display: table-cell
 		vertical-align: top
