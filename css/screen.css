@@ -313,6 +313,15 @@ a:hover { color: #026073; }
 .holiday__action.is-blue:hover { color: #00a6c9; }
 .holiday__right { display: table-cell; border-left: 1px solid gainsboro; padding: 11px 20px; background: #f4f4f4; }
 
+.object { margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; border-radius: 5px; }
+.object.is-inactive .object__left, .object.is-inactive .object__middle { opacity: 0.5; }
+.object__left { display: table-cell; padding: 5px 15px 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 458px; }
+.object__title { margin-bottom: 8px; }
+.object__title a { font-size: 16px; color: #00a6c9; }
+.object__info { margin: 8px 0 14px; }
+.object__meta { margin: 14px 0 0; color: #888888; font-family: "roboto-italic", Arial, sans-serif; }
+.object__middle { display: table-cell; border-left: 1px solid gainsboro; padding: 11px 28px; width: 306px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 .sidebar-nav { padding-top: 22px; }
 .sidebar-nav li.is-active a { color: #016d84; font-family: "roboto-regular", Arial, sans-serif; background: white; }
 .sidebar-nav li:first-child a { border-top: 0; box-shadow: none; }

@@ -217,3 +217,41 @@
 		border-left: 1px solid #dcdcdc
 		padding: 11px 20px
 		background: #f4f4f4  
+		
+.object
+	margin: 6px 0 
+	display: table
+	width: 100%
+	border: 1px solid #dcdcdc
+	background: #fff
+	font-size: 13px
+	color: $black
+	+fr
+	border-radius: 5px 
+	&.is-inactive
+		.object__left,
+		.object__middle
+			opacity: .5
+	&__left
+		display: table-cell
+		padding: 5px 15px 5px
+		+box
+		width: 458px
+	&__title
+		margin-bottom: 8px
+		a
+			font-size: 16px
+			color: $blue 
+	&__info
+		margin: 8px 0 14px 
+	&__meta
+		margin: 14px 0 0 
+		color: #888
+		+fi 
+
+	&__middle
+		display: table-cell
+		border-left: 1px solid #dcdcdc
+		padding: 11px 28px
+		width: 306px
+		+box

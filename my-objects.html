@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>my holidays</title>
+	<title>my objects</title>
 	<meta name="viewport" content="width=1200">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -87,107 +87,54 @@
 			<div class="page-title">Мои праздники</div>
 			<a href="js-popup-holiday" class="btn-action is-big-btn js-popup-link">Создать новый праздник</a>
 		</div>
-		<div class="holiday js-removeable">
-			<div class="holiday__left">
-				<div class="holiday__title"><a href="#">Свадьба</a></div>
-				<ul class="holiday__info">
-					<li>09.05.2014 (12:00) - 10.05.2014 (12:00)</li>
-					<li>Tallinn, Estonia, до 10 человек</li>
-				</ul>
-				<ul class="holiday__meta">
-					<li>Создан: 20.06.2014</li>
-					<li>Я - организатор праздника</li>
-				</ul>
-			</div>
-			<div class="holiday__middle">
-				<div class="holiday__status">
-					Запрос отправлен 21.06.2014
-					<span class="counter">12</span>
+		<div class="object js-removeable">
+			<div class="object__left">
+				<a href="#">
+					<img src="http://lorempixel.com/120/120" alt="">
+				</a>
+				<div class="object__head">
+					<div class="object__title"><a href="#">Tchaikovsky</a></div>
+					<div class="rating">
+						<div class="rating__in js-rating-small-read" data-score="4"></div>
+						<span class="rating__text">(119)</span>
+					</div>
+					<div class="object__meta">
+						Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+					</div>
+					<div class="object__descr">
+						Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+					</div>
 				</div>
-				<a href="#" class="btn-action is-liquid">Отправить новый запрос</a>
-				<a href="#" class="holiday__action"><i class="fa fa-times"></i>Закрыть праздник</a>
 			</div>
-			<div class="holiday__right">
-				<div class="holiday__status">
-					Обсуждаю с 15 друзьями
-					<span class="counter">12</span>
-				</div>
-				<a href="#" class="btn-simple is-liquid">Пригласить еще друзей</a>
-				<a href="#" class="holiday__action is-cancel"><i class="fa fa-ban"></i>Прекратить обсуждение</a>
-			</div>
-		</div>
-		<div class="holiday js-removeable">
-			<div class="holiday__left">
-				<div class="holiday__title"><a href="#">День рождения</a></div>
-				<ul class="holiday__info">
-					<li>09.05.2014 (12:00) - 10.05.2014 (12:00)</li>
-					<li>Tallinn, Estonia, до 10 человек</li>
-				</ul>
-				<ul class="holiday__meta">
-					<li>Создан: 20.06.2014</li>
-					<li>Я - организатор праздника</li>
+			<div class="object__middle">
+				<ul>
+					<li><a href="#">www.oldtallinn.ee</a></li>
+					<li>
+						<div>+372 777 888 9987</div>
+						<div>+372 88 999 8878</div>
+					</li>
+					<li>Масина 22, Таллинн</li>
 				</ul>
 			</div>
-			<div class="holiday__middle">
-				<div class="holiday__status">
-					Запрос на услуги не отправлен
+			<div class="object__right">
+				<div class="object__links">
+					<div class="object__status">Активный до 12.07.2014</div>
+					<ul>
+						<li>
+							<a href="#"><i class="fa fa-file"></i>Скачать счет</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-external-link-square"></i>Публичная страница</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-pencil"></i>Редактировать</a>
+						</li>
+					</ul>
 				</div>
-				<a href="#" class="btn-action is-liquid">Отправить новый запрос</a>
-				<a href="#" class="holiday__action"><i class="fa fa-times"></i>Закрыть праздник</a>
-			</div>
-			<div class="holiday__right">
-				<div class="holiday__status">
-					Не обсуждаю с друзьями
+				<div class="objects__action">
+					<a href="#" class="btn-submit is-big-btn">Продлить</a>
+					<a href="#" class="btn-remove js-remove-btn"><i class="fa fa-times"></i>Удалить</a>
 				</div>
-				<a href="#" class="btn-simple is-liquid">Пригласить друзей</a>
-			</div>
-		</div>
-		<div class="holiday is-inactive js-removeable">
-			<div class="holiday__left">
-				<div class="holiday__title"><a href="#">Свадьба</a></div>
-				<ul class="holiday__info">
-					<li>09.05.2014 (12:00) - 10.05.2014 (12:00)</li>
-					<li>Tallinn, Estonia, до 10 человек</li>
-				</ul>
-				<ul class="holiday__meta">
-					<li>Создан: 20.06.2014</li>
-					<li>Я - организатор праздника</li>
-				</ul>
-			</div>
-			<div class="holiday__middle">
-				<div class="holiday__status">
-					Запрос отправлен 21.06.2014
-					<span class="counter">12</span>
-				</div>
-				<a href="#" class="btn-action is-liquid">Отправить новый запрос</a>
-				<a href="#" class="holiday__action js-remove-btn"><i class="fa fa-trash-o"></i>Удалить праздник навсегда</a>
-			</div>
-			<div class="holiday__right">
-				<div class="holiday__status">
-					Обсуждаю с 15 друзьями
-					<span class="counter">12</span>
-				</div>
-				<a href="#" class="btn-simple is-liquid">Пригласить еще друзей</a>
-			</div>
-		</div>
-		<div class="holiday js-removeable">
-			<div class="holiday__left">
-				<div class="holiday__title"><a href="#">Свадьба</a></div>
-				<ul class="holiday__info">
-					<li>09.05.2014 (12:00) - 10.05.2014 (12:00)</li>
-					<li>Tallinn, Estonia, до 10 человек</li>
-				</ul>
-				<ul class="holiday__meta">
-					<li>Создан: 20.06.2014</li>
-					<li>Я - организатор праздника</li>
-				</ul>
-			</div>
-			<div class="holiday__right">
-				<div class="holiday__status">
-					Обсуждаю с 15 друзьями
-					<span class="counter">12</span>
-				</div>
-				<a href="#" class="holiday__action is-blue"><i class="fa fa-comments"></i>Написать новое сообщение</a>
 			</div>
 		</div>
 	</div>
