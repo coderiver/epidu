@@ -252,7 +252,7 @@ a:hover { color: #026073; }
 .search__left .input-wrap__title { padding: 0 10px 0 20px; width: 108px; }
 
 .search__right { float: right; width: 400px; line-height: 48px; height: 48px; }
-.search__right .checkbox { vertical-align: middle; padding-left: 10px; width: 123px; line-height: 1.2; }
+.search__right .checkbox { vertical-align: middle; padding-left: 10px; width: 122px; line-height: 1.2; }
 
 .search__submit { position: relative; margin-top: 16px; text-align: center; }
 .search__submit a { position: absolute; right: 0; top: 26px; }
@@ -629,7 +629,7 @@ a:hover { color: #026073; }
 .ui-multiselect span { color: gray; }
 .ui-multiselect:after { content: ""; position: absolute; top: 20px; right: 20px; }
 .ui-multiselect.has-placeholder span { color: #999999; }
-.ui-multiselect.has-value span { color: #5c5c5c; }
+.ui-multiselect.has-value span { color: #232323; }
 
 .ui-multiselect span.ui-icon { position: absolute; top: 50%; right: 16px; margin-top: -1px; width: 0px; height: 0px; border-style: solid; border-width: 6px 6px 0 6px; border-color: #a4a3a3 transparent transparent transparent; }
 
