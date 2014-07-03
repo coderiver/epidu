@@ -38,6 +38,8 @@ $green: #b0c400
 $gray: #555555
 //$gray: #888
 $gray_l: #a4a3a3
+$red: #c53300
+$red_d: #ad2d00
 
 html
 	+scrollbar
@@ -71,6 +73,8 @@ a
 	margin: 0 auto  
 	width: 1000px
 	+box
+.l-container_small
+	padding: 0 22px 
 .to-center
 	text-align: center
 .wrap
@@ -129,6 +133,7 @@ a
 	border-right: 1px solid $border 
 	padding: 0 28px
 	height: 78px
+	+vertical
 	text-align: right
 	.dropdown
 		margin-top: -36px
@@ -157,7 +162,7 @@ a
 			right: 14px
 			box-shadow: none 
 	.dropdown__list
-		&:first-child
+		&:first-child 
 			.dropdown__link
 				padding: 17px 20px 10px  
 		&:last-child
@@ -167,14 +172,15 @@ a
 .header__enter-links
 	display: inline-block
 	vertical-align: middle
+	font-size: 13px
 	li
 		line-height: 1.2
-		margin-top: 11px
+		margin-top: 11px 
 		&:first-child
 			margin-top: 0
 	a
 		+ts
-	.fa
+	.fa  
 		margin-left: 6px
 	.fa-caret-down
 		vertical-align: top
@@ -183,7 +189,7 @@ a
 		border-bottom: 1px dashed 
 .header__user
 	display: inline-block
-	margin: 7px -17px 0 8px
+	margin: 0 -17px 0 11px
 	vertical-align: middle
 .header__user-img
 	display: block
@@ -203,7 +209,7 @@ a
 	position: relative
 	float: left
 	.dropdown
-		right: 0
+		right: 5px
 		&:before
 			right: 3px   
 .header__lang-link	

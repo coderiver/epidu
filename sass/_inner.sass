@@ -134,3 +134,86 @@
 			bottom: -4px
 			height: 4px
 			background: url(../img/yellow-bg2.png) 0 0 repeat
+			
+.page-head
+	+clr
+	padding: 22px 0 18px
+	.btn-action   
+		float: right
+.page-title
+	float: left
+	padding-top: 3px
+	+fb
+	font-weight: normal
+	font-size: 30px 
+.holiday
+	margin: 6px 0 
+	display: table
+	width: 100%
+	border: 1px solid #dcdcdc
+	background: #fff
+	font-size: 13px
+	color: $black
+	+fr
+	border-radius: 5px 
+	&.is-inactive
+		.holiday__left,
+		.holiday__right,
+		.holiday__status,
+		.btn-action
+			opacity: .5
+	&__left
+		display: table-cell
+		padding: 11px 18px
+		+box
+		width: 355px
+	&__title
+		margin-bottom: 8px
+		a
+			font-size: 16px
+			color: $blue 
+	&__info
+		margin: 8px 0 14px 
+	&__meta
+		margin: 14px 0 0 
+		color: #888
+		+fi 
+
+	&__middle
+		display: table-cell
+		border-left: 1px solid #dcdcdc
+		padding: 11px 28px
+		width: 306px
+		+box
+	&__status
+		margin-bottom: 17px 
+	.btn-action,
+	.btn-simple
+		margin: 0 0 14px
+	.counter
+		margin-left: 9px
+	&__action
+		display: inline-block
+		color: $red
+		+fm
+		+tr
+		.fa
+			margin-right: 8px
+		&:hover
+			color: $red_d
+		&:active	
+			position: relative
+			top: 1px
+		&.is-cancel
+			color: #888
+			&:hover
+				color: $gray 
+		&.is-blue
+			color: $blue_d
+			&:hover
+				color: $blue 
+	&__right
+		display: table-cell
+		border-left: 1px solid #dcdcdc
+		padding: 11px 20px
+		background: #f4f4f4  
