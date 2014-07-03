@@ -92,7 +92,7 @@ a
 	position: relative
 	z-index: 3
 	background: $light 
-	box-shadow: 0 1px 6px rgba(0,0,0,.39)
+	box-shadow: 0 1px 6px rgba(0,0,0,.2)
 	.l-container
 		padding: 0 20px 
 		+clr
@@ -123,11 +123,47 @@ a
 		font-size: 13px
 		color: #636464 
 		+ts
-.header__enter
+.header__enter 
+	position: relative
 	float: left
 	border-right: 1px solid $border 
-	padding: 19px 28px
+	padding: 0 28px
+	height: 78px
 	text-align: right
+	.dropdown
+		margin-top: -36px
+		right: 39px
+		width: 342px
+		&:before
+			right: 43px
+			top: -11px
+		.btn-submit,
+		.btn-action
+			position: absolute
+			right: 7px
+			&:active
+				position: absolute
+		.btn-submit
+			top: 8px
+			&:active
+				top: 9px 
+		.btn-action
+			top: 2px
+			&:active
+				top: 3px
+		.counter
+			position: absolute
+			top: 8px
+			right: 14px
+			box-shadow: none 
+	.dropdown__list
+		&:first-child
+			.dropdown__link
+				padding: 17px 20px 10px  
+		&:last-child
+			.dropdown__link
+				padding: 10px 20px 17px
+			  
 .header__enter-links
 	display: inline-block
 	vertical-align: middle
@@ -140,6 +176,29 @@ a
 		+ts
 	.fa
 		margin-left: 6px
+	.fa-caret-down
+		vertical-align: top
+		margin-left: 12px
+	span
+		border-bottom: 1px dashed 
+.header__user
+	display: inline-block
+	margin: 7px -17px 0 8px
+	vertical-align: middle
+.header__user-img
+	display: block
+	position: relative 
+	width: 66px
+	height: 66px
+	img 
+		display: block
+		max-width: 100%
+		height: auto
+		border-radius: 50% 
+	.counter
+		position: absolute
+		top: -1px
+		right: -1px
 .header__lang
 	position: relative
 	float: left

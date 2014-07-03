@@ -15,7 +15,7 @@
 		+fa
 		margin-left: 5px
 	a
-		color: $blue_d
+		color: $blue_d    
 		+tr
 		&:hover
 			text-decoration: underline
@@ -74,7 +74,7 @@
 			+fa
 			font-size: 19px 
 	ul
-		margin: 18px 0 
+		margin: 18px 0
 		line-height: 1.2
 		font-size: 13px
 		li
@@ -91,7 +91,7 @@
 				+ts
 				+fa
 	ol
-		margin: 18px 0 
+		margin: 18px 0 41px
 		li
 			position: relative
 			margin-bottom: 5px
@@ -106,3 +106,31 @@
 				background: #929292 
 				border-radius: 50% 
 				+ts
+.message
+	display: block
+	margin: 18px 0 
+	padding: 15px 20px 
+	line-height: 1.4
+	font-size: 13px
+	&.is-gray
+		border-top: 1px solid $border 
+		border-bottom: 1px solid $border 
+		background: $light
+		box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff
+	&.is-green
+		background: $green
+		color: #fff
+	&.is-blue
+		background: $blue 
+		color: #fff
+	&.is-yellow
+		position: relative
+		background: url(../img/yellow-bg1.png) 0 0 repeat
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -4px
+			height: 4px
+			background: url(../img/yellow-bg2.png) 0 0 repeat
