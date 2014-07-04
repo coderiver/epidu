@@ -354,19 +354,19 @@ head.ready(function() {
 		} 
 	}); 
 	$(".js-check input").on("change",function(){
-		var checkGroup = $(this).parents(".js-check-group");
-		var checkHidden = checkGroup.find(".js-check-hidden");
+		var checkGroup = $(this).closest(".js-check-group");
+		var checkHidden = checkGroup.children(".js-check-hidden");
 		if ($(this).is(":checked")) {
-			checkHidden.show();
+			checkHidden.addClass("is-visible");
 			$(this).parent().addClass("is-checked");
 		}
 		else {
-			checkHidden.hide();
+			checkHidden.removeClass("is-visible").addClass("is-hidden");
 			$(this).parent().removeClass("is-checked");
 		}
 	}); 
 	$(".js-radio input").on("change",function(){
-		var radio = $(this).parents(".js-radio");
+		var radio = $(this).closest(".js-radio");
 		var radioGroup = $(this).parents(".js-radio-group");
 		var radioHidden = radio.find(".js-radio-hidden");
 		if ($(this).is(":checked")) {

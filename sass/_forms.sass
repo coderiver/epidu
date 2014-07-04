@@ -2,6 +2,16 @@
 .field
 	margin-bottom: 12px
 	font-size: 0
+.field_file
+	.input-wrap__title
+		height: 48px
+		line-height: 48px
+		color: $gray
+		+fb 
+	.is-big-btn
+		font-size: 15px
+		.fa
+			font-size: 15px
 .field__title
 	margin-bottom: 16px
 	font-size: 16px
@@ -13,12 +23,16 @@
 .input-wrap
 	position: relative
 	font-size: 0
-	+clr
+	+clr  
 .input-wrap_half
 	display: inline-block
-	vertical-align: top
+	vertical-align: middle
 	margin-left: 3%
 	width: 48.5%
+	+vertical
+	text-align: left
+	.checkbox
+		vertical-align: middle
 	&:first-child
 		margin-left: 0
 .input-wrap__title,
@@ -28,7 +42,7 @@
 	vertical-align: middle
 	+box
 .input-wrap__title
-	font-size: 13px
+	font-size: 13px  
 	color: $gray
 	+ts
 	line-height: 1.2
@@ -262,7 +276,7 @@
 		&:before
 			content: ""
 			position: absolute
-			left: -17px
+			left: -16px
 			top: 50%
 			margin-top: -9px
 			width: 16px
@@ -288,4 +302,28 @@
 		line-height: 1
 		color: $blue
 		border-bottom: 1px dashed	
-	
+.checkbox_bold
+	span
+		+fb
+.user-avatar
+	width: 66px
+	height: 66px
+	overflow: hidden
+	border-radius: 50% 
+	img
+		display: block
+.download-file
+	text-align: center
+	display: inline-block
+	vertical-align: middle
+	&.is-remove-ready
+		.user-avatar
+			width: 10px
+			height: 10px
+	&__main
+		min-height: 66px
+		min-width: 66px
+		margin-bottom: 10px
+	.user-avatar
+		+tr
+		margin: 0 auto 
