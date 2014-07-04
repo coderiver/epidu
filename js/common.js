@@ -231,6 +231,22 @@ head.ready(function() {
         $(".js-input-tel").mask("+999 99 99 99 99");
     }
 
+ //    $(".js-show-extend").on("click",function(){
+	// 	$(this).parents(".js-comment").addClass("has-open-extend");
+	// 	return false;
+	// }); 
+	$(".js-show-extend").on("click",function(){
+		$(this).parents(".js-comment").find(".js-comment-short").hide();
+		$(this).parents(".js-comment").find(".js-comment-extend").show();
+		$(this).parents(".js-comment").find(".js-comment-extend textarea").focus()
+		return false;
+	}); 
+	$(".js-hide-extend").on("click",function(){
+		$(this).parents(".js-comment").find(".js-comment-short").show();
+		$(this).parents(".js-comment").find(".js-comment-extend").hide();
+		return false;
+	}); 
+
     $(".textarea textarea").focusin(function() {
 	  $(this).parent().addClass("is-focused")
 	});
