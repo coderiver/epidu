@@ -222,6 +222,19 @@
 		padding: 11px 20px
 		background: #f4f4f4  
 		
+.object-wrap
+	position: relative
+	left: 0
+	+tr
+	&.is-remove-ready
+		left: -200px	
+	.to-right
+		margin-bottom: 24px	
+	+ .btn-add
+		position: relative 
+		top: -38px
+	.object
+		margin-bottom: 9px
 .object
 	position: relative
 	left: 0
@@ -252,6 +265,7 @@
 		float: left
 		margin-right: 13px
 		img
+			display: block
 			border-radius: 5px 
 	&__main
 		overflow: hidden
@@ -332,8 +346,17 @@
 	.fa
 		position: absolute
 		left: 0
-		top: 0
+		top: 1px
 		
+.btn-add
+	display: inline-block
+	color: $blue
+	font-size: 13px
+	+fr
+	&:hover
+		color: $blue_d 
+	.fa
+		margin-right: 7px
 .box
 	margin-bottom: 45px
 	border: 1px solid $border
@@ -352,6 +375,10 @@
 		width: 47.6%
 		&:first-child
 			float: left
+	&__title
+		margin: 22px 0 26px
+		font-size: 21px
+		+fb
 	&__label
 		margin-bottom: 14px
 		font-size: 15px
@@ -364,11 +391,26 @@
 		margin-bottom: 10px
 		&:last-child
 			margin-bottom: 0
+	.field_mb
+		margin-bottom: 21px
 	.input-wrap
 		margin-bottom: 0
 	.btn-remove_profile	
 		display: inline-block
 		margin-top: 27px
+.box_payment
+	margin: 18px 0 
+	padding-bottom: 5px
+	.box__item
+		padding: 21px 18.5% 31px
+	.btn-submit
+		margin-top: 10px
+		padding: 14px 5px 15px 
+		min-width: 312px
+	.is-hidden 
+		display: none
+	.is-visible
+		display: inherit
 .info-message
 	position: relative
 	margin: 18px 0 20px
@@ -535,3 +577,53 @@
 		padding: 13px 0 5px 35px
 		.radio-submit
 			margin-right: 65px
+	
+.radio-box-wrap
+	margin-bottom: 24px			
+.radio-box-wrap_cols
+	margin-bottom: 46px
+	+clr
+	.radio-box
+		float: left
+		margin-left: 15px
+		width: 303px
+		&:nth-child(2n+1)
+			margin-left: 0
+.radio-box
+	display: table
+	margin-bottom: -1px
+	border-top: 1px dashed #d5d5d5 
+	border-bottom: 1px dashed #d5d5d5 
+	padding: 0 14px 0 10px 
+	width: 100%
+	min-height: 69px
+	+box
+	cursor: pointer
+	table-layout: fixed
+	&.is-checked
+		background: #fbfbfb 
+.radio-box__left
+	display: table-cell
+	width: 50%
+	vertical-align: middle
+.radio-box__right
+	display: table-cell
+	width: 50%
+	vertical-align: middle
+	text-align: right
+	font-size: 15px
+	strong
+		font-weight: normal
+		+fb
+.radio-box__price
+	display: inline-block
+	padding: 5px 16px
+	border-radius: 5px 
+	span
+		display: block
+	&.is-special-price
+		background: $green 
+		color: #fff 
+	em
+		font-style: normal
+		text-decoration: line-through

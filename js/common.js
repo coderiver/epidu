@@ -361,14 +361,13 @@ head.ready(function() {
 		return false;
 	});
 
-	$(".js-radio input").on("change",function(){
-		if ($(this).parent().attr("data-radio") == 1) {
-			$(this).parents(".js-radio-group").addClass("is-active");
+	$(".js-radio-box input").on("change",function(){
+		if ($(this).is(":checked")) {
+			$(this).parents(".js-radio-box-group").find(".js-radio-box").removeClass("is-checked");
+			$(this).parents(".js-radio-box").addClass("is-checked");
 		}
-		if ($(this).parent().attr("data-radio") == 0) {
-			$(this).parents(".js-radio-group").removeClass("is-active");
-		} 
 	}); 
+ 
 	$(".js-check input").on("change",function(){
 		var checkGroup = $(this).closest(".js-check-group");
 		var checkHidden = checkGroup.children(".js-check-hidden");
@@ -406,44 +405,30 @@ head.ready(function() {
 	}); 
 
 	$("body").on("click",".js-add-btn",function(){
+		//alert();
 		var new_el = $(this).attr("data-hidden");
 		var html = $("."+new_el).html();
-		if ($(this).parents(".js-add-btn-wrap")) {
-			$(this).parents(".js-add-btn-wrap").before(html);
-		}
-		else {
+		//if ($(this).parents(".js-add-btn-wrap")) {
+			//$(this).parents(".js-add-btn-wrap").before(html);
+		//}
+		//else {
 			$(this).before(html);
-		}
+		//}
 		
 		return false;
 	});
 	
 
-	$(".js-nav a").on("click",function(){
-		var section = $(this).attr("href");
-		if (section.length) {
-			var top = $('[data-index="'+section+'"]').offset().top-$(".header").outerHeight();
-		}
-		$('html, body').animate({
+	$(".js-scroll-btn").on("click",function(){
+    	var categ = $(this).attr("href");
+    	var el = $('[data-el="'+categ+'"]');
+    	var top = el.offset().top;
+    	$('html, body').animate({
             scrollTop: top
-        }, 500);
+        }, 200); 
         return false;
-	});
-	function scroller() {
-    	var section = $(".js-screen");
-    	var doc_top = $(document).scrollTop();
-    	section.each(function(){
-    		var attr = $(this).attr("data-index");
-    		var link = $('[href="'+attr+'"]');
-    		var link_top = $(this).offset().top-$(".header").outerHeight();
-	    	if (doc_top >= link_top) {
-	    		$(".js-nav a").removeClass("is-active");
-	    		link.addClass("is-active");
-	    	}
-    	});
-    }
-    scroller();
-    
+    });
+
 
     function ui_slider_range() {
 		$(".js-ui-slider-range").each(function(){

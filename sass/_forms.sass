@@ -2,6 +2,7 @@
 .field
 	margin-bottom: 12px
 	font-size: 0
+
 .field_file
 	.input-wrap__title
 		height: 48px
@@ -190,55 +191,52 @@
 	cursor: pointer
 	white-space: nowrap
 	font-size: 0
-	&.is-custom
-		.fa
-			color: $green
+	+box
 	input
 		display: inline-block
 		vertical-align: middle
-		width: 17px
-		height: 17px
+		width: 16px
+		height: 16px
 		opacity: 0
 		visibility: hidden
 		&:checked
-			+ i.fa
+			+ span
 				&:after
-					display: none
-				&:before
 					display: block
-	span	
+	span	 
 		display: inline-block
 		vertical-align: middle
 		position: relative
 		margin: 0
-		padding-left: 14px
-		font-size: 13px
-		+fr
+		padding-left: 18px
+		font-size: 15px
+		+fm
+		color: $black
 		white-space: normal
-	i.fa
-		position: relative
-		display: inline-block
-		margin-left: -17px
-		vertical-align: middle
-		font-size: 20px
-		width: 17px
-		height: 17px
-		color: $blue 
-		&:after
+		+unselectable
+		&:before
 			content: ""
 			position: absolute
-			left: 0
-			top: 0
-			border: 1px solid $border
+			left: -16px
+			top: 50%
+			margin-top: -8px
+			width: 16px
+			height: 16px
 			border-radius: 50% 
-			width: 17px
-			height: 17px
-			background: $light	
-			+box-shadow(inset 0 0 5px rgba(0,0,0,.1))
-			+box
-		&:before
+			background: #f7f7f7 
+			+g(#fff,#f7f7f7)
+			box-shadow: inset 0 1px 5px rgba(#000, .64) 
+		&:after
+			content: ""
 			display: none
-
+			position: absolute
+			left: -13px
+			top: 50%
+			margin-top: -5px
+			width: 10px
+			height: 10px
+			background: $blue 
+			border-radius: 50% 
 .checkbox-wrap
 	margin-bottom: 10px
 .checkbox
@@ -305,6 +303,8 @@
 .checkbox_bold
 	span
 		+fb
+.checkbox_w100 
+	max-width: 100px
 .radio-submit
 	display: inline-block
 	position: relative
