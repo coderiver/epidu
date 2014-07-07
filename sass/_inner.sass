@@ -147,6 +147,9 @@
 	+fb
 	font-weight: normal
 	font-size: 30px 
+.page-title_small
+	font-size: 21px
+	padding: 5px 0
 .holiday
 	margin: 6px 0 
 	display: table
@@ -316,6 +319,9 @@
 			margin-right: 7px
 			color: $yellow 
 .btn-remove
+	display: inline-block
+	position: relative
+	padding-left: 17px
 	color: $red
 	+tr
 	+fm
@@ -324,7 +330,9 @@
 	&:active
 		margin-top: 1px
 	.fa
-		margin-right: 7px
+		position: absolute
+		left: 0
+		top: 0
 		
 .box
 	margin-bottom: 45px
@@ -378,19 +386,27 @@
 		font-size: 14px 
 		
 .comment
+	position: relative
+	left: 0
 	display: table
 	margin: 6px 0
 	border: 1px solid #dcdcdc
 	border-radius: 5px 
 	width: 100%
 	font-size: 13px
+	min-height: 135px
 	table-layout: fixed
 	background: $light  
-	&.has-open-extend
-		.comment__extend
-			display: block
-		.comment__simple
-			display: none
+	+tr
+	// &.has-open-extend
+	// 	.comment__extend
+	// 		display: block
+	// 	.comment__simple
+	// 		display: none
+	&.is-remove-ready
+		position: relative
+		left: -200px
+		opacity: 0
 	&__left,
 	&__middle,
 	&__right
@@ -424,6 +440,10 @@
 		width: 536px
 		.rating
 			margin: 0 0 12px 35px
+	&__info
+		padding-left: 35px
+		font-size: 13px
+		+fb
 	&__head
 		margin-bottom: 14px
 		+justify
@@ -433,7 +453,7 @@
 		text-align: left
 		font-size: 13px
 		.counter
-			margin-right: 7px
+			margin-right: 9px
 	&__meta
 		display: inline-block
 		vertical-align: middle
@@ -457,6 +477,10 @@
 	&__right
 		position: relative
 		padding: 12px 13px 
+		.btn-remove_absolute
+			position: absolute
+			bottom: 15px
+			left: 17px
 	&__key
 		padding: 10px 0 
 		color: #535353
@@ -478,6 +502,8 @@
 		&.is-hide-key
 			&:before
 				content: "\f062"
+	&__action
+		margin-bottom: 15px
 	&__extend
 		display: none
 	.textarea
@@ -505,3 +531,7 @@
 		&:first-child
 			border: 0
 			box-shadow: none 
+	&__radio
+		padding: 13px 0 5px 35px
+		.radio-submit
+			margin-right: 65px

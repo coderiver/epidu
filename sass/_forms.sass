@@ -122,13 +122,15 @@
 		+box
 		font-size: 14px
 		min-height: 52px
-		+fm
+		+fr
 		width: 100%
 		height: 100%
 		border: 0
 		resize: none 
+		background: none
 		+placeholder
-			color: #808080   
+			color: #808080
+			+fi   
 		+scrollbar
 			width: 6px
 			height: 6px
@@ -303,6 +305,70 @@
 .checkbox_bold
 	span
 		+fb
+.radio-submit
+	display: inline-block
+	position: relative
+	cursor: pointer
+	white-space: nowrap
+	font-size: 0
+	+box
+	&.is-true-radio
+		input
+			&:checked
+				+ span
+					&:before
+						background: $green 
+	&.is-false-radio
+		input
+			&:checked
+				+ span
+					&:before
+						background: $red 
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 16px
+		height: 16px
+		opacity: 0
+		visibility: hidden
+		&:checked
+			+ span
+				&:after
+					display: block
+	span	 
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		margin: 0
+		padding-left: 7px
+		font-size: 15px
+		+fb
+		color: $black
+		white-space: normal
+		+unselectable
+		&:before
+			content: ""
+			position: absolute
+			left: -16px
+			top: 50%
+			margin-top: -8px
+			width: 16px
+			height: 16px
+			border-radius: 50% 
+			background: #f7f7f7 
+			+g(#fff,#f7f7f7)
+			box-shadow: inset 0 1px 5px rgba(#000, .64) 
+		&:after
+			content: ""
+			display: none
+			position: absolute
+			left: -13px
+			top: 50%
+			margin-top: -5px
+			width: 10px
+			height: 10px
+			background: $light 
+			border-radius: 50% 
 .user-avatar
 	width: 66px
 	height: 66px
