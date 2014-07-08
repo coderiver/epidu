@@ -29,3 +29,16 @@
 		width: 336px  
 		+box
 		background: $light
+
+$grid-columns: 135,155,160,165,180,185,190,215,225,385 
+@each $i in $grid-columns
+	.col_#{$i}
+		width: #{$i}px 		
+.col
+	float: left
+	+box
+	padding-right: 5px
+	&__title
+		font-size: 13px
+		+fb
+		color: #606060 

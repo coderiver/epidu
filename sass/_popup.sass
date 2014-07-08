@@ -13,14 +13,13 @@
 	overflow: auto
 	+vertical
 	+scrollbar
-		width: 8px
-		height: 8px
-		border: 1px solid #d1d1d1
-		+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
-	+scrollbar-thumb
-		background: $blue
+		width: 6px
+		height: 6px
 		+border-radius(4px)
-		+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.72))
+		background: #d1d1d1
+	+scrollbar-thumb
+		background: $blue_d
+		+border-radius(4px)
 	+scrollbar-track-piece     
 		+border-radius(4px) 
 .popup
@@ -89,16 +88,59 @@
 .window
 	display: none
 	position: absolute
-	top: 300px
-	left: 400px
+	margin: -15px 0 0 -61px
 	z-index: 100
-	padding: 24px 6px 22px 20px
-	width: 375px
+	padding: 15px 11px
+	width: 302px
 	+box
-	background: #fff 
+	color: #606060 
+	background: #f5f5f5 
 	border-radius: 5px 
-	+box-shadow(0 0 6px rgba(#000,.5))
-	
+	font-size: 13px
+	+box-shadow(0 0 12px rgba(#000,.4))
+	&:after
+		content: ""
+		position: absolute 
+		bottom: -18px
+		left: 49px
+		+s(arr-b)
+	&__title
+		margin-bottom: 9px 
+		padding: 0 30px 0 10px
+		+fm
+		font-size: 15px 
+	&__in
+		padding: 0 30px 0 10px
+		overflow-x: hidden
+		overflow-y: auto 
+		max-height: 140px
+		+scrollbar
+			width: 6px
+			height: 6px
+			+border-radius(4px)
+			background: #d1d1d1
+		+scrollbar-thumb
+			background: $blue_d
+			+border-radius(4px)
+		+scrollbar-track-piece      
+			+border-radius(4px)
+	.fa-times-circle
+		position: absolute 
+		right: 7px
+		top: 7px
+		color: #a4a3a3
+		font-size: 16px
+		+tr
+		background: none
+		&:hover
+			color: $gray 
+		&:active
+			top: 8px
+.fa-question-circle
+	font-size: 17px
+	color: $blue
+	vertical-align: middle
+	+tr 	
 .soc-enter
 	font-size: 0
 	padding-bottom: 20px

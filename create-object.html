@@ -1,0 +1,1267 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Create object</title>
+	<meta name="viewport" content="width=1200">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header">
+		<div class="l-container">
+			<div class="header__left">
+				<div class="header__logo">
+					<a href="#"></a>
+					<span>организуй свой праздник</span>
+				</div>
+
+			</div>
+			<div class="header__right">
+				<div class="header__enter js-drop">
+					<ul class="header__enter-links">
+						<li><a href="#" class="js-drop-link"><span>Арсений Вокзальный</span><i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#">Выйти<i class="fa fa-sign-out"></i></a></li>
+					</ul>
+					<div class="header__user">
+						<a href="#" class="header__user-img">
+							<img src="http://lorempixel.com/66/66" alt="">
+							<span class="counter">12</span>
+						</a>
+
+					</div>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет объектов</span></a>
+							<a href="#" class="btn-submit is-small-btn">Создать объект</a>
+						</li>
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет праздников</span></a>
+							<a href="#" class="btn-action is-small-btn">Организовать праздник</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">
+								Общение
+								<span class="counter">2</span>
+							</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Комментарии / рейтинги</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link"><i class="fa fa-cogs"></i>Настройки профайла</a>
+						</li>
+					</ul>
+				</div>  
+				<div class="header__lang js-drop">
+					<a href="#" class="header__lang-link js-drop-link">
+						<span>Русский</span><i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">English</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Eesti</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Русский</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Soumi</a>
+						</li>
+					</ul>
+				</div>
+			</div>                  
+		</div>
+	</header>
+	<!-- END header -->
+	<div class="l-container">
+		<div class="page-head">
+			<div class="page-title"></div>
+		</div>
+		<div class="box accord">
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Общая информация</div>
+				<div class="accord__body js-accordion-list" style="display:block">
+					<div class="accord__in">
+						<div class="field">
+							<div class="input-wrap">
+								<input type="text" class="input" placeholder="название объекта">
+							</div>
+							<div class="to-right">
+								<a href="js-lang1" class="pseudolink js-more-lang">Перевести на другие языки</a>
+							</div>
+						</div>
+					</div>
+					<div class="accord__extend js-lang1">
+							<div class="info-message">Внимание, внимание! Все написанное ниже будет показано пользователям на разных языках сайта. Если вы не напишите перевод для какого-либоязыка, мы покажем пользователям перевод, сделанный автоматический с помощью Google Translate. Будьте внимательны и осторожны.
+							</div>
+							<div class="accord__in">
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-русски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-английски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-малазийски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="accord__in">
+						<div class="field field_file">	
+							<div class="input-wrap input-wrap_half">
+								<div class="input-wrap input-wrap_half">
+									<div class="input-wrap__title">Ваша фотография:</div>
+								</div>		
+								<div class="input-wrap input-wrap_half js-download">
+									<input type="file" class="js-download-input" hidden="">
+									<button class="btn-simple is-big-btn is-liquid js-download-btn" type="button"><i class="fa fa-search-plus"></i>Выбрать фото</button>
+								</div>		
+							</div>
+							<div class="input-wrap input-wrap_half">
+								<div class="download-file js-removeable">
+									<div class="download-file__main">
+										<div class="user-avatar">
+											<img src="http://lorempixel.com/66/66/people" alt="img">
+										</div>
+									</div>
+									<a href="#" class="btn-remove js-remove-btn"><i class="fa fa-times-circle"></i>Удалить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accord__in">
+						<div class="js-textarea">
+							<div class="textarea textarea_big">
+								<textarea placeholder="описание объекта"></textarea>
+							</div>
+							<div class="textarea-info">
+								<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+								<a href="js-lang2" class="pseudolink js-more-lang">Перевести на другие языки</a>
+							</div>
+						</div>
+					</div>
+					<div class="accord__extend js-lang2">
+						<div class="info-message">Внимание, внимание! Все написанное ниже будет показано пользователям на разных языках сайта. Если вы не напишите перевод для какого-либоязыка, мы покажем пользователям перевод, сделанный автоматический с помощью Google Translate. Будьте внимательны и осторожны.
+						</div>
+						<div class="accord__in">
+							<div class="textarea-wrap js-textarea">
+								<div class="textarea-title">По-русски:</div>
+								<div class="textarea textarea_big">
+									<textarea placeholder="описание объекта"></textarea>
+								</div>
+								<div class="textarea-info">
+									<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+								</div>
+							</div>
+							<div class="textarea-wrap js-textarea">
+								<div class="textarea-title">По-английски:</div>
+								<div class="textarea textarea_big">
+									<textarea placeholder="описание объекта"></textarea>
+								</div>
+								<div class="textarea-info">
+									<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+								</div>
+							</div>
+							<div class="textarea-wrap js-textarea">
+								<div class="textarea-title">По-малазийски:</div>
+								<div class="textarea textarea_big">
+									<textarea placeholder="описание объекта"></textarea>
+								</div>
+								<div class="textarea-info">
+									<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Категория объекта</div>
+				<div class="accord__body">
+					<div class="accord__in accord__in-radio js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Выберите категорию вашего объекта и подкатегории, к которым он принадлежит. Вы можете выбрать только одну главную категорию.
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Транспорт</span>
+							</label>
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Фото / видео</span>
+							</label>
+						</div>
+						<div class="radio-wrap js-check-group">
+							<label class="radio js-check">
+								<input type="radio" name="name-categ" checked>
+								<span>Место проведения</span>
+							</label>
+							<div class="js-check-hidden is-visible">
+								<div class="options">
+									<div class="options__in">
+										<div class="col col_190">
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Банкетный зал</span>
+											</label>
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Гостиница</span>
+											</label>
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Экстрим</span>
+											</label>
+										</div>
+										<div class="col col_190">
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Мыза</span>
+											</label>
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Бар</span>
+											</label>
+										</div>
+										<div class="col col_190">
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Ресторан</span>
+											</label>
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Кафе</span>
+											</label>
+										</div>
+										<div class="col col_160">
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Детские комнаты</span>
+											</label>
+											<label class="checkbox checkbox_bold">
+												<input type="checkbox">
+												<span>Боулинг</span>
+											</label>
+										</div>
+									</div>
+									<div class="options__in">
+										<div class="col col_190">
+											<div class="col__title">Доступные опции:</div>
+										</div>
+										<div class="col col_190">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Место для курения</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Терасса</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Пандус</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Детский уголок</span>
+											</label>
+										</div>
+										<div class="col col_190">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Бесплатный WiFi</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Разрешено с животными</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Гнездо</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Фейсконтроль</span>
+											</label>
+										</div>
+										<div class="col col_160">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Бесплатный WiFi</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Разрешено с животными</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Гнездо</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Фейсконтроль</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Музыка, свет</span>
+							</label>
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Красота</span>
+							</label>
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Цветы, декорирование</span>
+							</label>
+						</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="name-categ">
+								<span>Резмещение</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Опции объекта</div>
+				<div class="accord__body">
+					<div class="accord__in js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Выберите категорию вашего объекта и подкатегории, к которым он принадлежит. Вы можете выбрать только одну главную категорию.
+						</div>
+						<div class="options options_mod">
+							<div class="options__in">
+								<div class="col col_215">
+									<div class="col__title">Отметьте типы праздников, в которых вы можете  оказывать свои услуги</div>
+								</div>
+								<div class="col col_190">
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Свадьба</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Выпускной</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>День рождения</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Корпоратив</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Отдых</span>
+									</label>
+								</div>
+							</div>
+							<div class="options__in">
+								<div class="col col_215">
+									<div class="col__title">Языки общения с клиентами:</div>
+								</div>
+								<div class="col col_190">
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Эстонский</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Русский</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Финский</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Английский</span>
+									</label>
+									<label class="checkbox checkbox_bold">
+										<input type="checkbox">
+										<span>Суахили</span>
+									</label>
+								</div>
+							</div>
+							<div class="options__in">
+								<div class="col col_215">
+									<div class="col__title">Максимальное количество человек, которое вы можете обслужить:</div>
+								</div>
+								<div class="col col_135">
+									<select class="js-select-single">
+			                            <option value="до 10">до 10</option>
+			                            <option value="толпа">толпа</option>
+			                            <option value="вагон">вагон</option>
+			                            <option value="100">100</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Время работы</div>
+				<div class="accord__body">
+					<div class="accord__in js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Укажите время и дни недели, когда вы можете указывать свои услуги. Эта информация будет учитываться при отображении вашей информации.
+						</div>
+						<div class="options options_mod options_no-border">
+							<div class="options__in">
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Понедельник
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Вторник
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Среда
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Четверг
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Пятница
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Суббота
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="time js-check-group">
+									<div class="time__left">
+										<label class="checkbox checkbox_bold js-check">
+											<input type="checkbox">
+											<span>
+												Воскресение
+											</span>
+										</label>
+									</div>
+									<div class="time__input js-check-hidden is-hidden">
+										<span class="time__text">с</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+										<span class="time__text">до</span>
+										<div class="input-time"> 
+											<select class="js-select-single">
+					                            <option value="10:00">10:00</option>
+					                            <option value="12:00">12:00</option>
+					                            <option value="13:00">13:00</option>
+					                            <option value="14:00">14:00</option>
+					                            <option value="15:00">15:00</option>
+					                            <option value="16:00">16:00</option>
+					                            <option value="17:00">17:00</option>
+					                            <option value="18:00">18:00</option>
+					                            <option value="19:00">19:00</option>
+					                            <option value="20:00">20:00</option>
+					                        </select>
+										</div>
+									</div>
+									<div class="time__right js-check-hidden is-hidden js-check-add">
+										<label class="checkbox js-check-hour">
+											<input type="checkbox">
+											<span>
+												круглосуточно
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="options__in js-check-group">
+								<label class="checkbox checkbox_bold checkbox_inline js-check">
+									<input type="checkbox">
+									<span>Использовать календарь моей занятости</span>
+								</label>
+								<a href="js-window-calendar" class="fa fa-question-circle js-window-link"></a>
+								<div class="field field_connect js-check-hidden is-hidden">
+									<div class="input-wrap">
+										<input type="text" class="input" placeholder="адрес google календаря">
+									</div>
+									<button class="btn-simple is-big-btn" type="button">Присоединить</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Контактные данные, место</div>
+				<div class="accord__body">
+					<div class="accord__in js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Укажите время и дни недели, когда вы можете указывать свои услуги. Эта информация будет учитываться при отображении вашей информации.
+						</div>
+						<div class="field-group">
+							<div class="field">
+								<div class="input-wrap input-wrap_half">
+									<input type="tel" class="input" placeholder="контактный телефон">
+								</div>
+								<div class="input-wrap input-wrap_half">
+									<input type="e-mail" class="input" placeholder="e-mail">
+								</div>
+							</div>
+							<div class="field">
+								<div class="input-wrap input-wrap_half">
+									<input type="tel" class="input" placeholder="дополнительный контактный телефон">
+								</div>
+								<div class="input-wrap input-wrap_half">
+									<input type="text" class="input" placeholder="адрес сайта">
+								</div>
+							</div>
+						</div>
+						<div class="js-check-group">
+							<div class="field-group">
+								<label class="checkbox checkbox_bold js-check">
+									<input type="checkbox" checked>
+									<span>Указать контактный адрес и отображать расположение на карте</span>
+								</label>
+								<div class="input-wrap input-wrap_location is-right js-check-hidden is-visible">
+									<input type="text" class="input" placeholder="введите адрес">
+									<a class="fa fa-location-arrow" href="#"></a>
+								</div>
+								<div class="input-wrap js-check-hidden is-visible">
+									<input type="text" class="input" placeholder="уточнение адреса (этаж, офис, вход...)">
+								</div>
+							</div>
+							<div class="map-title js-check-hidden is-visible">Эта карта будет отображаться в информации для пользователей:</div>
+							<div class="map js-check-hidden is-visible">
+								<div id="map-canvas" class="map__body"></div>
+								<script>
+								  	function initialize() {
+									    var mapOptions = {
+									      	zoom: 15,
+									      	center: new google.maps.LatLng(59.437094, 24.741932),
+									      	disableDefaultUI: true,
+									      	scrollwheel: false,
+									     	zoomControl: true,
+									    	zoomControlOptions: {
+									        	style: google.maps.ZoomControlStyle.DEFAULT
+									      	},
+									      	mapTypeId: google.maps.MapTypeId.ROADMAP
+									    }
+									    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+									    //var image = 'img/marker.png';
+									    var myLatLng1 = new google.maps.LatLng(59.437094, 24.741932);
+									    var marker1 = new google.maps.Marker({
+										      position: myLatLng1,
+										      map: map,
+										      title: 'Uluru (Ayers Rock)', 
+										      //icon: image
+										});
+									    var contentString1 =	'<div style="width:200px;height: 80px">'
+												+'<p>Street </p>'
+												+'<p>3rd. Floor </p>'
+												+'<p>Таллін, Естонія</p>'
+												+'<p>10010</p>'+
+											'</div>';
+									  	var infowindow1 = new google.maps.InfoWindow({
+										    content: contentString1
+										});
+										google.maps.event.addListener(marker1, 'click', function(){
+										    infowindow1.open(map,marker1);
+										});
+									}
+								  	// Asynchronous Loading
+									function loadScript() {
+									  var script = document.createElement('script');
+									  script.type = 'text/javascript';
+									  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+									      'callback=initialize';
+									  document.body.appendChild(script);
+									}
+									window.onload = loadScript;
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Услуги</div>
+				<div class="accord__body">
+					<div class="accord__in js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Укажите время и дни недели, когда вы можете указывать свои услуги. Эта информация будет учитываться при отображении вашей информации.
+						</div>
+						<div class="options options_service js-removeable">
+							<div class="options__in">
+								<div class="wrap">
+									<div class="col col_385">
+										<div class="input-wrap js-input">
+											<input type="text" class="input">
+											<div class="input-wrap__counter">
+												<em class="js-char-counter" data-max="40">40</em> знаков
+											</div>
+											
+										</div>
+									</div>
+									<div class="col col_165">
+										<div class="input-wrap">
+											<span class="input-wrap__abs">стоимость</span>
+											<input type="text" class="input input_inline input_107">
+											<div class="input-wrap__text">Евро</div>
+										</div>
+									</div>
+									<div class="col col_185">
+										<select class="js-select-single">
+				                            <option value="за человека">за человека</option>
+				                            <option value="толпа">толпа</option>
+				                            <option value="вагон">вагон</option>
+				                            <option value="100">100</option>
+				                        </select>
+									</div>
+								</div>
+								<div class="wrap js-check-group">
+									<div class="col col_225">
+										<div class="input-wrap">
+											<label class="checkbox checkbox_bold checkbox_inline js-check" style="margin-top:14px">
+												<input type="checkbox">
+												<span>Указать скидку на эту услугу</span>
+											</label>
+										</div>
+									</div>
+									<div class="col col_165 js-check-hidden is-hidden">
+										<div class="input-wrap">
+											<input type="text" class="input input_inline input_58">
+											<div class="input-wrap__text">%</div>
+										</div>
+									</div>
+									<div class="col col_180 js-check-hidden is-hidden" style="margin-top:12px">
+										<div>Итоговая стоимость <br>услуги составляет</div>
+									</div>
+									<div class="col col_165 js-check-hidden is-hidden" style="margin-top:14px">
+										<div>55 Евро за человека</div>
+									</div>
+								</div>	
+							</div>
+							<div class="options__in">
+								<a href="#" class="btn-remove js-remove-btn"><i class="fa fa-times-circle"></i>далить эту услугу</a>
+								<a href="js-lang3" class="pseudolink js-more-lang">Перевести на другие языки</a>
+							</div>
+							<div class="accord__extend js-lang3">
+								<div class="info-message">Внимание, внимание! Все написанное ниже будет показано пользователям на разных языках сайта. Если вы не напишите перевод для какого-либоязыка, мы покажем пользователям перевод, сделанный автоматический с помощью Google Translate. Будьте внимательны и осторожны.
+								</div>
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-русски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-английски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+								<div class="textarea-wrap js-textarea">
+									<div class="textarea-title">По-малазийски:</div>
+									<div class="textarea textarea_big">
+										<textarea placeholder="описание объекта"></textarea>
+									</div>
+									<div class="textarea-info">
+										<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn-simple is-big-btn js-add-btn" data-hidden="js-hidden-service"><i class="fa fa fa-plus-circle "></i> Добавить еще услугу</a>
+					</div>
+				</div>
+			</div>
+			<div class="accord__item js-accordion is-active">
+				<div class="accord__title js-accordion-title">Фото / видео объекта</div>
+				<div class="accord__body">
+					<div class="accord__in js-accordion-list" style="display:block">
+						<div class="info-message info-message_mod">Добавьте максимум 10 фотографий. Постарайтесь выбрать фотографии, которые характеризуют ваши услуги лучше всего.
+						</div>
+						<div class="wrap">
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+							<a href="#" class="img js-removeable">
+								<img src="http://lorempixel.com/144/144" alt="">
+								<i class="fa fa-times-circle js-remove-btn"></i>
+							</a>
+						</div>
+						<div class="accord__download">
+							<div class="field field_file">
+								<div class="input-wrap input-wrap_half">
+									<div class="input-wrap__title">Добавьте фотографию:</div>
+								</div>		
+								<div class="input-wrap input-wrap_half js-download">
+									<input type="file" class="js-download-input" hidden="">
+									<button class="btn-simple is-big-btn is-liquid js-download-btn" type="button"><i class="fa fa-search-plus"></i>Выбрать фото</button>
+								</div>		
+							</div>
+							<div class="field field_file">
+								<div class="input-wrap input-wrap_half">
+									<div class="input-wrap__title">Выбранная фотография:</div>
+								</div>		
+								<div class="input-wrap input-wrap_half">
+									<div class="input-wrap__progress">
+										<i class="fa fa-spinner fa-spin"></i>my_foto.jpg
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+					<div class="accord__video js-accordion-list" style="display:block">
+						<div class="accord__in">
+							<div class="field">
+								<div class="field__title is-small">Добавьте видео из YouTube <a href="js-window-calendar" class="fa fa-question-circle js-window-link"></a></div>
+								<div class="input-wrap">
+									<input type="text" class="input" placeholder="youtube.com/...">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accord__footer">
+				<button class="btn-submit is-big-btn" type="button">Сохранить изменения в объекте</button>
+			</div>
+		</div>
+	</div>
+	<div class="push"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="l-container">
+		<div class="footer__col">
+			<div class="footer__title">
+				Поддержка
+			</div>
+			<ul>
+				<li>+372 99 88 7766</li>
+				<li><a href="#">Задать вопрос</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<div class="footer__title">
+				e-pidu в социальных сетях
+			</div>
+			<div class="footer__soc">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-vk"></i></a>
+			</div>
+		</div>
+		<div class="footer__col">
+			<ul class="soc">
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Как это работает?</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+				<li><a href="#">Условия использования сайта</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li><a href="#">© e-pidu.ee 2014</a></li>
+				<li><a href="#">Designed by Aprol Designs</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-object">
+		<!-- BEGIN categ-wrap -->
+		<div class="categ-wrap">
+			<div class="categ-wrap__title">Сколько объектов вы хотите создать?</div>
+			<div class="wrap">	
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						1-2
+					</span>
+					<span class="categ__title">
+						<span>10 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						3-5
+					</span>
+					<span class="categ__title">
+						<span>18 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						6-10
+					</span>
+					<span class="categ__title">
+						<span>24 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="popup__text">
+			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
+			<ul class="list list_blue">
+				<li>на 1 месяц</li>
+				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
+				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
+			</ul> 
+		</div>
+		<!-- END categ-wrap -->
+		<button class="btn-close js-popup-close" type="button"></button>
+	</div>
+</div>
+<div class="window js-window js-window-calendar">
+	<div class="window__title">Интеграция календаря Google</div>
+	<div class="window__in">
+		<div class="window__descr"><p>Если вы используете Google календарь, вы можете подключить его, чтобы сайт отображал вашу занятость для пользователей.</p>
+		<p>Детали вашего календаря не будут видны, только занятые и свободные дни.</p><p>Если вы используете Google календарь, вы можете подключить его, чтобы сайт отображал вашу занятость для пользователей.</p>
+		<p>Детали вашего календаря не будут видны, только занятые и свободные дни.</p></div>
+	</div>
+	<button type="button" class="fa fa-times-circle js-window-close"></button>
+</div>
+<div class="js-hidden-service" hidden>
+	<div class="options options_service js-removeable">
+		<div class="options__in">
+			<div class="wrap">
+				<div class="col col_385">
+					<div class="input-wrap js-input">
+						<input type="text" class="input">
+						<div class="input-wrap__counter">
+							<em class="js-char-counter" data-max="40">40</em> знаков
+						</div>
+						
+					</div>
+				</div>
+				<div class="col col_165">
+					<div class="input-wrap">
+						<span class="input-wrap__abs">стоимость</span>
+						<input type="text" class="input input_inline input_107">
+						<div class="input-wrap__text">Евро</div>
+					</div>
+				</div>
+				<div class="col col_185">
+					<select class="js-select-single">
+                        <option value="за человека">за человека</option>
+                        <option value="толпа">толпа</option>
+                        <option value="вагон">вагон</option>
+                        <option value="100">100</option>
+                    </select>
+				</div>
+			</div>
+			<div class="wrap js-check-group">
+				<div class="col col_225">
+					<div class="input-wrap">
+						<label class="checkbox checkbox_bold checkbox_inline js-check" style="margin-top:14px">
+							<input type="checkbox">
+							<span>Указать скидку на эту услугу</span>
+						</label>
+					</div>
+				</div>
+				<div class="col col_165 js-check-hidden is-hidden">
+					<div class="input-wrap">
+						<input type="text" class="input input_inline input_58">
+						<div class="input-wrap__text">%</div>
+					</div>
+				</div>
+				<div class="col col_180 js-check-hidden is-hidden" style="margin-top:12px">
+					<div>Итоговая стоимость <br>услуги составляет</div>
+				</div>
+				<div class="col col_165 js-check-hidden is-hidden" style="margin-top:14px">
+					<div>55 Евро за человека</div>
+				</div>
+			</div>	
+		</div>
+		<div class="options__in">
+			<a href="#" class="btn-remove js-remove-btn"><i class="fa fa-times-circle"></i>далить эту услугу</a>
+			<a href="js-lang4" class="pseudolink js-more-lang">Перевести на другие языки</a>
+		</div>
+		<div class="accord__extend js-lang4">
+			<div class="info-message">Внимание, внимание! Все написанное ниже будет показано пользователям на разных языках сайта. Если вы не напишите перевод для какого-либоязыка, мы покажем пользователям перевод, сделанный автоматический с помощью Google Translate. Будьте внимательны и осторожны.
+			</div>
+			<div class="textarea-wrap js-textarea">
+				<div class="textarea-title">По-русски:</div>
+				<div class="textarea textarea_big">
+					<textarea placeholder="описание объекта"></textarea>
+				</div>
+				<div class="textarea-info">
+					<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+				</div>
+			</div>
+			<div class="textarea-wrap js-textarea">
+				<div class="textarea-title">По-английски:</div>
+				<div class="textarea textarea_big">
+					<textarea placeholder="описание объекта"></textarea>
+				</div>
+				<div class="textarea-info">
+					<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+				</div>
+			</div>
+			<div class="textarea-wrap js-textarea">
+				<div class="textarea-title">По-малазийски:</div>
+				<div class="textarea textarea_big">
+					<textarea placeholder="описание объекта"></textarea>
+				</div>
+				<div class="textarea-info">
+					<span><em class="js-char-counter" data-max="500">500</em> знаков</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+
+</body>
+</html>
