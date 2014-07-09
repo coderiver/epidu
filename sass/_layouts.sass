@@ -13,7 +13,7 @@
 		display: table-cell
 		vertical-align: top
 		height: 100%
-		border-right: 1px solid #d8d8d8
+		border-right: 1px solid $border
 		padding: 30px 0 
 		width: 665px
 		+box
@@ -24,11 +24,29 @@
 	.l-col2
 		display: table-cell
 		vertical-align: top
-		border-right: 1px solid #d8d8d8
+		border-right: 1px solid $border
 		height: 100%
 		width: 336px  
 		+box
 		background: $light
+.has-right-sidebar
+	margin: 0 auto 
+	width: 1000px
+	.l-col1
+		border-right: 1px solid $border
+		border-left: 1px solid $border
+		padding: 0
+		width: 336px  
+		background: $light 
+	.l-col1_width
+		width: 100%
+		border-right: 0
+	.l-col2
+		width: 664px 
+		padding: 18px 12px 0
+		border: 0
+		background: #fff 
+		
 
 $grid-columns: 135,155,160,165,180,185,190,215,225,385 
 @each $i in $grid-columns

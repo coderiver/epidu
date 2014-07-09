@@ -90,6 +90,7 @@
 	display: inline-block
 	vertical-align: middle
 	width: 156px
+	+tr
 	.input
 		cursor: pointer
 		&:focus
@@ -103,11 +104,24 @@
 		color: #a4a3a3
 		font-size: 21px 
 		cursor: pointer
+	&.is-hidden
+		visibility: hidden
+		opacity: 0
+	&.is-visible
+		visibility: visible
+		opacity: 1 
 .input-time
 	position: relative
 	display: inline-block
 	vertical-align: middle
 	width: 106px
+	+tr
+	&.is-hidden
+		visibility: hidden
+		opacity: 0
+	&.is-visible
+		visibility: visible
+		opacity: 1 
 .input-wrap_location
 	.input
 		padding-left: 38px

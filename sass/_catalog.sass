@@ -1,0 +1,135 @@
+.has-fixed-filter
+	.header
+		margin-bottom: 65px
+	.filter
+		position: fixed
+		left: 0
+		top: 0
+		right: 0
+		//.search
+			//display: none
+		//&__result
+			//display: block
+	.sidebar
+		position: fixed
+		//top: 65px
+		left: 50%
+		margin-left: -499px
+		width: 334px
+.has-abs-sidebar	
+	.sidebar
+		position: absolute
+		z-index: 1
+		//top: auto !important
+.filter
+	position: relative
+	z-index: 2
+	background: $light url(../img/bg.jpg) 0 0 repeat
+	border-bottom: 1px solid #bdbdbd 
+	box-shadow: 0 1px 5px rgba(#000,.3) 
+	&__result
+		display: table
+		width: 100%
+		color: #606060 
+		font-size: 13px
+		display: none
+		a
+			color: $blue
+			border-bottom: 1px dashed
+			&:hover
+				color: $blue_d 
+	&__change,
+	&__info,
+	&__title
+		display: table-cell
+		height: 64px
+		vertical-align: middle
+	&__title
+		width: 332px
+		font-size: 16px
+		.fa
+			margin-right: 7px
+	&__info
+		width: 330px 
+.search_filter
+	position: static
+	margin: 0 
+	padding: 19px 0 9px
+	width: 100%
+	box-shadow: none 
+	background: none
+	.search__left
+		width: 362px
+		margin-right: 10px
+		.input-wrap__title
+			padding-left: 0
+			width: 90px
+	.search__right
+		width: 584px
+		.checkbox
+			padding-left: 10px
+			width: 128px
+	.is-big-btn
+		margin-left: 10px
+		padding: 13px 0 14px 
+		width: 174px
+		vertical-align: middle
+	.search__reset
+		float: right
+		width: 174px
+		+vertical
+		text-align: right
+		button
+			position: relative
+			vertical-align: middle
+			padding: 0 0 2px 21px
+			background: none
+			width: 154px
+			text-align: left
+			color: $blue_d 
+			font-size: 13px
+			&:hover
+				span
+					border-color: transparent 
+			&:before
+				content: "\f00d"
+				position: absolute
+				left: 0
+				top: 0 
+				+fa
+				font-size: 15px
+			span
+				border-bottom: 1px dashed 
+				
+.load-more
+	margin: 6px 0 
+	padding: 10px 
+	text-align: center
+	font-size: 43px
+	color: $gray 
+.sort
+	display: table
+	margin-bottom: 19px
+	width: 100%
+	&__col
+		display: table-cell
+		width: 50%
+		+box 
+		padding: 0 5px 
+		vertical-align: middle
+		text-align: right
+		&:first-child
+			text-align: left
+	&__link
+		color: $blue_d
+		a
+			color: $blue_d
+			&:hover
+				color: $blue 
+	.checkbox-wrap
+		margin-bottom: 8px
+	.rating__text,
+	.rating__in	
+		vertical-align: baseline
+	.select-simple
+		margin-bottom: 8px 

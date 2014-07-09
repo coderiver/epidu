@@ -439,6 +439,57 @@ head.ready(function() {
         return false;
     });
 
+	var header = $(".header");
+	var footer = $(".footer");
+	var sidebar = $(".js-sidebar");
+	var sidebar_parent = $(".js-sidebar").parent();
+	var headerHeight = header.outerHeight();
+	var footerHeight = footer.outerHeight();
+	var filter = $(".js-filter");
+	var body = $("body");
+    function fixedFilter() {
+    	var filterHeight = filter.outerHeight();
+    	if ($(document).scrollTop() > headerHeight) {
+    		body.addClass("has-fixed-filter");
+    		sidebar.css({
+    			top: filterHeight
+    		});
+    	}
+    	else {
+    		body.removeClass("has-fixed-filter");
+    		sidebar.css({
+    			top: 0
+    		});
+    	}
+
+    	if ((sidebar.outerHeight() + filter.outerHeight() + $(document).scrollTop()) >= footer.offset().top) {
+    		console.log('d');
+    		body.addClass("has-abs-sidebar");
+    		sidebar.css({
+    			top: footer.offset().top - sidebar.outerHeight()
+    		});
+    	}
+    	else {
+    		body.removeClass("has-abs-sidebar");
+    	}
+    }
+
+    $(".js-show-search").on("click",function(){
+    	$(".js-filter-search").show();
+    	$(".js-filter-result").hide();
+
+        return false;
+    });
+
+    fixedFilter();
+    $(window).scroll(function() {
+    	fixedFilter()
+    });
+	$(window).resize(function() {
+    	fixedFilter()
+    });
+
+
 
     function ui_slider_range() {
 		$(".js-ui-slider-range").each(function(){
