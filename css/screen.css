@@ -498,7 +498,7 @@ a:hover { color: #026073; }
 .sidebar__opt { padding: 0 10px; *zoom: 1; }
 .sidebar__opt:after { content: " "; display: table; clear: both; }
 .sidebar__opt-title { padding: 3px 10px 17px; color: #555555; font-size: 15px; font-family: "roboto-bold", Arial, sans-serif; }
-.sidebar__col { float: left; width: 43%; margin: 0 4% 0 3%; }
+.sidebar__col { float: left; width: 42%; margin: 0 5% 0 3%; }
 .sidebar__col .checkbox { display: block; margin: 0 0 12px; }
 .sidebar__col .checkbox span { padding-left: 8px; }
 .sidebar__col .checkbox span, .sidebar__col .checkbox input { vertical-align: text-bottom; }
