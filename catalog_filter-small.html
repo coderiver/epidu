@@ -1,0 +1,827 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Catalog</title>
+	<meta name="viewport" content="width=1200">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header">
+		<div class="l-container">
+			<div class="header__left">
+				<div class="header__logo">
+					<a href="#"></a>
+					<span>организуй свой праздник</span>
+				</div>
+				<a href="#" class="btn-action is-big-btn">Организовать праздник</a>
+			</div>
+			<div class="header__right">
+				<div class="header__enter js-drop">
+					<ul class="header__enter-links">
+						<li><a href="#" class="js-drop-link"><span>Арсений Вокзальный</span><i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#">Выйти<i class="fa fa-sign-out"></i></a></li>
+					</ul>
+					<div class="header__user">
+						<a href="#" class="header__user-img">
+							<img src="http://lorempixel.com/66/66" alt="">
+							<span class="counter">12</span>
+						</a>
+
+					</div>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет объектов</span></a>
+							<a href="#" class="btn-submit is-small-btn">Создать объект</a>
+						</li>
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет праздников</span></a>
+							<a href="#" class="btn-action is-small-btn">Организовать праздник</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">
+								Общение
+								<span class="counter">2</span>
+							</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Комментарии / рейтинги</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link"><i class="fa fa-cogs"></i>Настройки профайла</a>
+						</li>
+					</ul>
+				</div>  
+				<div class="header__lang js-drop">
+					<a href="#" class="header__lang-link js-drop-link">
+						<span>Русский</span><i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">English</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Eesti</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Русский</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Soumi</a>
+						</li>
+					</ul>
+				</div>
+			</div>                  
+		</div>
+	</header>
+	<!-- END header -->
+	<!-- filter -->
+	<div class="filter js-filter">
+		<div class="l-container l-container_small">
+			<div class="search search_filter js-filter-search" style="display:none">
+				<div class="wrap js-date-group">
+					<div class="search__left">
+						<div class="input-wrap">
+							<div class="input-wrap__title">
+								Начало праздника: 
+							</div>
+							<div class="input-wrap__body">
+								<div class="input-date js-date-from">
+									<input type="text" class="input input_date">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="input-time">
+									<select class="js-select-single">
+			                            <option value="10:00">10:00</option>
+			                            <option value="12:00">12:00</option>
+			                            <option value="13:00">13:00</option>
+			                            <option value="14:00">14:00</option>
+			                            <option value="15:00">15:00</option>
+			                            <option value="16:00">16:00</option>
+			                            <option value="17:00">17:00</option>
+			                            <option value="18:00">18:00</option>
+			                            <option value="19:00">19:00</option>
+			                            <option value="20:00">20:00</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search__right js-check-group">
+						<label class="checkbox js-check">
+							<input type="checkbox">
+							<span>Окончание праздника: </span>
+						</label> 
+						<div class="input-date js-check-hidden is-hidden js-date-to">
+							<input type="text" class="input input_date">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="input-time js-check-hidden is-hidden"> 
+							<select class="js-select-single">
+	                            <option value="10:00">10:00</option>
+	                            <option value="12:00">12:00</option>
+	                            <option value="13:00">13:00</option>
+	                            <option value="14:00">14:00</option>
+	                            <option value="15:00">15:00</option>
+	                            <option value="16:00">16:00</option>
+	                            <option value="17:00">17:00</option>
+	                            <option value="18:00">18:00</option>
+	                            <option value="19:00">19:00</option>
+	                            <option value="20:00">20:00</option>
+	                        </select>
+						</div>
+						<button class="btn-submit is-big-btn" type="submit">Применить </button>
+					</div>
+				</div>
+				<div class="wrap">
+					<div class="search__left">
+						<div class="input-wrap input-wrap_person">
+							<div class="input-wrap__title">
+								Количество человек: 
+							</div>
+							<div class="input-wrap__body">
+								<div class="input-time">
+									<select class="js-select-single">
+			                            <option value="до 10">до 10</option>
+			                            <option value="толпа">толпа</option>
+			                            <option value="вагон">вагон</option>
+			                            <option value="100">100</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search__right">
+						<div class="input-wrap input-wrap_location">
+							<div class="input-wrap__title">
+								Место Проведения: 
+							</div>
+							<div class="input-wrap__body">
+								<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
+								<a class="fa fa-location-arrow" href="#"></a>
+							</div>
+							<div class="search__reset">
+								<button type="reset"><span>Очистить параметры</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__result js-filter-result" style="display:block">
+				<div class="filter__title">
+					<i class="fa fa-cogs"></i>Параметры моего праздника
+				</div>
+				<div class="filter__info">
+					<div>09.05.2014 (12:00) - 10.05.2014 (12:00)</div>
+					<div>Tallinn, Estonia, до 10 человек</div>
+				</div>
+				<div class="filter__change">
+					<a href="#" class="js-show-search">Изменить параметры праздника</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END filter -->
+	<!-- l-cols -->
+	<div class="l-cols has-right-sidebar">
+		<!-- l-col1 -->
+		<div class="l-col1">
+			<div class="sidebar js-sidebar">
+				<div class="sidebar__in">
+					<div class="sidebar__item">
+						<select class="js-select-single">
+                            <option value="Место проведения">Место проведения</option>
+                            <option value="Место проведения">Место проведения</option>
+                            <option value="Место проведения">Место проведения</option>
+                            <option value="Место проведения">Место проведения</option>
+                        </select>
+                        <div class="sidebar__opt">
+                        	<div class="sidebar__col">
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Банкетный зал</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Гостиница</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Экстрим</span>
+								</label>	
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Мыза</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Бар</span>
+								</label>	
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Ресторан</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Кафе</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Детские комнаты</span>
+								</label>
+								<label class="checkbox checkbox_bold">
+									<input type="checkbox">
+									<span>Боулинг</span>
+								</label>
+                        	</div>
+                        	<div class="sidebar__col">
+
+                        	</div>
+                        </div>
+					</div>
+					<div class="sidebar__item">
+                        <div class="sidebar__opt">
+                        	<div class="sidebar__opt-title">Опции:</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Место для курения</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Терасса</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Пандус</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Детский уголок</span>
+								</label>
+                        	</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Бесплатный WiFi</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Разрешено с животными</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Гнездо</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Фейсконтроль</span>
+								</label>
+                        	</div>
+                        </div>
+					</div>
+					<div class="sidebar__item">
+                        <div class="sidebar__opt">
+                        	<div class="sidebar__opt-title">Опции:</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Место для курения</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Терасса</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Пандус</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Детский уголок</span>
+								</label>
+                        	</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Бесплатный WiFi</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Разрешено с животными</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Гнездо</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Фейсконтроль</span>
+								</label>
+                        	</div>
+                        </div>
+					</div>
+					<div class="sidebar__item">
+                        <div class="sidebar__opt">
+                        	<div class="sidebar__opt-title">Опции:</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Место для курения</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Терасса</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Пандус</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Детский уголок</span>
+								</label>
+                        	</div>
+                        	<div class="sidebar__col">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Бесплатный WiFi</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Разрешено с животными</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Гнездо</span>
+								</label>	
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Фейсконтроль</span>
+								</label>
+                        	</div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END l-col1 -->
+		<!-- l-col2 -->
+		<div class="l-col2">
+			<div class="sort">
+				<div class="sort__col">
+					<div class="checkbox-wrap">
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Показывать только спецпредложения</span>
+						</label>
+					</div>
+					<div class="rating">
+						<span class="rating__text">Рейтинг не менее:</span>
+						<div class="rating__in js-rating-small" data-score="4"></div>
+					</div>
+				</div>
+				<div class="sort__col">
+					<div class="select-simple js-select">
+						<select>
+							<option value="Сортировать по популярности">Сортировать по популярности</option>
+							<option value="Сортировать по популярности">Сортировать по популярности</option>
+							<option value="Сортировать по популярности">Сортировать по популярности</option>
+						</select>
+						<a href="#" class="select-simple__link">
+							<span class="js-select-text">Сортировать по популярности</span>
+							<i class="fa fa-caret-down"></i>
+						</a>
+					</div>
+					<div class="sort__link">
+						Показывать   
+						<a href="#">50</a>   
+						<a href="#">100</a>   
+						<a href="#">250</a>   
+						на странице
+					</div>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object js-removeable">
+				<div class="object__left">
+					<a href="#" class="object__img">
+						<img src="http://lorempixel.com/120/120" alt="">
+					</a>
+					<div class="object__main">
+						<div class="object__head">
+							<div class="object__title"><a href="#">Tchaikovsky</a></div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="4"></div>
+								<span class="rating__text">(119)</span>
+							</div>
+						</div>
+						<div class="object__meta">
+							Грузинская кухня, азиатская кухня, европейская кухня, еврейская кухня
+						</div>
+						<div class="object__descr">
+							Невероятный ресторан в старом городе Таллинн. Уютная атмосфера и невероятно вкусная кухня не оставят вас равнодушными!
+						</div>
+					</div>
+				</div>
+				<div class="object__middle">
+					<ul>
+						<li><a href="#">www.oldtallinn.ee</a></li>
+						<li>
+							<div>+372 777 888 9987</div>
+							<div>+372 88 999 8878</div>
+						</li>
+						<li>Масина 22, Таллинн</li>
+					</ul>
+				</div>
+			</div>
+			<div class="load-more">
+				<i class="fa fa-spinner fa-spin"></i>
+			</div>
+		</div>
+		<!-- END l-col2 -->
+	</div>
+	<!-- END l-cols -->
+	<div class="push"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="l-container">
+		<div class="footer__col">
+			<div class="footer__title">
+				Поддержка
+			</div>
+			<ul>
+				<li>+372 99 88 7766</li>
+				<li><a href="#">Задать вопрос</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<div class="footer__title">
+				e-pidu в социальных сетях
+			</div>
+			<div class="footer__soc">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-vk"></i></a>
+			</div>
+		</div>
+		<div class="footer__col">
+			<ul class="soc">
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Как это работает?</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+				<li><a href="#">Условия использования сайта</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li><a href="#">© e-pidu.ee 2014</a></li>
+				<li><a href="#">Designed by Aprol Designs</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-object">
+		<!-- BEGIN categ-wrap -->
+		<div class="categ-wrap">
+			<div class="categ-wrap__title">Сколько объектов вы хотите создать?</div>
+			<div class="wrap">	
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						1-2
+					</span>
+					<span class="categ__title">
+						<span>10 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						3-5
+					</span>
+					<span class="categ__title">
+						<span>18 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						6-10
+					</span>
+					<span class="categ__title">
+						<span>24 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="popup__text">
+			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
+			<ul class="list list_blue">
+				<li>на 1 месяц</li>
+				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
+				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
+			</ul> 
+		</div>
+		<!-- END categ-wrap -->
+		<button class="btn-close js-popup-close" type="button"></button>
+	</div>
+</div>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+
+</body>
+</html>
