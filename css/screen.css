@@ -372,15 +372,15 @@ a:hover { color: #026073; }
 .object { position: relative; left: 0; margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; border-radius: 5px; }
 .object.is-inactive .object__left, .object.is-inactive .object__middle { opacity: 0.5; }
 .object.is-remove-ready { opacity: 0; left: -500px; }
-.object__left { display: table-cell; vertical-align: top; padding: 5px 15px 5px 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 48%; }
+.object__left { display: table-cell; vertical-align: top; padding: 5px 15px 5px 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 48%; color: #232323; }
+.object__left:hover { color: #232323; }
 .object__img { float: left; margin-right: 13px; }
 .object__img img { display: block; border-radius: 5px; }
 .object__main { overflow: hidden; padding-top: 6px; }
 .object__head { *zoom: 1; }
 .object__head:after { content: " "; display: table; clear: both; }
 .object__head .rating { float: right; }
-.object__title { float: left; }
-.object__title a { font-size: 16px; color: #00a6c9; }
+.object__title { float: left; font-size: 16px; color: #00a6c9; }
 .object__meta { margin: 7px 0; color: #888888; font-family: "roboto-italic", Arial, sans-serif; }
 .object__middle { display: table-cell; vertical-align: top; border-left: 1px solid gainsboro; padding: 15px 0 5px 22px; width: 17.5%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .object__middle ul li:nth-child(2) { margin: 10px 0; }
@@ -1203,9 +1203,10 @@ a:hover { color: #026073; }
 .img .fa:hover { color: #ad2d00; }
 .img img { display: block; }
 
-.has-fixed-filter .header { margin-bottom: 65px; }
+.has-fixed-filter .header { margin-bottom: 148px; }
 .has-fixed-filter .filter { position: fixed; left: 0; top: 0; right: 0; }
 .has-fixed-filter .sidebar { position: fixed; left: 50%; margin-left: -499px; width: 334px; }
+.has-fixed-filter.has-small-filter .header { margin-bottom: 65px; }
 
 .has-abs-sidebar .sidebar { position: absolute; z-index: 1; }
 
