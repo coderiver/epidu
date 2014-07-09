@@ -474,6 +474,21 @@ head.ready(function() {
     	}
     }
 
+      function heightSidebar() {
+    	if (sidebar.outerHeight() > ($(window).height() - filter.outerHeight()) ) {
+    		sidebar.addClass("has-scroll").children().css({
+    			maxHeight: $(window).height() - filter.outerHeight() - 30
+    		});
+			//sidebar.addClass("has-scroll");
+    	}
+    	else {
+    		sidebar.removeClass("has-scroll").children().css({
+    			maxHeight: $(window).height() - filter.outerHeight() - 30
+    		});
+    	}
+
+    } 
+    heightSidebar();
     $(".js-show-search").on("click",function(){
     	$(".js-filter-search").show();
     	$(".js-filter-result").hide();

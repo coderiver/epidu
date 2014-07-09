@@ -1,9 +1,13 @@
 .sidebar
 	position: relative
+	padding: 15px 0 
 	z-index: 3
 	box-shadow: inset 0 1px 0 0 #fff 
 	background: $light
-	&__in
+	+box
+	&.has-scroll
+		padding-right: 5px
+	&__in 
 		overflow-y: auto
 		overflow-x: hidden
 		+scrollbar
@@ -21,6 +25,7 @@
 		padding: 15px 10px 7px
 		&:first-child
 			border-top: 0
+			padding-top: 0
 	&__opt
 		padding: 0 10px 
 		+clr
