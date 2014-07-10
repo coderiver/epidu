@@ -137,7 +137,7 @@ head.ready(function() {
 			        //hour: 23,
 			       // minute: 59,
 			        //second: 59,
-			        onClose: function( selectedDate ) {
+			        onClose : function( selectedDate ) {
 				        date_from.datepicker( "option", "maxDate", selectedDate );
 				    }
 			    });
@@ -145,7 +145,39 @@ head.ready(function() {
 		});
 	}
 	showDatePicker();
-		
+	//$.datepicker.setDefaults($.extend($.datepicker.regional['ru']));
+	//$(".js-datepicker").datepicker();
+	// 	$("#locale").change(function() {
+	// 		$('#datepicker').datepicker('option', $.extend({showMonthAfterYear: false},
+	// 			$.datepicker.regional[$(this).val()]));
+	// });
+	$.datepicker.regional['ru'] = {
+		closeText: 'Закрыть',
+		prevText: '&#x3c;Пред',
+		nextText: 'След&#x3e;',
+		currentText: 'Сегодня',
+		monthNames: ['Января','Февраля','Марта','Апреля','Мая','Июня',
+		'Июля','Августа','Сентября','Октября','Ноября','Декабрь'],
+		monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+		'Июл','Авг','Сен','Окт','Ноя','Дек'],
+		dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+		dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		dateFormat: 'dd.mm.yy', firstDay: 1,
+		isRTL: false};
+	$.datepicker.setDefaults($.datepicker.regional['ru']);
+	$(".js-datepicker").datepicker({
+        dateFormat: 'dd MM yy',
+        firstDay: 1,
+        changeMonth: true,
+        changeYear: true,
+        showOtherMonths: true,
+        onSelect : function( selectedDate ) {
+	       	$(".js-datepicker-date").val(selectedDate );
+	    },
+
+    });
+
 	$(".js-date-from .fa").on("click",function(){
 		$(this).parent().find(".input").focus();
 	});
@@ -345,6 +377,26 @@ head.ready(function() {
 		}
 	});
 
+	function tab() {
+       $(".js-tab").each(function(){
+        	var tab_link = $(this).find("a");
+        	var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+        	tab_cont.hide();
+            var id_active = $(this).find(".is-active").attr("href");
+        	$("."+id_active).show();
+        	$(this).parents(".js-tab-group").find(".js-tab1").show();
+        	$("body").on("click",".js-tab a", function() {
+            	var index = $(this).attr("href");
+            	$(this).parents(".js-tab").find("li").removeClass("is-active");
+            	$(this).parent().addClass("is-active");
+            	$(this).parents(".js-tab-group").find(".js-tab-cont").hide();
+            	$(this).parents(".js-tab-group").find("."+index).show();
+            	return false;
+          	});
+       });
+  	}
+  	tab();
+
 	$("body").on("click",".js-more-lang",function(){
     	var lang = $(this).attr("href");
     	$("."+lang).slideToggle(200);
@@ -463,7 +515,7 @@ head.ready(function() {
     	}
 
     	if ((sidebar.outerHeight() + filter.outerHeight() + $(document).scrollTop()) >= footer.offset().top) {
-    		console.log('d');
+   
     		body.addClass("has-abs-sidebar");
     		sidebar.css({
     			top: footer.offset().top - sidebar.outerHeight()

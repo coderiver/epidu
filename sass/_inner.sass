@@ -338,6 +338,14 @@
 		.fa-exclamation-triangle
 			margin-right: 7px
 			color: $yellow 
+.object_small
+	.object__title,
+	.rating
+		float: none
+	.object__title
+		margin-bottom: 4px
+	.object__descr	
+		margin-top: 21px
 .btn-remove
 	display: inline-block
 	position: relative
@@ -625,7 +633,7 @@
 	strong
 		font-weight: normal
 		+fb
-.radio-box__price
+.price-info
 	display: inline-block
 	padding: 5px 16px
 	border-radius: 5px 
@@ -638,3 +646,19 @@
 		font-style: normal
 		text-decoration: line-through
 		
+.list-bullet
+	margin: 8px 0
+	li
+		position: relative
+		margin-bottom: 5px
+		padding-left: 30px
+		&:before
+			content: "" 
+			position: absolute
+			left: 14px
+			top: 5px
+			width: 5px
+			height: 5px
+			background: #929292 
+			border-radius: 50% 
+			+ts

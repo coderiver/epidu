@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Item</title>
+	<meta name="viewport" content="width=1200">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header">
+		<div class="l-container">
+			<div class="header__left">
+				<div class="header__logo">
+					<a href="#"></a>
+					<span>организуй свой праздник</span>
+				</div>
+				<a href="#" class="btn-action is-big-btn">Организовать праздник</a>
+			</div>
+			<div class="header__right">
+				<div class="header__enter js-drop">
+					<ul class="header__enter-links">
+						<li><a href="#" class="js-drop-link"><span>Арсений Вокзальный</span><i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#">Выйти<i class="fa fa-sign-out"></i></a></li>
+					</ul>
+					<div class="header__user">
+						<a href="#" class="header__user-img">
+							<img src="http://lorempixel.com/66/66" alt="">
+							<span class="counter">12</span>
+						</a>
+
+					</div>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет объектов</span></a>
+							<a href="#" class="btn-submit is-small-btn">Создать объект</a>
+						</li>
+						<li class="dropdown__list is-inactive">
+							<a href="#" class="dropdown__link"><span>Нет праздников</span></a>
+							<a href="#" class="btn-action is-small-btn">Организовать праздник</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">
+								Общение
+								<span class="counter">2</span>
+							</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Комментарии / рейтинги</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link"><i class="fa fa-cogs"></i>Настройки профайла</a>
+						</li>
+					</ul>
+				</div>  
+				<div class="header__lang js-drop">
+					<a href="#" class="header__lang-link js-drop-link">
+						<span>Русский</span><i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown js-drop-list" style="display: none;">
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">English</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Eesti</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Русский</a>
+						</li>
+						<li class="dropdown__list">
+							<a href="#" class="dropdown__link">Soumi</a>
+						</li>
+					</ul>
+				</div>
+			</div>                  
+		</div>
+	</header>
+	<!-- END header -->
+	<!-- filter -->
+	<div class="filter js-filter">
+		<div class="l-container l-container_small">
+			<div class="search search_filter js-filter-search">
+				<div class="wrap js-date-group">
+					<div class="search__left">
+						<div class="input-wrap">
+							<div class="input-wrap__title">
+								Начало праздника: 
+							</div>
+							<div class="input-wrap__body">
+								<div class="input-date js-date-from">
+									<input type="text" class="input input_date">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="input-time">
+									<select class="js-select-single">
+			                            <option value="10:00">10:00</option>
+			                            <option value="12:00">12:00</option>
+			                            <option value="13:00">13:00</option>
+			                            <option value="14:00">14:00</option>
+			                            <option value="15:00">15:00</option>
+			                            <option value="16:00">16:00</option>
+			                            <option value="17:00">17:00</option>
+			                            <option value="18:00">18:00</option>
+			                            <option value="19:00">19:00</option>
+			                            <option value="20:00">20:00</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search__right js-check-group">
+						<label class="checkbox js-check">
+							<input type="checkbox">
+							<span>Окончание праздника: </span>
+						</label> 
+						<div class="input-date js-check-hidden is-hidden js-date-to">
+							<input type="text" class="input input_date">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="input-time js-check-hidden is-hidden"> 
+							<select class="js-select-single">
+	                            <option value="10:00">10:00</option>
+	                            <option value="12:00">12:00</option>
+	                            <option value="13:00">13:00</option>
+	                            <option value="14:00">14:00</option>
+	                            <option value="15:00">15:00</option>
+	                            <option value="16:00">16:00</option>
+	                            <option value="17:00">17:00</option>
+	                            <option value="18:00">18:00</option>
+	                            <option value="19:00">19:00</option>
+	                            <option value="20:00">20:00</option>
+	                        </select>
+						</div>
+						<button class="btn-submit is-big-btn" type="submit">Применить </button>
+					</div>
+				</div>
+				<div class="wrap">
+					<div class="search__left">
+						<div class="input-wrap input-wrap_person">
+							<div class="input-wrap__title">
+								Количество человек: 
+							</div>
+							<div class="input-wrap__body">
+								<div class="input-time">
+									<select class="js-select-single">
+			                            <option value="до 10">до 10</option>
+			                            <option value="толпа">толпа</option>
+			                            <option value="вагон">вагон</option>
+			                            <option value="100">100</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search__right">
+						<div class="input-wrap input-wrap_location">
+							<div class="input-wrap__title">
+								Место Проведения: 
+							</div>
+							<div class="input-wrap__body">
+								<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
+								<a class="fa fa-location-arrow" href="#"></a>
+							</div>
+							<div class="search__reset">
+								<button type="reset"><span>Очистить параметры</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__result js-filter-result">
+				<div class="filter__title">
+					<i class="fa fa-cogs"></i>Параметры моего праздника
+				</div>
+				<div class="filter__info">
+					<div>09.05.2014 (12:00) - 10.05.2014 (12:00)</div>
+					<div>Tallinn, Estonia, до 10 человек</div>
+				</div>
+				<div class="filter__change">
+					<a href="#" class="js-show-search">Изменить параметры праздника</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END filter -->
+	<!-- l-cols -->
+	<div class="l-cols has-right-sidebar">
+		<!-- l-col1 -->
+		<div class="l-col1">
+			<div class="sidebar js-sidebar">
+				<div class="sidebar__in">
+					<div class="sidebar__item">
+						<div class="sidebar__add"><a href="#" class="link-back">Вернуться к списку...</a></div>
+					</div>
+					<div class="sidebar__item">
+						<select class="js-select-single">
+                            <option value="Рестораны">Рестораны</option>
+                            <option value="Гостиница">Гостиница</option>
+                            <option value="Банкетный зал">Банкетный зал</option>
+                            <option value="Рестораны">Рестораны</option>
+                            <option value="Рестораны">Рестораны</option>
+                        </select>
+                        <div class="sidebar__add">
+	                        <a href="#" class="pseudolink">Открыть подробный фильтр</a>
+	                        <div class="checkbox-wrap">
+	                        	<label class="checkbox">
+	                        		<input type="checkbox">
+	                        		<span>Показывать только спецпредложения</span>
+	                        	</label>
+	                        </div>
+	                        <div class="rating">
+	                        	<span class="rating__text">Рейтинг не менее:</span>
+	                        	<div class="rating__in js-rating-small" data-score="4"></div>
+	                        </div>
+	                    </div>
+					</div>
+					<div class="sidebar__item">
+						<div class="object object_small">
+							<a class="object__left" href="#">
+								<div class="object__img">
+									<img src="http://lorempixel.com/120/120" alt="">
+								</div>
+								<div class="object__main">
+									<div class="object__head">
+										<div class="object__title">Tchaikovsky</div>
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</div>
+									<div class="object__descr">
+										Невероятный ресторан в старом городе Таллинн. Русская кухня.
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="object object_small">
+							<a class="object__left" href="#">
+								<div class="object__img">
+									<img src="http://lorempixel.com/120/120" alt="">
+								</div>
+								<div class="object__main">
+									<div class="object__head">
+										<div class="object__title">Tchaikovsky</div>
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</div>
+									<div class="object__descr">
+										Невероятный ресторан в старом городе Таллинн. Русская кухня.
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="object object_small">
+							<a class="object__left" href="#">
+								<div class="object__img">
+									<img src="http://lorempixel.com/120/120" alt="">
+								</div>
+								<div class="object__main">
+									<div class="object__head">
+										<div class="object__title">Tchaikovsky</div>
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</div>
+									<div class="object__descr">
+										Невероятный ресторан в старом городе Таллинн. Русская кухня.
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="object object_small">
+							<a class="object__left" href="#">
+								<div class="object__img">
+									<img src="http://lorempixel.com/120/120" alt="">
+								</div>
+								<div class="object__main">
+									<div class="object__head">
+										<div class="object__title">Tchaikovsky</div>
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</div>
+									<div class="object__descr">
+										Невероятный ресторан в старом городе Таллинн. Русская кухня.
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="object object_small">
+							<a class="object__left" href="#">
+								<div class="object__img">
+									<img src="http://lorempixel.com/120/120" alt="">
+								</div>
+								<div class="object__main">
+									<div class="object__head">
+										<div class="object__title">Tchaikovsky</div>
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</div>
+									<div class="object__descr">
+										Невероятный ресторан в старом городе Таллинн. Русская кухня.
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END l-col1 -->
+		<!-- l-col2 -->
+		<div class="l-col2">
+			<div class="item-head">
+				<div class="item-head__col">
+					<div class="item-head__title">Tchaikovsky</div>
+					<div class="rating">
+						<div class="rating__in js-rating-small-read" data-score="4"></div>
+						<span class="rating__text">(119)</span>
+					</div>
+					<div class="item-head__meta">Место проведения (ресторан, гостиница, банкетный зал)</div>
+				</div>
+				<div class="item-head__col">
+					<a href="#" class="btn-action is-big-btn">Отправить запрос на услуги</a>
+				</div>
+			</div>
+			<div class="item-content">
+				<div class="js-tab-group">
+					<ul class="tab js-tab">
+						<li class="tab__item is-active">
+							<a href="js-tab1" class="tab__link">
+								<i class="fa fa-image"></i>Фото
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab2" class="tab__link">
+								<i class="fa fa-film"></i>Видео
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab3" class="tab__link">
+								<i class="fa fa-map-marker"></i>Карта
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab4" class="tab__link">
+								<i class="fa fa-calendar-o"></i>Календарь
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content js-tab-cont js-tab1">
+						<div class="simple-slider">
+							<div class="js-fotorama" data-width="100%" data-height="100%" data-max-height="442px" data-transitionduration="500" data-autoplay="5000" data-arrows="true" data-nav="false">
+								<img src="http://lorempixel.com/624/442/food" alt="">
+								<img src="http://lorempixel.com/624/442/sports" alt="">
+								<img src="http://lorempixel.com/624/442/people" alt="">
+								<img src="http://lorempixel.com/624/442/abstract" alt="">
+								<img src="http://lorempixel.com/624/442/cats" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="tab-content js-tab-cont js-tab2">
+						<div class="video">
+							<iframe width="624" height="351" src="http://www.youtube.com/embed/HhN-_VkdSpc" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="tab-content js-tab-cont js-tab3">
+						<div class="map map_no-border">
+							<div id="map" class="map__body"></div>
+							<script>
+							  	function initialize() {
+								    var mapOptions = {
+								      	zoom: 15,
+								      	center: new google.maps.LatLng(59.437094, 24.741932),
+								      	disableDefaultUI: true,
+								      	scrollwheel: false,
+								     	zoomControl: true,
+								    	zoomControlOptions: {
+								        	style: google.maps.ZoomControlStyle.DEFAULT
+								      	},
+								      	mapTypeId: google.maps.MapTypeId.ROADMAP
+								    }
+								    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+								    //var image = 'img/marker.png';
+								    var myLatLng1 = new google.maps.LatLng(59.437094, 24.741932);
+								    var marker1 = new google.maps.Marker({
+									      position: myLatLng1,
+									      map: map,
+									      title: 'Uluru (Ayers Rock)', 
+									      //icon: image
+									});
+								    var contentString1 =	'<div style="width:200px;height: 80px">'
+											+'<p>Street </p>'
+											+'<p>3rd. Floor </p>'
+											+'<p>Таллін, Естонія</p>'
+											+'<p>10010</p>'+
+										'</div>';
+								  	var infowindow1 = new google.maps.InfoWindow({
+									    content: contentString1
+									});
+									google.maps.event.addListener(marker1, 'click', function(){
+									    infowindow1.open(map,marker1);
+									});
+								}
+							  	// Asynchronous Loading
+								function loadScript() {
+								  var script = document.createElement('script');
+								  script.type = 'text/javascript';
+								  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+								      'callback=initialize';
+								  document.body.appendChild(script);
+								}
+								window.onload = loadScript;
+							</script>
+						</div>
+					</div>
+					<div class="tab-content js-tab-cont js-tab4">
+						<div class="tab-content__in">
+							<div class="calendar">
+								<div class="calendar__main js-datepicker"></div>
+								<div class="calendar__info">
+									<input type="text" class="calendar__date js-datepicker-date" value="23 сентября 2014" readonly>
+									<div class="calendar__list">
+										<ul>
+											<li><a href="#"><span>10:00</span> Свободно </a></li>
+											<li><a href="#"><span>11:00</span> Свободно </a></li>
+											<li><a href="#"><span>12:00</span> Свободно </a></li>
+											<li><a href="#"><span>13:00</span> Свободно </a></li>
+											<li class="is-inactive"><a href="#"><span>14:00</span> Занято </a></li>
+											<li><a href="#"><span>15:00</span> Свободно </a></li>
+											<li><a href="#"><span>16:00</span> Свободно </a></li>
+											<li><a href="#"><span>17:00</span> Свободно </a></li>
+											<li><a href="#"><span>18:00</span> Свободно </a></li>
+											<li><a href="#"><span>19:00</span> Свободно </a></li>
+											<li><a href="#"><span>20:00</span> Свободно </a></li>
+											<li><a href="#"><span>21:00</span> Свободно </a></li><li><a href="#"><span>22:00</span> Свободно </a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="info-message">Здесь вы можете видеть занятость объекта. Этот каленарь служит только для информации. Обязательно уточняйте конкретные даты по телефону или e-mail.</div>
+						</div>
+					</div>
+				</div>
+				<div class="js-tab-group">
+					<ul class="tab js-tab">
+						<li class="tab__item is-active">
+							<a href="js-tab1" class="tab__link">
+								<i class="fa fa-info-circle"></i>Информация
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab2" class="tab__link">
+								<i class="fa fa-comments "></i>Услуги и мероприятия
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content tab-content_mod js-tab-cont js-tab1">
+						<div class="contact-info">
+							<div class="contact-info__text">
+								<a href="#" class="link-styled">Автоматически перевести на мой язык</a>
+								<p>В конце 18 века лучшие французские повара проложили дорогу в Россию. Смешение русской и французской кухни подарило миру симбиоз, дающий наслаждение.</p>
+								<p>Мы стремимся возродить забытые рецепты мастеров и обогатить их нашим опытом и представлением. Ресторан “Чайковский” представляет симфонию русской кухни.</p>
+								<ol class="list-bullet">
+									<li>Воскресенье-Пятница 12:00-15:00    18:00-23:00</li>
+									<li>Суббота-Воскресенье 13:00-23:00</li>
+								</ol>
+								<p>Каждую пятницу и субботу вечером, начиная с 19:00 – классическая живая музыка в ресторане „Tchaikovsky“!</p>
+							</div>
+							<div class="contact-info__main">
+								<ul>
+									<li>
+										<div>Контакты</div>
+										<p>www.oldtallinn.ee</p>
+										<p>+372 777 888 9987 <br>
+										+372 88 999 8878</p>
+										<p>Масина 22, Таллинн</p>
+									</li>
+									<li>
+										<div>Время работы</div>
+										<p><em>Пн - Пт   9:00 - 21:00</em> <br>
+										<em>Сб - Вс: 10:00 - 24:00</em></p>
+									</li>
+									<li>
+										<div>Языки общения</div>
+										<ol class="list-bullet">
+											<li>Русский</li>
+											<li>Эстонский</li>
+											<li>Финский</li>
+										</ol>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content tab-content_mod js-tab-cont js-tab2">
+						<div class="tab-content__in">
+							<a href="#" class="link-styled">Автоматически перевести на мой язык</a>
+							<div class="servise-list">
+								<ul class="service-list__in">
+									<li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info is-special-price">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li>
+									<li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li>
+									<li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li>
+
+									<li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info is-special-price">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li>
+									<li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info is-special-price">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li><li class="service">
+										<div class="service__info">Банька по-черному</div>
+										<div class="service__price">
+											<span class="price-info is-special-price">
+												<strong>85 €</strong> (за 3 объекта)
+												<span>обычная цена <em>108 €</em></span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="js-tab-group">
+					<ul class="tab js-tab">
+						<li class="tab__item is-active">
+							<a href="js-tab1" class="tab__link">
+								<i class="fa fa-star-half-empty"></i>Отзывы
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab2" class="tab__link">
+								<i class="fa fa-comments"></i>Обсуждения
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab2" class="tab__link">
+								<i class="fa fa-comment"></i>Общения
+							</a>
+						</li>
+						<li class="tab__item">
+							<a href="js-tab2" class="tab__link">
+								<i class="fa fa-list-ul"></i>Заметки
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content js-tab-cont js-tab1">
+						<div class="tab-content__in">
+							<div class="write-comment">
+								<div class="textarea textarea_height">
+									<textarea placeholder="Напишите свой отзыв..."></textarea>
+								</div>
+								<div class="write-comment__action">
+									<div class="rating rating_big">
+										<span class="rating__text">Оценка пользователя:</span>
+										<div class="rating__in js-rating" data-score="4"></div>
+									</div>
+									<div class="to-right">
+										<button class="btn-submit" type="submit">Отправить</button>
+									</div>
+								</div>
+							</div>
+							<div class="mark">
+								<div class="mark__user">
+									<div class="user-avatar">
+										<img src="http://lorempixel.com/66/66/people" alt="img">
+									</div>
+									<a href="#">Максим Городетский</a>
+								</div>
+								<div class="mark__main">
+									<div class="mark__head">
+										<div class="rating">
+											<span class="rating__text">Оценка пользователя:</span> 
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+										</div>
+										<div class="mark__meta">19 февраля 2014</div>
+									</div>
+									<div class="mark__body">
+										<p>Попали в него случайно.Просто захотелось кушать и первый ресторан по дороге оказался Старый Таллин.Название понравилось,ну мы и пошли.Внутри ресторанчик стилизован очень неплохо.Обслуживание очень хорошее.Блюда вкусные,кухня домашняя.Отдельный респект повару за рыбные блюда.Вкусный чай с рижским бальзамом.Цены демократические.В целом-зачет.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content js-tab-cont js-tab2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END l-col2 -->
+	</div>
+	<!-- END l-cols -->
+	<div class="push"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="l-container">
+		<div class="footer__col">
+			<div class="footer__title">
+				Поддержка
+			</div>
+			<ul>
+				<li>+372 99 88 7766</li>
+				<li><a href="#">Задать вопрос</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<div class="footer__title">
+				e-pidu в социальных сетях
+			</div>
+			<div class="footer__soc">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-vk"></i></a>
+			</div>
+		</div>
+		<div class="footer__col">
+			<ul class="soc">
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Как это работает?</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+				<li><a href="#">Условия использования сайта</a></li>
+			</ul>
+		</div>
+		<div class="footer__col">
+			<ul>
+				<li><a href="#">© e-pidu.ee 2014</a></li>
+				<li><a href="#">Designed by Aprol Designs</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-object">
+		<!-- BEGIN categ-wrap -->
+		<div class="categ-wrap">
+			<div class="categ-wrap__title">Сколько объектов вы хотите создать?</div>
+			<div class="wrap">	
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						1-2
+					</span>
+					<span class="categ__title">
+						<span>10 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						3-5
+					</span>
+					<span class="categ__title">
+						<span>18 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+				<a href="#" class="categ js-categ categ_obj">
+					<span class="categ__icon">
+						6-10
+					</span>
+					<span class="categ__title">
+						<span>24 € в месяц <em>за все объекты</em></span>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="popup__text">
+			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
+			<ul class="list list_blue">
+				<li>на 1 месяц</li>
+				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
+				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
+			</ul> 
+		</div>
+		<!-- END categ-wrap -->
+		<button class="btn-close js-popup-close" type="button"></button>
+	</div>
+</div>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+
+</body>
+</html>

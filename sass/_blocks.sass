@@ -253,12 +253,20 @@
 	font-size: 12px
 	color: $black  
 	+fr
-.rating__in,
-.rating__text
-	display: inline-block
-	vertical-align: middle
-	height: 15px	
-	
+	&__in,
+	&__text
+		display: inline-block
+		vertical-align: middle
+		height: 15px	
+.rating_big
+	.rating__text
+		margin-right: 12px
+		+fm
+	.rating__in,
+	.rating__text,
+		height: 22px
+		line-height: 22px
+		vertical-align: baseline
 .list
 	line-height: 1.2
 	font-size: 13px

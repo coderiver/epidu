@@ -11,8 +11,10 @@
 	border-radius: 5px
 	+box
 	background: #fff
-	
-
+.ui-datepicker-inline
+	+box-shadow(none)
+	border-radius: 0
+	border: 0
 .ui-slider__main
 	margin-bottom: 3px
 	position: relative	
@@ -132,6 +134,17 @@
 	box-shadow: 0 0 0 3px $blue, 0 2px 12px rgba(0,0,0,.75)
 	.ui-datepicker-calendar
 		margin: 0
+.ui-datepicker-inline
+	+box-shadow(none)
+	border-radius: 0
+	border: 0
+	tbody
+		td
+			border-color: #cbcbcb 
+			&:first-child
+				border-left: 1px solid #cbcbcb
+			&:last-child
+				border-right: 2px solid #cbcbcb
 .ui-datepicker .ui-datepicker-header
 	position: relative
 	padding: 10px 0 
@@ -195,18 +208,26 @@
 .ui-datepicker th
 	padding: .7em .3em
 	text-align: center
-	font-weight: bold
+	+fb
+	font-size: 15px
+	font-weight: normal  
 	border: 0
-
+	&.ui-datepicker-week-end
+		span
+			color: $blue 
 .ui-datepicker td
-	width: 35px
-	height: 35px
+	
 	vertical-align: middle
 	border: 1px solid #e3e3e3
 	&:first-child
 		border-left: 0
 	&:hover
 		background: #e5e5e5 
+	a
+		width: 35px
+		text-align: center
+		height: 35px
+		line-height: 35px
 .ui-datepicker td span,
 .ui-datepicker td a
 	display: block
@@ -215,7 +236,29 @@
 	font-size: 16px
 	+fr
 	color: $black 
-
+.ui-datepicker-inline
+	.ui-state-default
+		background: #fff 
+		&:hover
+			background: #e5e5e5 
+		&.ui-state-active,
+		&.ui-datepicker-today
+			background: $blue
+			color: #fff !important
+			&:hover
+				background: $blue !important
+				color: #fff  !important
+	.ui-state-disabled
+		background: #ececec 
+		.ui-state-default
+			background: none
+	.ui-datepicker-today
+		a
+			background: $blue
+			color: #fff !important
+			&:hover
+				background: $blue !important
+				color: #fff  !important
 .ui-datepicker
 	.ui-priority-secondary
 		color: $gray_l
@@ -237,17 +280,16 @@
 	.ui-priority-secondary
 		color: $gray_l
 
-.ui-datepicker-today
+.ui-datepicker-today,
+.ui-datepicker-current-day
 	background: $blue
 	a
 		color: #fff !important
 	&:hover
 		background: $blue !important
 		a
-			color: #fff  !important
-.ui-datepicker
-	.ui-datepicker-current-day
-		background: #e5e5e5 
+			color: #fff !important
+
 .ui-datepicker .ui-datepicker-buttonpane
 	background-image: none
 	margin: .7em 0 0 0
