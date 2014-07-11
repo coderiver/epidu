@@ -263,12 +263,154 @@
 			text-align: left
 
 .write-comment
-	&__action
-		margin: 13px 0 
+	margin-bottom: 37px
+	border-bottom: 1px solid #fff
+	box-shadow: inset 0 -1px 0 #d5d5d5 
+	&__action 
+		margin: 13px 0 20px
 		display: table
 		width: 100%
+	&__title
+		margin-bottom: 19px
+		font-size: 15px
+		+fm
+	.rating
+		padding-top: 8px 
 	.rating,
 	.to-right
 		display: table-cell
 		width: 50%
 		vertical-align: middle
+	.info-message
+		margin-bottom: 32px
+.cycle-slideshow
+	overflow: hidden
+	z-index: 1
+	.mark
+		width: 574px
+.mark
+	margin-bottom: 30px
+	&:last-child
+		margin-bottom: 0
+	&__user
+		float: left
+		margin-right: 12px
+		width: 97px
+		text-align: center
+		a
+			color: $blue_d 
+		.user-avatar
+			display: inline-block
+	&__main
+		overflow: hidden
+		border-bottom: 1px solid #fff
+		box-shadow: inset 0 -1px 0 #d5d5d5 
+	&__head
+		display: table
+		margin-bottom: 17px
+		width: 100%
+		.rating,
+			display: table-cell
+			&__text
+				+fm
+	&__meta
+		display: table-cell
+		text-align: right
+		color: #898989 
+		.fa-quote-left
+			color: #898989
+			font-size: 16px
+			margin-right: 3px 
+	&__body
+		padding: 0 15px 21px 0
+		+fi
+.mark_friend
+	.mark__meta
+		text-align: left
+.slider-nav  
+	+justify
+.slide-prev
+	display: inline-block
+	vertical-align: middle
+	+s(prev-s)
+.slide-next
+	display: inline-block
+	vertical-align: middle
+	+s(next-s)
+.slider-dots
+	display: inline-block
+	span
+		display: inline-block
+		margin-left: 8px
+		vertical-align: middle
+		text-align: left
+		width: 12px
+		height: 12px
+		background: #e2e2e2
+		border-radius: 50%
+		cursor: pointer
+		box-shadow: inset 0 1px 3px rgba(#000,.5)   
+		&:first-child
+			margin-left: 0
+		&.cycle-pager-active
+			background: #0b8ea9
+			+g(#0b8ea9,#017188)  
+			box-shadow: 0 1px 4px rgba(#000,.7) 
+
+.discus
+	padding-right: 8px
+	&__in
+		max-height: 506px
+		padding-right: 26px
+		overflow-x: hidden
+		+scrollbar
+			width: 6px
+			height: 6px
+			+border-radius(4px)
+			background: #d1d1d1
+		+scrollbar-thumb
+			background: $blue_d
+			+border-radius(4px)
+		+scrollbar-track-piece     
+			+border-radius(4px) 
+
+.invite-box
+	margin-bottom: 13px
+	padding: 16px 18px 
+	background: #e9e9e9 
+	border-bottom: 1px solid #fff
+	box-shadow: inset 0 -1px 0 #d5d5d5  
+	.field_invite
+		margin: 20px 0 7px 
+		
+.note
+	position: relative
+	left: 0
+	margin-bottom: 34px 
+	padding-bottom: 27px
+	border-bottom: 1px solid #fff
+	+tr
+	box-shadow: inset 0 -1px 0 #e5e5e5
+	&.is-remove-ready
+		left: -200px
+	&:last-child
+		border: 0
+		box-shadow: none 
+	&__head
+		display: table
+		margin-bottom: 18px
+		width: 100%
+	&__meta,
+	&__btn
+		display: table-cell
+		vertical-align: middle
+	&__meta
+		color: #898989
+		.fa
+			margin-right: 7px
+	&__btn
+		text-align: right
+	&__body
+		+fi
+		p
+			margin-bottom: 8px

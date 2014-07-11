@@ -24,20 +24,20 @@ head.ready(function() {
 		return false;
 	});
 
-	$('.js-slider').slick({
-		slidesToShow: 1,
-		infinite: true,
-		speed: 300,
-		touchMove: true,
-		arrows: true,
-		dots: false,
-		autoplay: true,
-  		autoplaySpeed: 5000,
-		onInit: function(){
-			//alert();
-			//$(".js-slider").addClass("is-ready");
-		}
-	});
+	// $('.js-slider').slick({
+	// 	slidesToShow: 1,
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	touchMove: true,
+	// 	arrows: true,
+	// 	dots: false,
+	// 	autoplay: true,
+ //  		autoplaySpeed: 5000,
+	// 	onInit: function(){
+	// 		//alert();
+	// 		//$(".js-slider").addClass("is-ready");
+	// 	}
+	// });
 
 	// popups
 	$(".js-popup-link").on("click", function(event){

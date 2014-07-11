@@ -22,7 +22,17 @@
 		min-width: 0
 		vertical-align: middle
 		padding: 13px 5px 14px 
-
+.field_invite	
+	.input-wrap
+		display: inline-block
+		vertical-align: middle
+		width: 68%
+	.btn-simple
+		margin-left: 2%
+		width: 30%
+		min-width: 0
+		vertical-align: middle
+		padding: 8px 5px 10px 
 .pseudolink
 	border-bottom: 1px dashed 
 .field_file
@@ -55,7 +65,7 @@
 	position: relative
 	font-size: 0
 	+clr  
-	min-height: 48px
+	//min-height: 48px
 	.checkbox_inline
 		margin-top: 16px
 .input-wrap_half
@@ -69,6 +79,10 @@
 		vertical-align: middle
 	&:first-child
 		margin-left: 0
+	&.is-hidden
+		display: none
+	&.is-visible
+		display: inline-block
 .input-wrap__title,
 .input-wrap__body
 	position: relative
@@ -179,6 +193,9 @@
 			color: $black 
 	+placeholder
 		color: #808080 
+.input_s
+	height: 39px
+	font-size: 13px
 .input_inline
 	display: inline-block
 	vertical-align: middle
