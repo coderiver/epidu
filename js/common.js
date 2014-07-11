@@ -1,8 +1,6 @@
 head.ready(function() {
 
 	
-	
-
 	$(document).on("click",function(){
 		$(".js-overlay").hide();
 		$("html").removeClass("has-open-popup");
@@ -24,20 +22,7 @@ head.ready(function() {
 		return false;
 	});
 
-	// $('.js-slider').slick({
-	// 	slidesToShow: 1,
-	// 	infinite: true,
-	// 	speed: 300,
-	// 	touchMove: true,
-	// 	arrows: true,
-	// 	dots: false,
-	// 	autoplay: true,
- //  		autoplaySpeed: 5000,
-	// 	onInit: function(){
-	// 		//alert();
-	// 		//$(".js-slider").addClass("is-ready");
-	// 	}
-	// });
+
 
 	// popups
 	$(".js-popup-link").on("click", function(event){
@@ -480,6 +465,11 @@ head.ready(function() {
 		return false;
 	});
 	
+	$(".js-show-invite").on("click",function() {
+		$(".js-invite").removeAttr("hidden");
+		$(this).addClass("is-disabled");
+		return false;
+	})
 
 	$(".js-scroll-btn").on("click",function(){
     	var categ = $(this).attr("href");
@@ -678,5 +668,5 @@ head.ready(function() {
     }
     accordion();
     //$(".fotorama__active .slider__box").animate({ top: '100px' }, 600, 'easeOutBounce', function () {})
-	
+
 });
