@@ -259,7 +259,13 @@
 	&.is-remove-ready
 		opacity: 0
 		left: -500px
+	.counter
+		position: absolute
+		right: 5px
+		top: 5px
+		box-shadow: none 
 	&__left
+		position: relative
 		display: table-cell
 		vertical-align: top
 		padding: 5px 15px 5px 5px
@@ -269,6 +275,7 @@
 		&:hover
 			color: $black
 	&__img
+		position: relative
 		float: left
 		margin-right: 13px
 		img
@@ -338,6 +345,39 @@
 		.fa-exclamation-triangle
 			margin-right: 7px
 			color: $yellow 
+	&__badge
+		position: absolute
+		top: 5px
+		left: 5px 
+		width: 22px
+		height: 22px
+		text-align: center
+		line-height: 19px
+		background: $green
+		border-radius: 50%   
+		&:after
+			content: "\f118"
+			display: inline-block
+			vertical-align: middle
+			+fa
+			font-size: 14px
+			color: #fff
+		&.is-bad
+			background: $red 
+			&:after
+				content: "\f119" 
+	.fa-times-circle
+		position: absolute
+		top: 6px
+		right: 6px
+		background: none
+		color: $gray
+		font-size: 15px 
+		+tr
+		&:hover
+			color: $red
+		&:active
+			top: 7px
 .object_small
 	.object__title,
 	.rating
@@ -346,6 +386,11 @@
 		margin-bottom: 4px
 	.object__descr	
 		margin-top: 21px
+	.object__left
+		display: block
+		width: 100%
+		font-size: 12px
+		+clr
 .btn-remove
 	display: inline-block
 	position: relative

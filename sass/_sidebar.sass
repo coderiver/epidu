@@ -8,6 +8,14 @@
 	+box
 	&.has-scroll
 		padding-right: 10px
+	.window
+		top: 173px
+		left: 10px
+		right: 10px
+		margin: 0
+		width: auto
+		.to-center
+			margin: 15px 0 4px 
 	&__in 
 		overflow-y: auto
 		overflow-x: hidden
@@ -22,11 +30,25 @@
 		+scrollbar-track-piece     
 			+border-radius(4px) 
 	&__item
+		position: relative
 		border-top: 1px solid $border
 		padding: 15px 10px 7px
 		&:first-child
 			border-top: 0
 			padding-top: 0
+		
+	&__filter
+		position: absolute
+		display: none
+		left: 0
+		right: 0
+		top: 50px
+		z-index: 3
+		padding-top: 10px
+		background: $light 
+		border-bottom: 1px solid $border 
+		.to-center
+			padding: 19px 0 28px 
 	&__opt
 		padding: 0 10px 
 		+clr

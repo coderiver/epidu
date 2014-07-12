@@ -10,20 +10,30 @@
 			//display: none
 		//&__result
 			//display: block
-	.sidebar_fixed
-		position: fixed
-		//top: 65px
-		left: 50%
-		margin-left: -499px
-		width: 334px
+	.has-left-sidebar
+		.sidebar_fixed
+			position: fixed
+			//top: 65px
+			left: 50%
+			margin-left: -499px
+			width: 334px
+	.has-right-sidebar
+		.sidebar_fixed
+			position: fixed
+			//top: 65px
+			left: 50%
+			margin-left: 165px
+			width: 334px
 	&.has-small-filter
 		.header
 			margin-bottom: 65px
 .has-abs-sidebar	
-	.sidebar_fixed
-		position: absolute
-		z-index: 1
-		//top: auto !important
+	.has-left-sidebar,
+	.has-right-sidebar
+		.sidebar_fixed
+			position: absolute
+			z-index: 1
+			//top: auto !important
 
 .filter
 	position: relative

@@ -98,6 +98,16 @@
 	border-radius: 5px 
 	font-size: 13px
 	+box-shadow(0 0 12px rgba(#000,.4))
+	&.has-top-corner
+		&:before
+			content: ""
+			position: absolute 
+			top: -14px
+			left: 50%
+			margin-left: -9px
+			+s(arr-t)
+		&:after
+			display: none
 	&:after
 		content: ""
 		position: absolute 
@@ -124,6 +134,9 @@
 			+border-radius(4px)
 		+scrollbar-track-piece      
 			+border-radius(4px)
+	&__descr
+		p
+			margin-bottom: 10px
 	.fa-times-circle
 		position: absolute 
 		right: 7px
@@ -136,6 +149,11 @@
 			color: $gray 
 		&:active
 			top: 8px
+.window_no-scroll
+	.window__in
+		overflow-x: visible 
+		overflow-y: visible 
+		max-height: 100%
 .fa-question-circle
 	font-size: 17px
 	color: $blue

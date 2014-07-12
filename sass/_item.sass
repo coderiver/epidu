@@ -16,14 +16,48 @@
 		font-size: 22px
 		+fb
 		color: $blue
+		&.is-dark
+			margin-bottom: 35px
+			color: $black
+			font-size: 30px
+			+fb 
 	&__meta
 		margin: 19px 0 0 
 		max-width: 73%
 		+fi
 		font-size: 13px
 		color: #888 
+	&__info
+		color: $black
+		font-size: 13px
+		+clr
+		.link-save
+			float: right
+	&__descr
+		padding: 10px 0 0 4px
+		color: #606060
+		font-size: 12px
+		text-align: left 
+.item-head_mod
+	padding-left: 18px
+	.item-head__col	
+		&:first-child	
+			padding-right: 30px
+.link-save
+	display: inline-block
+	color: $blue_d
+	&:hover
+		span
+			border-color: transparent 
+	.fa
+		margin-right: 4px
+		font-size: 15px
+	span
+		display: inline-block
+		line-height: 1
+		border-bottom: 1px dashed 
 .item-content
-	padding: 0 10px 0 6px  
+	padding: 0 10px 0 6px   
 	
 .tab
 	padding: 0 25px 
