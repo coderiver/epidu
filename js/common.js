@@ -364,37 +364,37 @@ head.ready(function() {
 		}
 	});
 
-	function tab() {
-       $(".js-tab").each(function(){
-        	var tab_link = $(this).find("a");
-        	var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
-        	tab_cont.hide();
-            var id_active = $(this).find(".is-active").attr("href");
-        	$("."+id_active).show();
-        	$(this).parents(".js-tab-group").find(".js-tab1").show();
-        	$("body").on("click",".js-tab a", function() {
-            	var index = $(this).attr("href");
-            	$(this).parents(".js-tab").find("li").removeClass("is-active");
-            	$(this).parent().addClass("is-active");
-            	$(this).parents(".js-tab-group").find(".js-tab-cont").hide();
-            	$(this).parents(".js-tab-group").find("."+index).show();
-            	return false;
-          	});
-       });
-  	}
-  	tab();
- 	// if ($(".js-tab").length) {
-  //       $(".js-tab").tabs({
-  //           beforeActivate: function(event, ui) { 
-  //               window.location.hash=ui.newPanel.selector; 
-  //           },
-  //           activate: function(event, ui) { 
-  //               //google.load("visualization", "1", {packages:["corechart"]});
-  //               //google.setOnLoadCallback(drawChart);
-  //           },
+	// function tab() {
+ //       $(".js-tab").each(function(){
+ //        	var tab_link = $(this).find("a");
+ //        	var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+ //        	tab_cont.hide();
+ //            var id_active = $(this).find(".is-active").attr("href");
+ //        	$("."+id_active).show();
+ //        	$(this).parents(".js-tab-group").find(".js-tab1").show();
+ //        	$("body").on("click",".js-tab a", function() {
+ //            	var index = $(this).attr("href");
+ //            	$(this).parents(".js-tab").find("li").removeClass("is-active");
+ //            	$(this).parent().addClass("is-active");
+ //            	$(this).parents(".js-tab-group").find(".js-tab-cont").hide();
+ //            	$(this).parents(".js-tab-group").find("."+index).show();
+ //            	return false;
+ //          	});
+ //       });
+ //  	}
+ //  	tab();
+ 	if ($(".js-tab").length) {
+        $(".js-tab").tabs({
+            beforeActivate: function(event, ui) { 
+                window.location.hash=ui.newPanel.selector; 
+            },
+            activate: function(event, ui) { 
+                //google.load("visualization", "1", {packages:["corechart"]});
+                //google.setOnLoadCallback(drawChart);
+            },
 
-  //       });  
-  //   }
+        });  
+    }
    
    
 	$("body").on("click",".js-more-lang",function(){
