@@ -148,4 +148,10 @@
 			border-bottom: 1px solid #c5c5c5  
 
 .ui-draggable
-	z-index: 10
+	z-index: 2
+	&:active
+		cursor: move
+		.object__left
+			cursor: move
+			&:hover
+				cursor: move

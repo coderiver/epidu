@@ -521,14 +521,24 @@ head.ready(function() {
       helper: "clone",
       revert: "invalid",
       start: function( event, ui ) {
+      	var top = $(".js-sidebar .sidebar__in").scrollTop();
       	$(".js-sidebar").addClass("disable-scroll");
+      	$(".js-sidebar .sidebar__in").css({
+      		marginTop: -top
+      	});
+      	console.log(top)
       },
       stop: function( event, ui ) {
       	$(".js-sidebar").removeClass("disable-scroll");
+      	$(".js-sidebar .sidebar__in").css({
+      		marginTop: 0
+      	});
       }
     });
     //$( "ul, li" ).disableSelection();
-
+    $(".js-sidebar .sidebar__in").scroll(function() {
+		console.log($(this).scrollTop());
+    })
 	var header = $(".header");
 	var footer = $(".footer");
 	var sidebar = $(".js-sidebar");
