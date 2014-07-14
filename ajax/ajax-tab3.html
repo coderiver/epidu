@@ -1,3 +1,50 @@
-<div class="ajax-tab3">
-	3
+<div class="tab-content">
+	<div class="map map_no-border">
+		<div id="map" class="map__body"></div>
+		<script>
+		  	function initialize() {
+			    var mapOptions = {
+			      	zoom: 15,
+			      	center: new google.maps.LatLng(59.437094, 24.741932),
+			      	disableDefaultUI: true,
+			      	scrollwheel: false,
+			     	zoomControl: true,
+			    	zoomControlOptions: {
+			        	style: google.maps.ZoomControlStyle.DEFAULT
+			      	},
+			      	mapTypeId: google.maps.MapTypeId.ROADMAP
+			    }
+			    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			    //var image = 'img/marker.png';
+			    var myLatLng1 = new google.maps.LatLng(59.437094, 24.741932);
+			    var marker1 = new google.maps.Marker({
+				      position: myLatLng1,
+				      map: map,
+				      title: 'Uluru (Ayers Rock)', 
+				      //icon: image
+				});
+			    var contentString1 =	'<div style="width:200px;height: 80px">'
+						+'<p>Street </p>'
+						+'<p>3rd. Floor </p>'
+						+'<p>Таллін, Естонія</p>'
+						+'<p>10010</p>'+
+					'</div>';
+			  	var infowindow1 = new google.maps.InfoWindow({
+				    content: contentString1
+				});
+				google.maps.event.addListener(marker1, 'click', function(){
+				    infowindow1.open(map,marker1);
+				});
+			}
+		  	// Asynchronous Loading
+			function loadScript() {
+			  var script = document.createElement('script');
+			  script.type = 'text/javascript';
+			  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+			      'callback=initialize';
+			  document.body.appendChild(script);
+			}
+			window.onload = loadScript;
+		</script>
+	</div>
 </div>
