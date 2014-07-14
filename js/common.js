@@ -383,7 +383,20 @@ head.ready(function() {
        });
   	}
   	tab();
+ 	// if ($(".js-tab").length) {
+  //       $(".js-tab").tabs({
+  //           beforeActivate: function(event, ui) { 
+  //               window.location.hash=ui.newPanel.selector; 
+  //           },
+  //           activate: function(event, ui) { 
+  //               //google.load("visualization", "1", {packages:["corechart"]});
+  //               //google.setOnLoadCallback(drawChart);
+  //           },
 
+  //       });  
+  //   }
+   
+   
 	$("body").on("click",".js-more-lang",function(){
     	var lang = $(this).attr("href");
     	$("."+lang).slideToggle(200);
