@@ -31,6 +31,8 @@
 		.fa-pencil
 			opacity: 1
 			visibility: visible
+		.grid__scroll
+			opacity: 1
 	&.has-open-window
 		.grid__window
 			z-index: 2
@@ -51,7 +53,7 @@
 		padding-right: 4px
 		overflow-x: hidden
 		overflow-y: scroll
-		max-height: 298px
+		height: 298px
 		opacity: .5
 		+tr(opacity .2s linear)
 		+scrollbar
@@ -64,14 +66,13 @@
 			+border-radius(4px)
 		+scrollbar-track-piece     
 			+border-radius(4px)
-		&:hover
-			opacity: 1
 	&__head
 		margin-bottom: 5px
 		padding-right: 30px
 		min-height: 20px
 		font-size: 16px
 		position: relative
+		+text-overflow
 		.counter
 			margin-left: 13px
 			box-shadow: none 
