@@ -507,7 +507,27 @@ head.ready(function() {
     });
     $(".js-grid-window").on("click",function(event) {
 		event.stopPropagation();
-	})
+	});
+
+    // $(".js-drag-list").sortable({
+    // 	items: ".js-drag-item"
+    // });
+	
+	$( ".js-sortable" ).sortable({
+      revert: true
+    });
+    $( ".js-draggable" ).draggable({
+      connectToSortable: ".js-sortable",
+      helper: "clone",
+      revert: "invalid",
+      start: function( event, ui ) {
+      	$(".js-sidebar").addClass("disable-scroll");
+      },
+      stop: function( event, ui ) {
+      	$(".js-sidebar").removeClass("disable-scroll");
+      }
+    });
+    //$( "ul, li" ).disableSelection();
 
 	var header = $(".header");
 	var footer = $(".footer");

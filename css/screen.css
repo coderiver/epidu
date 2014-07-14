@@ -516,6 +516,7 @@ a:hover { color: #026073; }
 
 .sidebar { position: relative; padding: 15px 0; z-index: 1; width: 334px; box-shadow: inset 0 1px 0 0 white; background: #f4f4f4; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .sidebar.has-scroll { padding-right: 10px; }
+.sidebar.disable-scroll .sidebar__in { overflow-x: visible; overflow-y: visible; }
 .sidebar .window { top: 173px; left: 10px; right: 10px; margin: 0; width: auto; }
 .sidebar .window .to-center { margin: 15px 0 4px; }
 .sidebar__in { overflow-y: auto; overflow-x: hidden; }
@@ -537,6 +538,7 @@ a:hover { color: #026073; }
 .sidebar .checkbox span { padding-left: 8px; }
 .sidebar .checkbox span, .sidebar .checkbox input { vertical-align: baseline; }
 .sidebar .rating { color: #555555; }
+.sidebar .object__badge, .sidebar .object .fa-times-circle, .sidebar .object .counter { display: none; }
 
 .sidebar_fixed { z-index: 3; }
 
@@ -1467,8 +1469,12 @@ a:hover { color: #026073; }
 .note__body { font-family: "roboto-italic", Arial, sans-serif; }
 .note__body p { margin-bottom: 8px; }
 
-.grid-wrap { padding: 24px 0 0 0; background: white; *zoom: 1; }
+.grid-wrap { padding: 24px 0 0 0; background: white; border-bottom: 0; *zoom: 1; }
 .grid-wrap:after { content: " "; display: table; clear: both; }
+.grid-wrap__scroll { overflow-x: hidden; overflow-y: auto; margin-right: 7px; padding-right: 10px; max-height: 1040px; }
+.grid-wrap__scroll::-webkit-scrollbar { width: 6px; height: 6px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: #d1d1d1; }
+.grid-wrap__scroll::-webkit-scrollbar-thumb { background: #016d84; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.grid-wrap__scroll::-webkit-scrollbar-track-piece { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 
 .grid { position: relative; left: 0; float: left; margin: 0 0 18px 18px; width: 300px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-transition: left 0.2s linear; -o-transition: left 0.2s linear; -webkit-transition: left 0.2s linear; transition: left 0.2s linear; }
 .grid:hover .fa-pencil { opacity: 1; visibility: visible; }
@@ -1500,3 +1506,5 @@ a:hover { color: #026073; }
 .grid .object:hover { box-shadow: none; }
 .grid .object:last-child { border-bottom: 0; }
 .grid .object:first-child { border-bottom: 1px solid #c5c5c5; }
+
+.ui-draggable { z-index: 10; }
