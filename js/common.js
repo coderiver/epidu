@@ -389,11 +389,24 @@ head.ready(function() {
         $(".js-tab").tabs({
             beforeActivate: function(event, ui) { 
                 window.location.hash=ui.newPanel.selector; 
-                inlineDatePicker();
             },
-            activate: function(event, ui) { 
-                inlineDatePicker();
-            },
+            // activate: function(event, ui) { 
+            // },
+            load: function( event, ui ) {
+
+            	fotoramaInit();
+
+				inlineDatePicker();
+
+				$( '.js-cycle' ).cycle();
+
+				$("body").find(".js-sortable").sortable({
+				      revert: true,
+				      receive: function( event, ui ) {
+				      	$(this).parent().find(".js-grid-message").hide();
+				      }
+				    });
+            }
 
         });  
     }
@@ -407,15 +420,18 @@ head.ready(function() {
   	// $('.js-fotorama').fotorama({
   	// 	dots: true
   	// });
-  	var $fotoramaDiv = $('.js-fotorama').on('fotorama:ready', function () {
-	    //alert();
-	    $('.js-fotorama').addClass("is-ready");
-	}).fotorama();
-  	var fotorama = $fotoramaDiv.data('fotorama');
-  	$(".js-next-slide").on("click",function(){
-		fotorama.show(">");
-		return false;
-	});
+
+	function fotoramaInit() {
+	  	var $fotoramaDiv = $('.js-fotorama').on('fotorama:ready', function () {
+		    $('.js-fotorama').addClass("is-ready");
+		}).fotorama();
+	  	var fotorama = $fotoramaDiv.data('fotorama');
+	  	$(".js-next-slide").on("click",function(){
+			fotorama.show(">");
+			return false;
+		});
+	}
+	fotoramaInit();
 
 	$(".js-radio-box input").on("change",function(){
 		if ($(this).is(":checked")) {
@@ -484,7 +500,7 @@ head.ready(function() {
 
 	
 	
-	$(".js-show-invite").on("click",function(event) {
+	$("body").on("click",".js-show-invite",function(event) {
 		$(".js-invite").removeAttr("hidden");
 		$(this).addClass("is-disabled");
 		event.stopPropagation();

@@ -1,50 +1,5 @@
 <div class="tab-content">
 	<div class="map map_no-border">
-		<div id="map" class="map__body"></div>
-		<script>
-		  	function initialize() {
-			    var mapOptions = {
-			      	zoom: 15,
-			      	center: new google.maps.LatLng(59.437094, 24.741932),
-			      	disableDefaultUI: true,
-			      	scrollwheel: false,
-			     	zoomControl: true,
-			    	zoomControlOptions: {
-			        	style: google.maps.ZoomControlStyle.DEFAULT
-			      	},
-			      	mapTypeId: google.maps.MapTypeId.ROADMAP
-			    }
-			    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-			    //var image = 'img/marker.png';
-			    var myLatLng1 = new google.maps.LatLng(59.437094, 24.741932);
-			    var marker1 = new google.maps.Marker({
-				      position: myLatLng1,
-				      map: map,
-				      title: 'Uluru (Ayers Rock)', 
-				      //icon: image
-				});
-			    var contentString1 =	'<div style="width:200px;height: 80px">'
-						+'<p>Street </p>'
-						+'<p>3rd. Floor </p>'
-						+'<p>Таллін, Естонія</p>'
-						+'<p>10010</p>'+
-					'</div>';
-			  	var infowindow1 = new google.maps.InfoWindow({
-				    content: contentString1
-				});
-				google.maps.event.addListener(marker1, 'click', function(){
-				    infowindow1.open(map,marker1);
-				});
-			}
-		  	// Asynchronous Loading
-			function loadScript() {
-			  var script = document.createElement('script');
-			  script.type = 'text/javascript';
-			  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-			      'callback=initialize';
-			  document.body.appendChild(script);
-			}
-			window.onload = loadScript;
-		</script>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.4049700353733!2d24.768193567173334!3d59.44299805229039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f1a42ac10405c01!2sCity+Hotel+Portus!5e0!3m2!1suk!2sua!4v1405407007856" width="624" height="442" frameborder="0" style="border:0"></iframe>
 	</div>
 </div>

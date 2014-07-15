@@ -386,7 +386,7 @@ a:hover { color: #026073; }
 .object { position: relative; left: 0; margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; -webkit-transition: box-shadow 0.2s linear, border 0.2s linear; -moz-transition: box-shadow 0.2s linear, border 0.2s linear; -ms-transition: box-shadow 0.2s linear, border 0.2s linear; -o-transition: box-shadow 0.2s linear, border 0.2s linear; transition: box-shadow 0.2s linear, border 0.2s linear; border-radius: 5px; }
 .object:hover { z-index: 2; border-color: #23d7fd; box-shadow: 0 0 7px rgba(0, 166, 201, 0.5); }
 .object.is-inactive .object__left, .object.is-inactive .object__middle { opacity: 0.5; }
-.object.is-remove-ready { opacity: 0; left: -500px; }
+.object.is-remove-ready { opacity: 0; left: -500px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .object .counter { position: absolute; right: 5px; top: 5px; box-shadow: none; }
 .object__left { position: relative; display: table-cell; vertical-align: top; padding: 5px 15px 5px 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 48%; color: #232323; }
 .object__left:hover { color: #232323; }
@@ -1374,7 +1374,7 @@ a:hover { color: #026073; }
 .calendar:after { content: " "; display: table; clear: both; }
 .calendar__main { float: left; }
 .calendar__info { float: right; margin-top: 43px; width: 234px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #cbcbcb; }
-.calendar__date { padding: 0 18px; height: 48px; line-height: 48px; background: #00a6c9; color: white; font-size: 20px; }
+.calendar__date { display: block; padding: 0 18px; height: 48px; width: 100%; line-height: 48px; background: #00a6c9; color: white; font-size: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .calendar__list { padding: 5px 5px 5px 0; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .calendar__list ul { padding-right: 5px; overflow-y: auto; max-height: 216px; overflow-x: hidden; }
 .calendar__list ul::-webkit-scrollbar { width: 6px; height: 6px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: #d1d1d1; }
