@@ -29,9 +29,22 @@
 		width: 336px  
 		+box
 		background: $light
+.l-cols_width
+	&.has-right-sidebar
+		width: 1316px 
+		.l-col2
+			width: 336px
+		.l-col1
+			width: 980px
+		+r(w1400)  
+			width: 1000px
+			.l-col2
+				width: 336px
+			.l-col1
+				width: 664px
 .has-left-sidebar
-	margin: 0 auto 
-	width: 1000px
+	margin: 0 auto  
+	width: 1000px   
 	.l-col1
 		border-right: 1px solid $border
 		border-left: 1px solid $border

@@ -406,3 +406,10 @@
 2014-07-03 10:23:43 unchanged img/icons-sa6e6a90fb1.png
 2014-07-03 10:23:43 unchanged img/icons-sa6e6a90fb1.png
 2014-07-03 10:23:44 overwrite css/screen.css 
+2014-07-15 09:08:10    remove img/icons-s03b28b2b2a.png
+2014-07-15 09:08:11    create img/icons-sbfef421086.png
+2014-07-15 09:08:12     error sass/screen.sass (Line 40 of sass/_layouts.sass: Invalid CSS after "width": expected expression (e.g. 1px, bold), was ": 1000px")
+2014-07-15 09:08:12 overwrite css/screen.css 
+2014-07-15 09:08:14 unchanged img/icons-sbfef421086.png
+2014-07-15 09:08:14     error sass/screen.sass (Line 40 of sass/_layouts.sass: Invalid CSS after "width": expected expression (e.g. 1px, bold), was ": 1000px")
+2014-07-15 09:08:14 overwrite css/screen.css 
