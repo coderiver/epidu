@@ -389,6 +389,7 @@ head.ready(function() {
         $(".js-tab").tabs({
             beforeActivate: function(event, ui) { 
                 window.location.hash=ui.newPanel.selector; 
+                inlineDatePicker();
             },
             activate: function(event, ui) { 
                 inlineDatePicker();
