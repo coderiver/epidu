@@ -391,8 +391,7 @@ head.ready(function() {
                 window.location.hash=ui.newPanel.selector; 
             },
             activate: function(event, ui) { 
-                //google.load("visualization", "1", {packages:["corechart"]});
-                //google.setOnLoadCallback(drawChart);
+                inlineDatePicker();
             },
 
         });  
