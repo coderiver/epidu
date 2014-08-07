@@ -1,1 +1,2 @@
-body { display: none; }
+@media (max-device-width: 1280px) and (orientation: landscape) { body { display: none; } }
+@media (max-device-width: 800px) and (orientation: portrait) { body { display: none; } }
