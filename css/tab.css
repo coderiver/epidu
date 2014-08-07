@@ -1,2 +1,2 @@
-@media (max-device-width: 1280px) and (orientation: landscape) { body { display: none; } }
-@media (max-device-width: 800px) and (orientation: portrait) { body { display: none; } }
+@media (max-device-width: 1280px) and (orientation: landscape) { .input-wrap__body, .input-wrap__title { float: left; } }
+@media (max-device-width: 800px) and (orientation: portrait) { .input-wrap__body, .input-wrap__title { float: left; } }
