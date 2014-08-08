@@ -1,4 +1,4 @@
-@media (max-device-width: 1280px) and (orientation: landscape) { .input-wrap__body, .input-wrap__title, .input-date { float: left; }
+@media (max-device-width: 1280px) and (orientation: landscape) { .input-wrap__body, .input-wrap__title, .input-date, .checkbox { float: left; }
   .input-date.is-visible { display: inline !important; visibility: visible !important; } }
-@media (max-device-width: 800px) and (orientation: portrait) { .input-wrap__body, .input-wrap__title, .input-date { float: left; }
+@media (max-device-width: 800px) and (orientation: portrait) { .input-wrap__body, .input-wrap__title, .input-date, .checkbox { float: left; }
   .input-date.is-visible { display: inline !important; visibility: visible !important; } }
