@@ -655,13 +655,19 @@ head.ready(function() {
 
         return false;
     });
-
-    fixedFilter();
+    if (filter.length>0) {
+    	fixedFilter();
+    }
+    
     $(window).scroll(function() {
-    	fixedFilter()
+    	if (filter.length>0) {
+    		fixedFilter();
+    	}
     });
 	$(window).resize(function() {
-    	fixedFilter()
+    	if (filter.length>0) {
+    		fixedFilter();
+    	}
     });
 
 
