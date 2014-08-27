@@ -321,29 +321,34 @@ head.ready(function() {
 		}
 
 	});
-	$(".js-select-single").multiselect({
-		selectedList: 1,
-		noneSelectedText: $(this).attr("data-placeholder"),
-		header: "",
-		multiple: false,
- 		open: function () {
- 			if ($(this).hasClass("has-not-checkbox")) {
- 				$(this).multiselect("widget").addClass("has-not-checkbox");
- 			}
- 			
- 		},
- 		close: function () {
- 			//$(this).multiselect("widget").removeClass("is-small");
- 		}
-	}).on("multiselectclick", function(event, ui) {
-		if ($(this).multiselect("widget").find("input").is(":checked")) {
-			$(this).next().addClass("has-value").removeClass("has-placeholder");
-		}
-		else {
-			$(this).next().addClass("has-placeholder").removeClass("has-value");
-		}
+	function selectList() {
+		$(".js-select-single").multiselect({
+			selectedList: 1,
+			noneSelectedText: $(this).attr("data-placeholder"),
+			header: "",
+			multiple: false,
+	 		open: function () {
+	 			if ($(this).hasClass("has-not-checkbox")) {
+	 				$(this).multiselect("widget").addClass("has-not-checkbox");
+	 			}
+	 			
+	 		},
+	 		close: function () {
+	 			//$(this).multiselect("widget").removeClass("is-small");
+	 		}
+		}).on("multiselectclick", function(event, ui) {
+			if ($(this).multiselect("widget").find("input").is(":checked")) {
+				$(this).next().addClass("has-value").removeClass("has-placeholder");
+			}
+			else {
+				$(this).next().addClass("has-placeholder").removeClass("has-value");
+			}
 
-	});
+		});
+	}
+	selectList();
+	
+
 	$(".js-textarea textarea").keyup(function () {  
 		var counter = $(this).parents(".js-textarea").find('.js-char-counter');
 		var max = +counter.attr("data-max");
@@ -355,7 +360,7 @@ head.ready(function() {
 		    counter.removeClass("is-limit").text(char);
 		}
 	});
-	$(".js-input input").keyup(function () {  
+	$("body").on("keyup",".js-input input",function () {  
 		var counter = $(this).parents(".js-input").find('.js-char-counter');
 		var max = +counter.attr("data-max");
 		var len = $(this).val().length;
@@ -441,7 +446,7 @@ head.ready(function() {
 		}
 	}); 
  
-	$(".js-check input").on("change",function(){
+	$("body").on("change",".js-check input",function(){
 		var checkGroup = $(this).closest(".js-check-group");
 		var checkHidden = checkGroup.children(".js-check-hidden");
 		if ($(this).is(":checked")) {
@@ -494,16 +499,15 @@ head.ready(function() {
 		return false;
 	}); 
 	$("body").on("click",".js-add-btn",function(){
-		//alert();
 		var new_el = $(this).attr("data-hidden");
 		var html = $("."+new_el).html();
-		//if ($(this).parents(".js-add-btn-wrap")) {
-			//$(this).parents(".js-add-btn-wrap").before(html);
-		//}
-		//else {
-			$(this).before(html);
-		//}
-		
+		$(this).before(html);
+		$(".js-select-single-added").multiselect({
+			selectedList: 1,
+			noneSelectedText: $(this).attr("data-placeholder"),
+			header: "",
+			multiple: false,
+		});
 		return false;
 	});
 
@@ -644,15 +648,16 @@ head.ready(function() {
     }
 
       function heightSidebar() {
-    	if (sidebar.outerHeight() > ($(window).height() - filter.outerHeight()) ) {
+      	var height = $(window).height() - filter.outerHeight() - footer.outerHeight()-3;
+    	if (sidebar.outerHeight() > height ) {
     		sidebar.addClass("has-scroll").children().css({
-    			maxHeight: $(window).height() - filter.outerHeight() - 30
+    			maxHeight: height - 105
     		});
 			//sidebar.addClass("has-scroll");
     	}
     	else {
     		sidebar.removeClass("has-scroll").children().css({
-    			maxHeight: $(window).height() - filter.outerHeight() - 30
+    			maxHeight: height - 105
     		});
     	}
 
@@ -783,6 +788,12 @@ head.ready(function() {
                 $(this).parent().toggleClass("is-active");
                 $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
             }
+            $(".js-select-single").multiselect({
+				selectedList: 1,
+				noneSelectedText: $(this).attr("data-placeholder"),
+				header: "",
+				multiple: false,
+			});
             
         });
         $(".js-show-all-accordion").on("click",function(){
