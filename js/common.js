@@ -647,19 +647,19 @@ head.ready(function() {
     	}
     }
 
-      function heightSidebar() {
-      	var height = $(window).height() - filter.outerHeight() - footer.outerHeight()-3;
-    	if (sidebar.outerHeight() > height ) {
-    		sidebar.addClass("has-scroll").children().css({
-    			maxHeight: height - 105
-    		});
-			//sidebar.addClass("has-scroll");
-    	}
-    	else {
-    		sidebar.removeClass("has-scroll").children().css({
-    			maxHeight: height - 105
-    		});
-    	}
+    function heightSidebar() {
+
+    	var height = $(window).height() - filter.outerHeight() - footer.outerHeight()-3;
+		if (sidebar.outerHeight() > height ) {
+			sidebar.addClass("has-scroll").children().css({
+				maxHeight: height - 105
+			});
+		}
+		else {
+			sidebar.removeClass("has-scroll").children().css({
+				maxHeight: height - 105
+			});
+		}
 
     } 
     heightSidebar();
