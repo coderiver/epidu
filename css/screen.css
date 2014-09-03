@@ -164,6 +164,8 @@ a:hover { color: #026073; }
 
 .col_385 { width: 385px; }
 
+.col_540 { width: 540px; }
+
 .col { float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-right: 5px; }
 .col__title { font-size: 13px; font-family: "roboto-bold", Arial, sans-serif; color: #606060; }
 
@@ -1228,6 +1230,7 @@ a:hover { color: #026073; }
 .options__in:after { content: " "; display: table; clear: both; }
 .options__in:first-child { border: 0; padding-top: 22px; }
 .options .col { padding-right: 30px; }
+.options .col_540 { padding-right: 0; }
 .options .checkbox { display: block; margin: 0 0 12px; }
 .options .checkbox_inline { display: inline-block; vertical-align: middle; margin: 0 20px 0 0; }
 
