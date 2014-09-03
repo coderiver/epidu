@@ -243,14 +243,12 @@
 	width: 100%
 	border: 1px solid #dcdcdc
 	background: #fff
+	table-layout: fixed
 	font-size: 13px
 	color: $black
 	+fr
-	-webkit-transition: box-shadow .2s linear, border .2s linear
-	-moz-transition: box-shadow .2s linear, border .2s linear
-	-ms-transition: box-shadow .2s linear, border .2s linear
-	-o-transition: box-shadow .2s linear, border .2s linear
-	transition: box-shadow .2s linear, border .2s linear
+	word-break: break-all
+	+transition(box-shadow .2s, border .2s)
 	border-radius: 5px 
 	&:hover
 		z-index: 2
@@ -283,12 +281,18 @@
 		position: relative
 		float: left
 		margin-right: 13px
+		height: 115px
+		overflow: hidden
 		img
 			display: block
+			max-width: 100%
+			max-height: 100%
 			border-radius: 5px 
 	&__main
 		overflow: hidden
 		padding-top: 6px
+		+box
+		height: 115px
 	&__head	
 		+clr
 		.rating
@@ -310,6 +314,8 @@
 		width: 17.5%
 		+box
 		ul
+			max-height: 115px
+			overflow: hidden
 			li
 				&:nth-child(2)
 					margin: 10px 0 

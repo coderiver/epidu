@@ -411,7 +411,21 @@ head.ready(function() {
 				      receive: function( event, ui ) {
 				      	$(this).parent().find(".js-grid-message").hide();
 				      }
-				    });
+				});
+				if ($('.js-rating').length > 0) {
+					$('.js-rating').each(function(){
+						$(this).raty({
+							width: 150,
+							hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
+							starOff: 'img/star.png',
+							starOn : 'img/star-act.png',
+							score: function() {
+								return $(this).attr('data-score');
+							}
+						});
+					});
+						
+				} 
             }
 
         });  
