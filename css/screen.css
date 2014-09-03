@@ -51,7 +51,7 @@ a:hover { color: #026073; }
 
 .is-visible { display: inherit; }
 
-.out { position: relative; margin: 0 0 -151px; min-height: 100%; height: auto !important; height: 100%; }
+.out { position: relative; margin: 0 0 -151px; min-height: 100%; height: auto !important; height: 100%; overflow: hidden; }
 
 .push { clear: both; height: 151px; }
 
@@ -108,7 +108,7 @@ a:hover { color: #026073; }
 .header__lang-link span { border-bottom: 1px dotted; }
 .header__lang-link .fa { margin-left: 16px; }
 
-.footer { position: relative; z-index: 2; border-top: 1px solid #d8d8d8; background: #f4f4f4; text-shadow: 0 1px 0 white; min-height: 150px; overflow: hidden; }
+.footer { position: relative; z-index: 3; border-top: 1px solid #d8d8d8; background: #f4f4f4; text-shadow: 0 1px 0 white; min-height: 150px; overflow: hidden; }
 .footer .l-container { padding: 32px 25px 35px; *zoom: 1; }
 .footer .l-container:after { content: " "; display: table; clear: both; }
 
@@ -525,6 +525,7 @@ a:hover { color: #026073; }
 .list-bullet li:before { content: ""; position: absolute; left: 14px; top: 5px; width: 5px; height: 5px; background: #929292; border-radius: 50%; text-shadow: 0 1px 0 white; }
 
 .sidebar { position: relative; padding: 15px 0; z-index: 2; width: 334px; box-shadow: inset 0 1px 0 0 white; background: #f4f4f4; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sidebar:after { content: ""; position: absolute; height: 1000px; left: -1px; right: -1px; bottom: -1000px; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; background: #f4f4f4; }
 .sidebar.has-scroll { padding-right: 10px; }
 .sidebar.disable-scroll .sidebar__in { overflow-x: visible; overflow-y: visible; }
 .sidebar .window { top: 173px; left: 10px; right: 10px; margin: 0; width: auto; }

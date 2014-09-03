@@ -6,6 +6,16 @@
 	box-shadow: inset 0 1px 0 0 #fff 
 	background: $light
 	+box
+	&:after
+		content: ""
+		position: absolute
+		height: 1000px
+		left: -1px
+		right: -1px 
+		bottom: -1000px
+		border-left: 1px solid #d8d8d8 
+		border-right: 1px solid #d8d8d8 
+		background: $light
 	&.has-scroll
 		padding-right: 10px
 	&.disable-scroll
