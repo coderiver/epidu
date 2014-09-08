@@ -550,6 +550,7 @@ a:hover { color: #026073; }
 .sidebar .checkbox { display: block; margin: 0 0 12px; }
 .sidebar .checkbox span { padding-left: 8px; }
 .sidebar .checkbox span, .sidebar .checkbox input { vertical-align: baseline; }
+.sidebar .checkbox.sidebar__col { float: none; display: inline-block; vertical-align: top; margin: 0 5% 12px 2%; }
 .sidebar .rating { color: #555555; }
 .sidebar .object__badge, .sidebar .object .fa-times-circle, .sidebar .object .counter { display: none; }
 
