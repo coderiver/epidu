@@ -663,15 +663,15 @@ head.ready(function() {
 
     function heightSidebar() {
 
-    	var height = $(window).height() - filter.outerHeight() - footer.outerHeight()-3;
+    	var height = $(window).height() - footer.outerHeight() - header.outerHeight();
 		if (sidebar.outerHeight() > height ) {
 			sidebar.addClass("has-scroll").children().css({
-				maxHeight: height - 105
+				height: height - 30
 			});
 		}
 		else {
 			sidebar.removeClass("has-scroll").children().css({
-				maxHeight: height - 105
+				height: height - 30
 			});
 		}
 
