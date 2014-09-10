@@ -665,12 +665,12 @@ head.ready(function() {
 
     	var height = $(window).height() - footer.outerHeight() - header.outerHeight();
 		if (sidebar.outerHeight() > height ) {
-			sidebar.addClass("has-scroll").children().css({
+			sidebar.addClass("has-scroll").find(".sidebar__in").css({
 				height: height - 30
 			});
 		}
 		else {
-			sidebar.removeClass("has-scroll").children().css({
+			sidebar.removeClass("has-scroll").find(".sidebar__in").css({
 				height: height - 30
 			});
 		}
