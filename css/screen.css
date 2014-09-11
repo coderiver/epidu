@@ -547,7 +547,7 @@ a:hover { color: #026073; }
 .sidebar__add { padding: 5px 7px; }
 .sidebar__add .pseudolink { display: inline-block; margin-bottom: 20px; }
 .sidebar .ui-multiselect + .sidebar__opt { margin-top: 20px; }
-.sidebar .checkbox { display: block; margin: 0 0 12px; }
+.sidebar .checkbox { display: block; float: none; margin: 0 0 12px; }
 .sidebar .checkbox span { padding-left: 8px; }
 .sidebar .checkbox span, .sidebar .checkbox input { vertical-align: baseline; }
 .sidebar .checkbox.sidebar__col { float: none; display: inline-block; vertical-align: top; margin: 0 5% 12px 2%; }
