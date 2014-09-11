@@ -400,7 +400,7 @@ a:hover { color: #026073; }
 .object__head { *zoom: 1; }
 .object__head:after { content: " "; display: table; clear: both; }
 .object__head .rating { float: right; }
-.object__title { float: left; font-size: 16px; color: #00a6c9; }
+.object__title { float: left; max-width: 210px; font-size: 16px; color: #00a6c9; }
 .object__meta { margin: 7px 0; color: #888888; font-family: "roboto-italic", Arial, sans-serif; }
 .object__middle { display: table-cell; vertical-align: top; border-left: 1px solid gainsboro; padding: 15px 0 5px 22px; width: 17.5%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .object__middle ul { max-height: 115px; overflow: hidden; }
