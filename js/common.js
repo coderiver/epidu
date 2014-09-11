@@ -630,10 +630,13 @@ head.ready(function() {
 	var footer = $(".footer");
 	var sidebar = $(".js-sidebar");
 	var sidebar_parent = $(".js-sidebar").parent();
-	var headerHeight = header.outerHeight();
-	var footerHeight = footer.outerHeight();
 	var filter = $(".js-filter");
 	var body = $("body");
+	var headerHeight = header.outerHeight();
+	var footerHeight = footer.outerHeight();
+	var sidebarHeight = sidebar.outerHeight();
+	var filterHeight = filter.outerHeight();
+	
     function fixedFilter() {
     	var filterHeight = filter.outerHeight();
     	if ($(document).scrollTop() > headerHeight) {
@@ -649,11 +652,11 @@ head.ready(function() {
     		});
     	}
 
-    	if ((sidebar.outerHeight() + filter.outerHeight() + $(document).scrollTop()) >= footer.offset().top) {
+    	if ((sidebarHeight + filterHeight + $(document).scrollTop()) >= footer.offset().top) {
    
     		body.addClass("has-abs-sidebar");
     		sidebar.css({
-    			top: footer.offset().top - sidebar.outerHeight()
+    			top: footer.offset().top - sidebarHeight
     		});
     	}
     	else {
@@ -661,12 +664,32 @@ head.ready(function() {
     	}
     }
 
-    function heightSidebar() {
+  //   function heightSidebar() {
 
-    	var height = $(window).height() - footer.outerHeight() - header.outerHeight();
+  //   	var height = $(window).height() - footer.outerHeight() - header.outerHeight();
+		// if (sidebar.outerHeight() > height ) {
+		// 	sidebar.addClass("has-scroll").find(".sidebar__in").css({
+		// 		height: height - 30
+		// 	});
+		// }
+		// else {
+		// 	sidebar.removeClass("has-scroll").find(".sidebar__in").css({
+		// 		height: height - 30
+		// 	});
+		// }
+
+  //   } 
+  //   heightSidebar();
+  	function heightSidebar() {
+    	if (filter.length > 0) {
+			var height = $(window).height() - footerHeight
+    	}
+    	else {
+			var height = $(window).height() - footerHeight + headerHeight
+    	}
 		if (sidebar.outerHeight() > height ) {
 			sidebar.addClass("has-scroll").find(".sidebar__in").css({
-				height: height - 30
+				height: height -30
 			});
 		}
 		else {
