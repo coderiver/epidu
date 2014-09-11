@@ -387,7 +387,7 @@ a:hover { color: #026073; }
 .object-wrap + .btn-add { position: relative; top: -38px; }
 .object-wrap .object { margin-bottom: 9px; }
 
-.object { position: relative; left: 0; margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; table-layout: fixed; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; word-break: break-all; -moz-transition: box-shadow 0.2s, border 0.2s; -o-transition: box-shadow 0.2s, border 0.2s; -webkit-transition: box-shadow 0.2s, border 0.2s; transition: box-shadow 0.2s, border 0.2s; border-radius: 5px; }
+.object { position: relative; left: 0; margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; table-layout: fixed; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; -moz-transition: box-shadow 0.2s, border 0.2s; -o-transition: box-shadow 0.2s, border 0.2s; -webkit-transition: box-shadow 0.2s, border 0.2s; transition: box-shadow 0.2s, border 0.2s; border-radius: 5px; }
 .object:hover { z-index: 2; border-color: #23d7fd; box-shadow: 0 0 7px rgba(0, 166, 201, 0.5); }
 .object.is-inactive .object__left, .object.is-inactive .object__middle { opacity: 0.5; }
 .object.is-remove-ready { opacity: 0; left: -500px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
