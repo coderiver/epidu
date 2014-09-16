@@ -208,17 +208,16 @@
 	text-align: center
 	line-height: 144px
 	overflow: hidden
-	+tr
 	&:nth-child(5n+5)
 		margin-right: 0
 	&:hover
-		z-index: 2
-		box-shadow: 0 0 9px rgba(#000,.5) 
+		a
+			z-index: 2
+			box-shadow: 0 0 9px rgba(#000,.5) 
 		&:after,
 		.fa
 			visibility: visible
 			opacity: 1
-			
 	&:after,
 	.fa
 		position: absolute
@@ -232,6 +231,7 @@
 		+arr(58,58,rgba(#fff,.8),tr) 
 	&.is-remove-ready
 		left: -100px
+		+tr
 	.fa
 		right: 8px
 		top: 8px
@@ -242,5 +242,8 @@
 		cursor: pointer
 		&:hover
 			color: $red_d 
+	a
+		display: block
+		+tr
 	img
 		display: block
