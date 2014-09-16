@@ -533,6 +533,14 @@ a:hover { color: #026073; }
 .list-bullet li { position: relative; margin-bottom: 5px; padding-left: 30px; }
 .list-bullet li:before { content: ""; position: absolute; left: 14px; top: 5px; width: 5px; height: 5px; background: #929292; border-radius: 50%; text-shadow: 0 1px 0 white; }
 
+.has-fixed-sidebar .sidebar_fixed { position: fixed; left: 50%; top: 0; width: 334px; }
+.has-fixed-sidebar .has-left-sidebar .sidebar_fixed { margin-left: -499px; }
+.has-fixed-sidebar .has-right-sidebar .sidebar_fixed { margin-left: 165px; }
+.has-fixed-sidebar .l-cols_width.has-right-sidebar .sidebar_fixed { margin-left: 323px; }
+@media only screen and (max-width: 1400px) { .has-fixed-sidebar .l-cols_width.has-right-sidebar .sidebar_fixed { margin-left: 165px; } }
+
+.has-abs-sidebar .has-left-sidebar .sidebar_fixed, .has-abs-sidebar .has-right-sidebar .sidebar_fixed { position: absolute; z-index: 1; }
+
 .sidebar { position: relative; padding: 15px 0; z-index: 2; width: 334px; box-shadow: inset 0 1px 0 0 white; background: #f4f4f4; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .sidebar:after { content: ""; position: absolute; height: 1000px; left: -1px; right: -1px; bottom: -1000px; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; background: #f4f4f4; }
 .sidebar.has-scroll { padding-right: 10px; }
@@ -1297,16 +1305,6 @@ a:hover { color: #026073; }
 .img .fa:hover { color: #ad2d00; }
 .img a { display: block; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .img img { display: block; }
-
-.has-fixed-filter .header { margin-bottom: 148px; }
-.has-fixed-filter .filter { position: fixed; left: 0; top: 0; right: 0; }
-.has-fixed-filter .has-left-sidebar .sidebar_fixed { position: fixed; left: 50%; margin-left: -499px; width: 334px; }
-.has-fixed-filter .has-right-sidebar .sidebar_fixed { position: fixed; left: 50%; margin-left: 165px; width: 334px; }
-.has-fixed-filter .l-cols_width.has-right-sidebar .sidebar_fixed { margin-left: 323px; }
-@media only screen and (max-width: 1400px) { .has-fixed-filter .l-cols_width.has-right-sidebar .sidebar_fixed { margin-left: 165px; } }
-.has-fixed-filter.has-small-filter .header { margin-bottom: 65px; }
-
-.has-abs-sidebar .has-left-sidebar .sidebar_fixed, .has-abs-sidebar .has-right-sidebar .sidebar_fixed { position: absolute; z-index: 1; }
 
 .filter { position: relative; z-index: 4; background: #f4f4f4 url(../img/bg.jpg) 0 0 repeat; border-bottom: 1px solid #bdbdbd; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
 .filter__result { display: table; width: 100%; color: #606060; font-size: 13px; display: none; }

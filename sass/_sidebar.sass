@@ -1,3 +1,30 @@
+.has-fixed-sidebar
+	.sidebar_fixed
+		position: fixed
+		left: 50%
+		top: 0
+		width: 334px
+	.has-left-sidebar
+		.sidebar_fixed
+			margin-left: -499px
+	.has-right-sidebar
+		.sidebar_fixed
+			margin-left: 165px
+			
+	.l-cols_width
+		&.has-right-sidebar
+			.sidebar_fixed
+				margin-left: 323px
+			+r(w1400)  
+				.sidebar_fixed
+					margin-left: 165px
+.has-abs-sidebar	
+	.has-left-sidebar,
+	.has-right-sidebar
+		.sidebar_fixed
+			position: absolute
+			z-index: 1
+			
 .sidebar
 	position: relative
 	padding: 15px 0 

@@ -629,28 +629,35 @@ head.ready(function() {
 	var header = $(".header");
 	var footer = $(".footer");
 	var sidebar = $(".js-sidebar");
-	var sidebar_parent = $(".js-sidebar").parent();
+	var sidebar_parent = $(".js-sidebar").parents(".l-cols");
 	var filter = $(".js-filter");
 	var body = $("body");
 	var headerHeight = header.outerHeight();
 	var footerHeight = footer.outerHeight();
 	var sidebarHeight = sidebar.outerHeight();
 	var filterHeight = filter.outerHeight();
-	
-    function fixedFilter() {
-    	var filterHeight = filter.outerHeight();
-    	if ($(document).scrollTop() > headerHeight) {
-    		body.addClass("has-fixed-filter");
-    		sidebar.css({
-    			top: filterHeight
-    		});
+	var top = sidebar_parent.offset().top;
+    function fixedSidebar() {
+    	console.log(top+"-"+$(document).scrollTop());
+    	if ($(document).scrollTop() >= top) {
+    		body.addClass("has-fixed-sidebar");
     	}
     	else {
-    		body.removeClass("has-fixed-filter");
-    		sidebar.css({
-    			top: 0
-    		});
+    		body.removeClass("has-fixed-sidebar");
     	}
+    	// var filterHeight = filter.outerHeight();
+    	// if ($(document).scrollTop() > headerHeight) {
+    	// 	body.addClass("has-fixed-filter");
+    	// 	sidebar.css({
+    	// 		top: filterHeight
+    	// 	});
+    	// }
+    	// else {
+    	// 	body.removeClass("has-fixed-filter");
+    	// 	sidebar.css({
+    	// 		top: 0
+    	// 	});
+    	// }
 
     	// if ((sidebarHeight + filterHeight + $(document).scrollTop()) >= footer.offset().top) {
    
@@ -664,22 +671,6 @@ head.ready(function() {
     	// }
     }
 
-  //   function heightSidebar() {
-
-  //   	var height = $(window).height() - footer.outerHeight() - header.outerHeight();
-		// if (sidebar.outerHeight() > height ) {
-		// 	sidebar.addClass("has-scroll").find(".sidebar__in").css({
-		// 		height: height - 30
-		// 	});
-		// }
-		// else {
-		// 	sidebar.removeClass("has-scroll").find(".sidebar__in").css({
-		// 		height: height - 30
-		// 	});
-		// }
-
-  //   } 
-  //   heightSidebar();
   	function heightSidebar() {
     	if (filter.length > 0) {
 			var height = $(window).height() - footerHeight
@@ -689,12 +680,12 @@ head.ready(function() {
     	}
 		if (sidebar.outerHeight() > height ) {
 			sidebar.addClass("has-scroll").find(".sidebar__in").css({
-				height: height -30
+				height: height - 25
 			});
 		}
 		else {
 			sidebar.removeClass("has-scroll").find(".sidebar__in").css({
-				height: height - 30
+				height: height -  25
 			});
 		}
 
@@ -706,18 +697,18 @@ head.ready(function() {
 
         return false;
     });
-    if (filter.length>0) {
-    	fixedFilter();
+    if (sidebar.length>0) {
+    	fixedSidebar();
     }
     
     $(window).scroll(function() {
-    	if (filter.length>0) {
-    		fixedFilter();
+    	if (sidebar.length>0) {
+    		fixedSidebar();
     	}
     });
 	$(window).resize(function() {
-    	if (filter.length>0) {
-    		fixedFilter();
+    	if (sidebar.length>0) {
+    		fixedSidebar();
     	}
     });
 
