@@ -652,16 +652,16 @@ head.ready(function() {
     		});
     	}
 
-    	if ((sidebarHeight + filterHeight + $(document).scrollTop()) >= footer.offset().top) {
+    	// if ((sidebarHeight + filterHeight + $(document).scrollTop()) >= footer.offset().top) {
    
-    		body.addClass("has-abs-sidebar");
-    		sidebar.css({
-    			top: footer.offset().top - sidebarHeight
-    		});
-    	}
-    	else {
-    		body.removeClass("has-abs-sidebar");
-    	}
+    	// 	body.addClass("has-abs-sidebar");
+    	// 	sidebar.css({
+    	// 		top: footer.offset().top - sidebarHeight
+    	// 	});
+    	// }
+    	// else {
+    	// 	body.removeClass("has-abs-sidebar");
+    	// }
     }
 
   //   function heightSidebar() {

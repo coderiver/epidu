@@ -388,7 +388,7 @@ a:hover { color: #026073; }
 .object-wrap .object { margin-bottom: 9px; }
 
 .object { position: relative; left: 0; margin: 6px 0; display: table; width: 100%; border: 1px solid gainsboro; background: white; table-layout: fixed; font-size: 13px; color: #232323; font-family: "roboto-regular", Arial, sans-serif; -moz-transition: box-shadow 0.2s, border 0.2s; -o-transition: box-shadow 0.2s, border 0.2s; -webkit-transition: box-shadow 0.2s, border 0.2s; transition: box-shadow 0.2s, border 0.2s; border-radius: 5px; }
-.object.is-active { z-index: 2; border-color: #23d7fd; box-shadow: 0 0 7px rgba(0, 166, 201, 0.5); }
+.object:hover, .object.is-active { z-index: 2; border-color: #23d7fd; box-shadow: 0 0 7px rgba(0, 166, 201, 0.5); }
 .object.is-inactive .object__left, .object.is-inactive .object__middle { opacity: 0.5; }
 .object.is-remove-ready { opacity: 0; left: -500px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .object .counter { position: absolute; right: 5px; top: 5px; box-shadow: none; }
@@ -948,7 +948,6 @@ a:hover { color: #026073; }
 .download-file .user-avatar { -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; margin: 0 auto; }
 
 .ui-multiselect { position: relative; overflow: hidden; display: block; padding: 0 30px 0 20px; width: 100% !important; margin: 0; height: 48px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; font-family: "roboto-regular", Arial, sans-serif; border-radius: 7px; background: white; text-align: left; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; box-shadow: 0 1px 0 white, inset 0 1px 5px rgba(0, 0, 0, 0.5); background-image: -moz-linear-gradient(bottom, rgba(235, 235, 235, 0.41) 0%, rgba(255, 255, 255, 0.41) 100%); background-image: -webkit-linear-gradient(bottom, rgba(235, 235, 235, 0.41) 0%, rgba(255, 255, 255, 0.41) 100%); background-image: linear-gradient(to top, rgba(235, 235, 235, 0.41) 0%, rgba(255, 255, 255, 0.41) 100%); }
-.ui-multiselect span { color: gray; }
 .ui-multiselect:after { content: ""; position: absolute; top: 20px; right: 20px; }
 .ui-multiselect.has-placeholder span { color: #999999; }
 .ui-multiselect.has-value span { color: #232323; }
