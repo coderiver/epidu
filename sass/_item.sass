@@ -1,18 +1,33 @@
 .item-head
-	display: table
-	width: 100%
 	+box
 	margin: 0 0 30px 
+	+clr
 	&__col
-		display: table-cell
-		vertical-align: top
+		float: right
+		width: 40%
 		padding: 0 10px 0 6px 
-		width: 50%
 		+box
-		&:last-child
-			text-align: right
+		+clr
+		text-align: right
+		&:first-child
+			float: left
+			width: 60%
+			text-align: left
 		.is-big-btn
 			padding: 14px 44px 15px 
+	&__main
+		overflow: hidden
+	&__img
+		float: right
+		margin-left: 20px
+		overflow: hidden
+		width: 80px
+		height: 80px
+		overflow: hidden
+		img
+			max-width: 100%
+			max-height: 100%
+			border-radius: 5px 
 	&__title
 		margin-bottom: 3px
 		font-size: 22px
@@ -25,7 +40,6 @@
 			+fb 
 	&__meta
 		margin: 19px 0 0 
-		max-width: 73%
 		+fi
 		font-size: 13px
 		color: #888 

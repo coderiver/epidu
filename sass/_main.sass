@@ -3,6 +3,9 @@
 	height: 622px
 	overflow: hidden
 	border-bottom: 1px solid #fff 
+	.fotorama
+		position: relative
+		z-index: 1
 	.fotorama__arr
 		position: absolute
 		left: 50%
@@ -134,22 +137,31 @@
 	background-color: $light 
 	background-position: 50% 50%
 	background-repeat: no-repeat  
-	box-shadow: 0 1px 10px rgba(0,0,0,.3) 
+	box-shadow: 0 1px 10px rgba(0,0,0,.3)
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	left: 0
+	// 	right: 0
+	// 	height: 53px
+	// 	top: 152px
+	// 	background: $green   
 	&:hover
 		box-shadow: none 
 	&:nth-child(3n+3)
 		margin-right: 0
 	&__title
-		display: block
-		margin-top: 152px
+		display: inline-block
+		width: 100%
+		margin-top: 154px
 		height: 53px
 		line-height: 47px
 		text-align: center
 		color: #fff
 		font-size: 16px
 		+fb
-		background: $green 
-		text-align: center
+		background: url(../img/green.png) 50% 0 no-repeat
+		
 		span
 			display: inline-block
 			vertical-align: middle
@@ -214,6 +226,14 @@
 	.input-wrap__title
 		padding: 0 10px 0 20px 
 		width: 108px
+.android
+	.search__left
+		.input-wrap__title
+			width: 103px
+	.input-date
+		width: 153px
+	.input-time
+		width: 103px
 .search__right
 	float: right
 	width: 400px
