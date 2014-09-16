@@ -839,6 +839,6 @@ head.ready(function() {
         });
     }
     accordion();
-    //$(".fotorama__active .slider__box").animate({ top: '100px' }, 600, 'easeOutBounce', function () {})
+
 
 });
