@@ -121,20 +121,21 @@
 	border-radius: 34px 
 	background: #e6e6e6 
 	box-shadow: 0 1px 0 #fff, inset 0 1px 4px rgba(0,0,0,.5)
-	
+.android
+	.categ
+		background: none
 .categ
 	float: left
-	position: relative
 	margin: 0 40px 40px 0 
 	height: 233px
 	width: 233px
 	overflow: hidden
-	border: 5px solid #fff
 	border-radius: 50% 
 	vertical-align: top
 	+tr
+	border: 5px solid #fff
 	+box
-	background-color: $light 
+	background: $light 
 	background-position: 50% 50%
 	background-repeat: no-repeat  
 	box-shadow: 0 1px 10px rgba(0,0,0,.3)
@@ -150,6 +151,7 @@
 		box-shadow: none 
 	&:nth-child(3n+3)
 		margin-right: 0
+		
 	&__title
 		display: inline-block
 		width: 100%

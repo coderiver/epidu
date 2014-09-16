@@ -288,7 +288,9 @@ a:hover { color: #026073; }
 
 .categ-wrap__title { display: inline-block; margin: -34px 0 22px; padding: 0 30px; height: 68px; line-height: 68px; font-size: 16px; font-family: "roboto-bold", Arial, sans-serif; color: #606060; text-shadow: 0 1px 0 white; border-radius: 34px; background: #e6e6e6; box-shadow: 0 1px 0 white, inset 0 1px 4px rgba(0, 0, 0, 0.5); }
 
-.categ { float: left; position: relative; margin: 0 40px 40px 0; height: 233px; width: 233px; overflow: hidden; border: 5px solid white; border-radius: 50%; vertical-align: top; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f4f4f4; background-position: 50% 50%; background-repeat: no-repeat; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
+.android .categ { background: none; }
+
+.categ { float: left; margin: 0 40px 40px 0; height: 233px; width: 233px; overflow: hidden; border-radius: 50%; vertical-align: top; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; border: 5px solid white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #f4f4f4; background-position: 50% 50%; background-repeat: no-repeat; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
 .categ:hover { box-shadow: none; }
 .categ:nth-child(3n+3) { margin-right: 0; }
 .categ__title { display: inline-block; width: 100%; margin-top: 154px; height: 53px; line-height: 47px; text-align: center; color: white; font-size: 16px; font-family: "roboto-bold", Arial, sans-serif; background: url(../img/green.png) 50% 0 no-repeat; }
