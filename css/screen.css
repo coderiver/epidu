@@ -1216,6 +1216,13 @@ a:hover { color: #026073; }
 
 .fotorama__nav-wrap { position: absolute; left: 0; right: 0; }
 
+.ie9 .fotorama__arr { opacity: 1; z-index: 20; }
+.ie9 .fotorama__arr--disabled { opacity: 0.5; }
+.ie9 .fotorama__arr--disabled:hover { opacity: 0.5; }
+.ie9 .search_filter .is-big-btn { font-size: 14px; padding: 0; height: 48px; line-height: 48px; }
+.ie9 .search__left { margin-right: 5px; }
+.ie9 .search__reset button:before { position: static; display: inline-block; vertical-align: middle; }
+
 .accord { overflow: hidden; }
 .accord .field_file { margin-bottom: 20px; }
 .accord .field { margin-bottom: 0; }
