@@ -676,8 +676,8 @@ head.ready(function() {
 				height: height -  25
 			});
 		}
-
-		if (($(".js-content").outerHeight() <= body.height()) && $(".js-content").length > 0)  {
+		var heightCol = $(".js-content").outerHeight() + filterHeight + headerHeight;
+		if ((heightCol <= body.height()) && $(".js-content").length > 0)  {
 			if (filter.length > 0) {
 				sidebar.find(".sidebar__in").css({
 					height: body.height() - headerHeight - filterHeight - footerHeight - 30
