@@ -581,24 +581,30 @@ head.ready(function() {
       	$(this).parent().find(".js-grid-message").hide();
       }
     });
-    $(".js-draggable").draggable({
-      connectToSortable: ".js-sortable",
-      helper: "clone",
-      revert: "invalid",
-      start: function( event, ui ) {
-      	var top = $(".js-sidebar .sidebar__in").scrollTop();
-      	$(".js-sidebar").addClass("disable-scroll");
-      	$(".js-sidebar .sidebar__in").css({
-      		marginTop: -top
-      	});
-      },
-      stop: function( event, ui ) {
-      	$(".js-sidebar").removeClass("disable-scroll");
-      	$(".js-sidebar .sidebar__in").css({
-      		marginTop: 0
-      	});
-      }
-    });
+    function dragObject() {
+    	$(".js-draggable").draggable({
+    	connectToSortable: ".js-sortable",
+    	helper: "clone",
+    	revert: "invalid",
+    	start: function( event, ui ) {
+        	var top = $(".js-sidebar .sidebar__in").scrollTop();
+        	$(".js-sidebar").addClass("disable-scroll");
+        	$(".js-sidebar .sidebar__in").css({
+        		marginTop: -top
+        	});
+    	  	
+    	  },
+    	  stop: function( event, ui ) {
+    	  	$(".js-sidebar").removeClass("disable-scroll");
+    	  	$(".js-sidebar .sidebar__in").css({
+    	  		marginTop: 0
+    	  	});
+    	  }
+
+    	});
+    }
+    dragObject();
+	    
     
     $("body").on("click",".js-grid-save",function() {
     	var name = $(this).parents(".js-grid").find(".js-grid-input").val();
@@ -842,5 +848,28 @@ head.ready(function() {
     }
     accordion();
 
+    // $(".js-filter").swipe({
+    // 	tap:function(event, target) {
+    //     	//alert('tap');
+    //     },
+    //     hold:function(event, target) {
+    //     	alert('hold');
+    //     	$(this).addClass("is-active");
+    //     }
+    // });
+	// if ($("html").hasClass("desktop")) {
+		
+	// }
+ //    $(".object").swipe({
+ //    	tap:function(event, target) {
+ //        	//alert('tap');
+ //        },
+ //        hold:function(event, target) {
+ //        	//alert('hold');
+ //        	$(this).addClass("js-draggable");
+ //        	dragObject();
+ //        	return false;
+ //        }
+ //    });
 
 });
