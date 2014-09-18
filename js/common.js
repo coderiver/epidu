@@ -25,6 +25,10 @@ head.ready(function() {
 	});
 
 
+	// ie9 detect
+	if ($("html").hasClass("ie9") || $("html").hasClass("ie8") || $("html").hasClass("ie7")) {
+		alert('Old Browser');
+	}
 
 	// popups
 	$(".js-popup-link").on("click", function(event){
@@ -644,7 +648,10 @@ head.ready(function() {
 	var footerHeight = footer.outerHeight();
 	var sidebarHeight = sidebar.outerHeight();
 	var filterHeight = filter.outerHeight();
-	var top = sidebar_parent.offset().top;
+	if (sidebar_parent.length >0) {
+		var top = sidebar_parent.offset().top;
+	}
+	
     function fixedSidebar() {
     	if ($(document).scrollTop() >= top) {
     		body.addClass("has-fixed-sidebar");
