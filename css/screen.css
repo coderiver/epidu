@@ -121,6 +121,9 @@ a:hover { color: #026073; }
 .footer__soc { font-size: 21px; }
 .footer__soc a { margin-right: 18px; }
 
+.ie .btn-submit { line-height: 1; }
+.ie .search_filter .search__reset button:before { top: 50%; margin-top: -8px; }
+
 .l-cols { display: table; padding: 0; table-layout: fixed; height: 100%; }
 .l-cols.has-not-sidebar .l-col1 { width: 100%; border-right: 0; }
 .l-cols .l-cols-wrap { display: table-row; }
