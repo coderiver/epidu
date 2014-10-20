@@ -255,3 +255,106 @@
 		position: absolute
 		right: 0
 		top: 26px
+		
+.help-box
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	+vertical
+	z-index: 2
+	+clr
+	&__in
+		display: inline-block
+		vertical-align: middle
+		box-shadow: 0 0 0 5px rgba(100,100,100,.6)
+		padding: 35px 0 0
+		width: 1000px
+		font-size: 13px
+		color: $black 
+		+box
+		overflow: hidden
+		border-radius: 13px 
+		background: $light
+		text-align: left
+	&__title
+		margin: 0 0 52px 
+		+fb
+		font-size: 36px
+		text-align: center
+	&__body
+		position: relative
+		padding-bottom: 40px
+	.or-separator
+		position: absolute
+		left: 50%
+		top: -10px
+		bottom: 0
+		width: 0
+		border-left: 1px dashed #c3c3c3
+		span
+			position: absolute
+			top: 95px
+			left: 50%
+			margin-left: -33px
+			width: 65px
+			height: 65px
+			color: #606060
+			line-height: 65px
+			font-size: 16px
+			border-radius: 50% 
+			text-align: center 
+			background: #e6e6e6
+			text-shadow: 0 1px 0 #fff  
+			box-shadow: 0 1px 0 #fff, inset 0 1px 4px rgba(0,0,0,.89)
+
+	&__cols
+		display: table
+		width: 100%
+		table-layout: fixed
+	&__left,
+	&__right
+		display: table-cell
+		vertical-align: top
+		width: 50%
+		+box
+	&__left	
+		padding-right: 57px
+		border-right: 1px  
+		img
+			float: left
+			margin-right: 5px
+	&__right
+		padding-left: 57px
+		img
+			float: right
+			margin: -13px 0 0 35px
+	&__text
+		overflow: hidden
+		line-height: 1.4
+	&__subtitle 
+		margin-bottom: 21px
+		font-size: 20px
+		line-height: 1.3
+	.btn-wrap
+		float: left
+		position: relative
+		width: 50%
+		padding-top: 32px
+		text-align: center
+		.btn-submit,
+		.btn-action
+			min-width: 378px
+	.icon-funny-arr1
+		position: absolute
+		top: -38px
+		left: 237px
+		z-index: 2
+		+s(funny-arr1)
+	.icon-funny-arr2
+		position: absolute
+		top: -38px
+		left: 228px
+		z-index: 2
+		+s(funny-arr2)

@@ -56,133 +56,50 @@
 	<!-- END header -->
 	<!-- BEGIN slider -->
 	<div class="slider">
-		<div class="js-fotorama" data-width="100%" data-height="100%" data-minheight="622px" data-transitionduration="500" data-autoplay="5000">
+		<div class="js-fotorama" data-width="100%" data-height="100%" data-minheight="622px" data-transitionduration="500" data-autoplay="5000" data-arrows="false" data-transition="crossfade">
 			<div class="slider__item">
-				<div class="slider__box">
-					<div class="slider__title">Найдите услуги и место </div>
-					для проведения праздника
-				</div>
 				<div class="slider__img">
 					<img src="img/slide1.jpg" alt="">
 				</div>
 			</div> 
 			<div class="slider__item">
-				<div class="slider__box">
-					<div class="slider__title">Найдите услуги и место </div>
-					для проведения праздника
-				</div>
 				<div class="slider__img">
 					<img src="img/slide2.jpg" alt="">
 				</div>
 			</div> 
 		</div>
-		<div class="search">
-			<div class="wrap">
-				<div class="search__left">
-					<div class="select">
-						<select class="js-select-single" data-placeholder="Категория услуги">
-                            <option value="Курьерские услуги">Курьерские услуги</option>
-                            <option value="Компьютерная помощь">Компьютерная помощь</option>
-                            <option value="Бытовой ремонт">Бытовой ремонт</option>
-                           <option value="Курьерские услуги">Курьерские услуги</option>
-                            <option value="Компьютерная помощь">Компьютерная помощь</option>
-                            <option value="Бытовой ремонт">Бытовой ремонт</option>
-                            <option value="Курьерские услуги">Курьерские услуги</option>
-                            <option value="Компьютерная помощь">Компьютерная помощь</option>
-                            <option value="Бытовой ремонт">Бытовой ремонт</option>
-                        </select>
-					</div>
-				</div>
-				<div class="search__right">
-					<input type="text" class="input" placeholder="Название услуги или места...">
-				</div>
-			</div>
-			<div class="wrap js-date-group">
-				<div class="search__left">
-					<div class="input-wrap">
-						<div class="input-wrap__title">
-							Начало праздника: 
-						</div>
-						<div class="input-wrap__body">
-							<div class="input-date js-date-from">
-								<input type="text" class="input input_date">
-								<i class="fa fa-calendar"></i>
+		<div class="help-box">
+			<div class="help-box__in">
+				<div class="help-box__title">Все для организации вашего праздника</div>
+				<div class="help-box__body">
+					<div class="help-box__cols">
+						<div class="help-box__left">
+							<img src="img/help-img1.png" alt="img">
+							<div class="help-box__text">
+								<div class="help-box__subtitle">Каталог мест и услуг для вашего праздника</div>
+								<p>В подробном каталоге вы найдете лучшие предложение для вашего праздника: места проведения, рестораны, декорирование и многое другое!</p>
 							</div>
-							<div class="input-time">
-								<select class="js-select-single">
-		                            <option value="10:00">10:00</option>
-		                            <option value="12:00">12:00</option>
-		                            <option value="13:00">13:00</option>
-		                            <option value="14:00">14:00</option>
-		                            <option value="15:00">15:00</option>
-		                            <option value="16:00">16:00</option>
-		                            <option value="17:00">17:00</option>
-		                            <option value="18:00">18:00</option>
-		                            <option value="19:00">19:00</option>
-		                            <option value="20:00">20:00</option>
-		                        </select>
+						</div>
+						<div class="help-box__right">
+							<img src="img/help-img2.png" alt="img">
+							<div class="help-box__text">
+								<div class="help-box__subtitle">Конструктор для ваших праздников</div>
+								<p>Создайте праздник, соберите только нужные предложения для вашего праздника в одном месте и Вы ничего не упустите из виду.</p>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="search__right js-check-group">
-					<label class="checkbox js-check">
-						<input type="checkbox">
-						<span>Окончание праздника: </span>
-					</label> 
-					<div class="input-date js-check-hidden is-hidden js-date-to">
-						<input type="text" class="input input_date">
-						<i class="fa fa-calendar"></i>
-					</div>
-					<div class="input-time js-check-hidden is-hidden"> 
-						<select class="js-select-single">
-                            <option value="10:00">10:00</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:00">20:00</option>
-                        </select>
-					</div>
-				</div>
-			</div>
-			<div class="wrap">
-				<div class="search__left">
-					<div class="input-wrap input-wrap_person">
-						<div class="input-wrap__title">
-							Количество человек: 
+					<div class="wrap">
+						<div class="btn-wrap">
+							<i class="icon-funny-arr1"></i>
+							<a href="#" class="btn-submit is-big-btn">Искать места и услуги в каталоге</a>
 						</div>
-						<div class="input-wrap__body">
-							<div class="input-time">
-								<select class="js-select-single">
-		                            <option value="до 10">до 10</option>
-		                            <option value="толпа">толпа</option>
-		                            <option value="вагон">вагон</option>
-		                            <option value="100">100</option>
-		                        </select>
-							</div>
+						<div class="btn-wrap">
+							<i class="icon-funny-arr2"></i>
+							<a href="#" class="btn-action is-big-btn">Организовать свой праздник</a>
 						</div>
 					</div>
+					<div class="or-separator"><span>или</span></div>
 				</div>
-				<div class="search__right">
-					<div class="input-wrap input-wrap_location">
-						<div class="input-wrap__title">
-							Место Проведения: 
-						</div>
-						<div class="input-wrap__body">
-							<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
-							<a class="fa fa-location-arrow" href="#"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="search__submit">
-				<button class="btn-submit is-big-btn" type="submit"><i class="fa fa-search"></i>Искать в каталоге</button>
-				<a href="#">Открыть подробный поиск</a>
 			</div>
 		</div>
 	</div>  
@@ -217,7 +134,7 @@
 	</div>
 	<!-- END promo -->
 	<!-- BEGIN categ-wrap -->
-	<div class="categ-wrap">
+	<!-- <div class="categ-wrap">
 		<div class="categ-wrap__title">Какой праздник вы хотите организовать?</div>
 		<div class="l-container">	
 			<a href="#" class="categ" style="background-image: url(img/cat-wedding.png);">
@@ -258,7 +175,7 @@
 				</span>
 			</a>
 		</div>
-	</div>
+	</div> -->
 	<!-- END categ-wrap -->
 	<div class="push"></div>
 </div>
