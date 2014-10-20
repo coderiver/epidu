@@ -142,14 +142,14 @@
 	padding: 8px 24px 10px
 	min-width: 174px
 	border-radius: 5px
-	color: $gray
+	color: $black
 	font-size: 14px
 	+fm
 	text-align: center
 	font-weight: normal
 	+font-smoothing
 	+box
-	text-shadow: 0 -1px 0 rgba(#fff,.27)
+	text-shadow: 0 1px 0 rgba(#fff,.27)
 	box-shadow: 0 1px 3px rgba(#000, .4), inset 0 1px 0 rgba(255,255,255,.54)
 	background: #fec343
 	+g(#fec343, #ffaf02)
@@ -157,6 +157,7 @@
 	text-decoration: none
 	&:hover
 		background: #ffaf02
+		color: $black
 		+g(#ffaf02,#fec343)
 	&:active
 		position: relative
@@ -165,9 +166,8 @@
 	.fa
 		margin-right: 8px
 	&.is-big-btn
-		font-size: 14px
 		.fa
-			font-size: 14px
+			font-size: 16px
 .is-big-btn
 	padding: 14px 48px 15px
 	font-size: 16px

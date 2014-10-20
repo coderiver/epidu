@@ -206,12 +206,11 @@ a:hover { color: #026073; }
 .btn-simple .fa:first-child { margin-left: 0; }
 .btn-simple.is-disabled { background: #e8e8e8; color: #9f9f9f; pointer-events: none; box-shadow: 0 1px 0 white, inset 0 1px 0 rgba(0, 0, 0, 0.2); }
 
-.btn-search { display: inline-block; padding: 8px 24px 10px; min-width: 174px; border-radius: 5px; color: #555555; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; text-align: center; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.27); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.54); background: #fec343; background-image: -moz-linear-gradient(#fec343, #ffaf02); background-image: -webkit-linear-gradient(#fec343, #ffaf02); background-image: linear-gradient(#fec343, #ffaf02); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; text-decoration: none; }
-.btn-search:hover { background: #ffaf02; background-image: -moz-linear-gradient(#ffaf02, #fec343); background-image: -webkit-linear-gradient(#ffaf02, #fec343); background-image: linear-gradient(#ffaf02, #fec343); }
+.btn-search { display: inline-block; padding: 8px 24px 10px; min-width: 174px; border-radius: 5px; color: #232323; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; text-align: center; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.27); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.54); background: #fec343; background-image: -moz-linear-gradient(#fec343, #ffaf02); background-image: -webkit-linear-gradient(#fec343, #ffaf02); background-image: linear-gradient(#fec343, #ffaf02); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; text-decoration: none; }
+.btn-search:hover { background: #ffaf02; color: #232323; background-image: -moz-linear-gradient(#ffaf02, #fec343); background-image: -webkit-linear-gradient(#ffaf02, #fec343); background-image: linear-gradient(#ffaf02, #fec343); }
 .btn-search:active { position: relative; top: 1px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.44); }
 .btn-search .fa { margin-right: 8px; }
-.btn-search.is-big-btn { font-size: 14px; }
-.btn-search.is-big-btn .fa { font-size: 14px; }
+.btn-search.is-big-btn .fa { font-size: 16px; }
 
 .is-big-btn { padding: 14px 48px 15px; font-size: 16px; font-family: "roboto-bold", Arial, sans-serif; }
 .is-big-btn .fa { margin-right: 12px; font-size: 19px; }
@@ -343,7 +342,7 @@ a:hover { color: #026073; }
 .help-box__title { margin: 0 0 52px; font-family: "roboto-bold", Arial, sans-serif; font-size: 36px; text-align: center; }
 .help-box__body { position: relative; padding-bottom: 40px; }
 .help-box .or-separator { position: absolute; left: 50%; top: -10px; bottom: 0; width: 0; border-left: 1px dashed #c3c3c3; }
-.help-box .or-separator span { position: absolute; top: 95px; left: 50%; margin-left: -33px; width: 65px; height: 65px; color: #606060; line-height: 65px; font-size: 16px; border-radius: 50%; text-align: center; background: #e6e6e6; text-shadow: 0 1px 0 white; box-shadow: 0 1px 0 white, inset 0 1px 4px rgba(0, 0, 0, 0.89); }
+.help-box .or-separator span { position: absolute; top: 95px; left: 50%; margin-left: -33px; width: 65px; height: 65px; color: #606060; line-height: 65px; font-size: 16px; border-radius: 50%; text-align: center; background: #e6e6e6; text-shadow: 0 1px 0 white; box-shadow: 0 1px 0 white, inset 0 1px 4px rgba(0, 0, 0, 0.6); }
 .help-box__cols { display: table; width: 100%; table-layout: fixed; }
 .help-box__left, .help-box__right { display: table-cell; vertical-align: top; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .help-box__left { padding-right: 57px; border-right: 1px; }
