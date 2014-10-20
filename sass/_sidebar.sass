@@ -78,19 +78,21 @@
 		+scrollbar-track-piece     
 			+border-radius(4px) 
 	&__item
-		position: relative
+		//position: relative
 		border-top: 1px solid $border
 		padding: 15px 10px 7px
 		&:first-child
 			border-top: 0
 			padding-top: 0
-		
+		.btn-search
+			margin: 10px 0
 	&__filter
 		position: absolute
 		display: none
 		left: 0
-		right: 0 
-		top: 70px
+		right: 20px 
+		top: 85px
+		bottom: 0
 		z-index: 11
 		padding-top: 10px
 		background: $light 
