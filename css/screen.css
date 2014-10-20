@@ -254,6 +254,13 @@ a:hover { color: #026073; }
 
 .list_blue li:before { color: #00a6c9; }
 
+.tip { position: absolute; margin-top: -5px; padding-top: 10px; display: none; z-index: 100; width: 300px; }
+.tip__in { padding: 20px 25px; position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; color: #313131; font-family: "roboto-regular", Arial, sans-serif; background: #ffefcd; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.24); }
+.tip__in:before { content: ""; position: absolute; left: 50%; top: -10px; margin-left: -5px; width: 0px; height: 0px; border-style: solid; border-width: 0 5.5px 10px 5.5px; border-color: transparent transparent #ffefcd transparent; }
+.tip .fa { float: left; margin-right: 25px; font-size: 42px; }
+.tip__title { overflow: hidden; font-family: "roboto-medium", Arial, sans-serif; font-size: 15px; }
+.tip__content { padding-top: 12px; }
+
 .slider { position: relative; height: 622px; overflow: hidden; border-bottom: 1px solid white; }
 .slider .fotorama { position: relative; z-index: 1; }
 .slider .fotorama__arr { position: absolute; left: 50%; top: 358px; opacity: 0.65; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
