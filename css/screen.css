@@ -584,7 +584,7 @@ a:hover { color: #026073; }
 .sidebar.has-width-scroll { padding-right: 5px; }
 .sidebar.has-width-scroll .sidebar__in { padding: 0 25px; }
 .sidebar.has-width-scroll .sidebar__item { padding: 15px 0px 7px; }
-.sidebar.disable-scroll .sidebar__in { overflow-x: visible; overflow-y: visible; }
+.sidebar.disable-scroll .sidebar__in, .sidebar.has-open-filter .sidebar__in { overflow-x: visible; overflow-y: visible; }
 .sidebar .window { top: 173px; left: 10px; right: 10px; margin: 0; width: auto; }
 .sidebar .window .to-center { margin: 15px 0 4px; }
 .sidebar__in { overflow-y: auto; overflow-x: hidden; }

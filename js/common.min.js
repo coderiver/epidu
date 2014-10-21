@@ -11,7 +11,8 @@ head.ready(function() {
 		$(".js-drop-list").hide();
 		//$(".js-item-popup").fadeOut(200);
 		$(".js-window").fadeOut(200);
-		$(".js-sidebar-filter").slideUp(200);
+		$(".js-sidebar-filter").hide();
+		$(".js-sidebar").removeClass("has-open-filter");
 		$(".js-grid").removeClass("has-open-window");
 	});
 
@@ -585,7 +586,7 @@ head.ready(function() {
 	});
 	$(".js-show-filter").on("click",function() {
 		$(".js-sidebar-filter").slideDown(200)
-		$(this).parents(".js-sidebar").addClass("disable-scroll");
+		$(this).parents(".js-sidebar").addClass("has-open-filter");
 		return false;
 	})
 	$(".js-sidebar-filter").on("click",function(event) {
