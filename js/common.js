@@ -585,7 +585,7 @@ head.ready(function() {
 	});
 	$(".js-show-filter").on("click",function() {
 		$(".js-sidebar-filter").slideDown(200)
-		//$(this).addClass("is-disabled");
+		$(this).parents(".js-sidebar").addClass("disable-scroll");
 		return false;
 	})
 	$(".js-sidebar-filter").on("click",function(event) {

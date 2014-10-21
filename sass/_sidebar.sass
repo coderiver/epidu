@@ -90,13 +90,24 @@
 		position: absolute
 		display: none
 		left: 0
-		right: 20px 
+		right: 5px 
 		top: 85px
 		bottom: 0
 		z-index: 11
-		padding-top: 10px
+		padding: 10px 0
 		background: $light 
 		border-bottom: 1px solid $border 
+		overflow-y: auto
+		+scrollbar
+			width: 6px
+			height: 6px
+			+border-radius(4px)
+			background: #d1d1d1
+		+scrollbar-thumb
+			background: $blue_d
+			+border-radius(4px)
+		+scrollbar-track-piece     
+			+border-radius(4px) 
 		.to-center
 			padding: 19px 0 28px 
 	&__opt
