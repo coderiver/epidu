@@ -120,6 +120,7 @@ a
 .header__right
 	float: right
 	width: 645px
+	text-align: right
 	+clr
 	.btn-group
 		margin-top: 14px
@@ -148,7 +149,8 @@ a
 		+ts
 .header__enter 
 	position: relative
-	float: left
+	display: inline-block
+	vertical-align: middle
 	border-right: 1px solid $border 
 	padding: 0 28px
 	height: 78px
@@ -226,7 +228,8 @@ a
 		right: -1px
 .header__lang
 	position: relative
-	float: left
+	display: inline-block
+	vertical-align: middle
 	.dropdown
 		right: 5px
 		&:before

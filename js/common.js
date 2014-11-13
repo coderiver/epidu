@@ -233,6 +233,10 @@ head.ready(function() {
 	    // }
     });
 
+    $(".js-date").parent().find(".fa").on("click",function(){
+		$(this).parent().find(".input").focus();
+	});
+
 	//rating
 	if ($('.js-rating').length > 0) {
 		$('.js-rating').each(function(){
