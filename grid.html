@@ -20,9 +20,12 @@
 					<a href="#"></a>
 					<span>организуй свой праздник</span>
 				</div>
-				<a href="#" class="btn-action is-big-btn">Организовать праздник</a>
 			</div>
 			<div class="header__right">
+				<div class="btn-group">
+					<a href="#" class="btn-submit is-big-btn">Каталог</a>
+					<a href="#" class="btn-submit is-big-btn is-active">Праздник</a>
+				</div>
 				<div class="header__enter js-drop">
 					<ul class="header__enter-links">
 						<li><a href="#" class="js-drop-link"><span>Арсений Вокзальный</span><i class="fa fa-caret-down"></i></a></li>
@@ -81,136 +84,35 @@
 		</div>
 	</header>
 	<!-- END header -->
-	<!-- filter -->
-	<div class="filter js-filter">
-		<div class="l-container l-container_small">
-			<div class="search search_filter js-filter-search">
-				<div class="wrap js-date-group">
-					<div class="search__left">
-						<div class="input-wrap">
-							<div class="input-wrap__title">
-								Начало праздника: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-date js-date-from">
-									<input type="text" class="input input_date">
-									<i class="fa fa-calendar"></i>
-								</div>
-								<div class="input-time">
-									<select class="js-select-single">
-			                            <option value="10:00">10:00</option>
-			                            <option value="12:00">12:00</option>
-			                            <option value="13:00">13:00</option>
-			                            <option value="14:00">14:00</option>
-			                            <option value="15:00">15:00</option>
-			                            <option value="16:00">16:00</option>
-			                            <option value="17:00">17:00</option>
-			                            <option value="18:00">18:00</option>
-			                            <option value="19:00">19:00</option>
-			                            <option value="20:00">20:00</option>
-			                        </select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="search__right js-check-group">
-						<label class="checkbox js-check">
-							<input type="checkbox">
-							<span>Окончание праздника: </span>
-						</label> 
-						<div class="input-date js-check-hidden is-hidden js-date-to">
-							<input type="text" class="input input_date">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<div class="input-time js-check-hidden is-hidden"> 
-							<select class="js-select-single">
-	                            <option value="10:00">10:00</option>
-	                            <option value="12:00">12:00</option>
-	                            <option value="13:00">13:00</option>
-	                            <option value="14:00">14:00</option>
-	                            <option value="15:00">15:00</option>
-	                            <option value="16:00">16:00</option>
-	                            <option value="17:00">17:00</option>
-	                            <option value="18:00">18:00</option>
-	                            <option value="19:00">19:00</option>
-	                            <option value="20:00">20:00</option>
-	                        </select>
-						</div>
-						<button class="btn-submit is-big-btn" type="submit">Применить </button>
-					</div>
-				</div>
-				<div class="wrap">
-					<div class="search__left">
-						<div class="input-wrap input-wrap_person">
-							<div class="input-wrap__title">
-								Количество человек: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-time">
-									<select class="js-select-single">
-			                            <option value="до 10">до 10</option>
-			                            <option value="толпа">толпа</option>
-			                            <option value="вагон">вагон</option>
-			                            <option value="100">100</option>
-			                        </select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="search__right">
-						<div class="input-wrap input-wrap_location">
-							<div class="input-wrap__title">
-								Место Проведения: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-wrap input-wrap_half">
-									<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
-									<a class="fa fa-location-arrow" href="#"></a>
-								</div>
-								<div class="input-wrap input-wrap_half">
-									<input type="text" class="input">
-								</div>
-							</div>
-							<div class="search__reset">
-								<button type="reset"><span>Очистить параметры</span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="filter__result js-filter-result">
-				<div class="filter__title">
-					<i class="fa fa-cogs"></i>Параметры моего праздника
-				</div>
-				<div class="filter__info">
-					<div>09.05.2014 (12:00) - 10.05.2014 (12:00)</div>
-					<div>Tallinn, Estonia, до 10 человек</div>
-				</div>
-				<div class="filter__change">
-					<a href="#" class="js-show-search">Изменить параметры праздника</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END filter -->
 	<!-- l-cols -->
 	<div class="l-cols l-cols_width has-right-sidebar">
 		<!-- l-col2 -->
 		<div class="l-col1 l-col1_mod">
 			<div class="js-content">
 				<div class="item-head item-head_mod">
-					<div class="item-head__col">
-						<div class="item-head__title is-dark">Свадьба</div>
-						<div class="item-head__info">
-							Создан: 07.05.2014           
-							<a href="#" class="link-save">
-							<i class="fa fa-floppy-o"></i><span>Сохранить праздник</span>
+					<div class="item-head__table">
+						<div class="item-head__cell item-head__event">
+							<strong>День рождения</strong>
+							<span>создан 20.11.2014</span>
+						</div>
+						<div class="item-head__cell">
+							<a href="#" class="link-action is-blue">
+								<i class="fa fa-cog"></i>
+								<span>изменить параметры моего праздника</span>
 							</a>
 						</div>
-					</div>
-					<div class="item-head__col">
-						<a href="#" class="btn-action is-big-btn">Отправить запрос на услуги</a>
-						<div class="item-head__descr">Запрос отправится всем выбранным услугам  автоматически, учитывая все ваши параметры.</div>
+						<div class="item-head__cell">
+							<a href="#" class="link-action is-green">
+								<i class="fa fa-mail-forward"></i>
+								<span>отправить запрос на услуги</span>
+							</a>
+						</div>
+						<div class="item-head__cell">
+							<a href="#" class="link-action">
+								<i class="fa fa-info-circle"></i>
+								<span>помощь</span>
+							</a>
+						</div>
 					</div>
 				</div>
 				

@@ -181,13 +181,7 @@ head.ready(function() {
 			}
 		});
 	}
-	showDatePicker();
-	//$.datepicker.setDefaults($.extend($.datepicker.regional['ru']));
-	//$(".js-datepicker").datepicker();
-	// 	$("#locale").change(function() {
-	// 		$('#datepicker').datepicker('option', $.extend({showMonthAfterYear: false},
-	// 			$.datepicker.regional[$(this).val()]));
-	// });
+
 	function inlineDatePicker() {
 		$.datepicker.regional['ru'] = {
 			closeText: 'Закрыть',
@@ -220,6 +214,24 @@ head.ready(function() {
 	$(".js-date-from .fa").on("click",function(){
 		$(this).parent().find(".input").focus();
 	});
+
+	$(".js-date").datepicker({
+        dateFormat: 'yy-mm-dd',
+        firstDay: 1, 
+        changeMonth: true,
+        changeYear: true,
+        showOtherMonths: true,
+        //showTimezone: true,
+        selectOtherMonths: true,
+        yearRange: '-10:+3',
+        //showSecond: true,
+        showButtonPanel: false,
+        //timeFormat: 'HH:mm:ss z',
+        //timeFormat: 'HH:mm:ss',
+     	//    onClose: function( selectedDate ) {
+	    //     date_to.datepicker( "option", "minDate", selectedDate );
+	    // }
+    });
 
 	//rating
 	if ($('.js-rating').length > 0) {

@@ -20,9 +20,12 @@
 					<a href="#"></a>
 					<span>организуй свой праздник</span>
 				</div>
-				<a href="#" class="btn-action is-big-btn">Организовать праздник</a>
 			</div>
 			<div class="header__right">
+				<div class="btn-group">
+					<a href="#" class="btn-action is-big-btn is-active">Каталог</a>
+					<a href="#" class="btn-action is-big-btn">Праздник</a>
+				</div>
 				<div class="header__enter js-drop">
 					<ul class="header__enter-links">
 						<li><a href="#" class="js-drop-link"><span>Арсений Вокзальный</span><i class="fa fa-caret-down"></i></a></li>
@@ -81,118 +84,6 @@
 		</div>
 	</header>
 	<!-- END header -->
-	<!-- filter -->
-	<div class="filter js-filter">
-		<div class="l-container l-container_small">
-			<div class="search search_filter js-filter-search">
-				<div class="wrap js-date-group">
-					<div class="search__left">
-						<div class="input-wrap">
-							<div class="input-wrap__title">
-								Начало праздника: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-date js-date-from">
-									<input type="text" class="input input_date">
-									<i class="fa fa-calendar"></i>
-								</div>
-								<div class="input-time">
-									<select class="js-select-single">
-			                            <option value="10:00">10:00</option>
-			                            <option value="12:00">12:00</option>
-			                            <option value="13:00">13:00</option>
-			                            <option value="14:00">14:00</option>
-			                            <option value="15:00">15:00</option>
-			                            <option value="16:00">16:00</option>
-			                            <option value="17:00">17:00</option>
-			                            <option value="18:00">18:00</option>
-			                            <option value="19:00">19:00</option>
-			                            <option value="20:00">20:00</option>
-			                        </select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="search__right js-check-group">
-						<label class="checkbox js-check">
-							<input type="checkbox">
-							<span>Окончание праздника: </span>
-						</label> 
-						<div class="input-date js-check-hidden is-hidden js-date-to">
-							<input type="text" class="input input_date">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<div class="input-time js-check-hidden is-hidden"> 
-							<select class="js-select-single">
-	                            <option value="10:00">10:00</option>
-	                            <option value="12:00">12:00</option>
-	                            <option value="13:00">13:00</option>
-	                            <option value="14:00">14:00</option>
-	                            <option value="15:00">15:00</option>
-	                            <option value="16:00">16:00</option>
-	                            <option value="17:00">17:00</option>
-	                            <option value="18:00">18:00</option>
-	                            <option value="19:00">19:00</option>
-	                            <option value="20:00">20:00</option>
-	                        </select>
-						</div>
-						<button class="btn-submit is-big-btn" type="submit">Применить </button>
-					</div>
-				</div>
-				<div class="wrap">
-					<div class="search__left">
-						<div class="input-wrap input-wrap_person">
-							<div class="input-wrap__title">
-								Количество человек: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-time">
-									<select class="js-select-single">
-			                            <option value="до 10">до 10</option>
-			                            <option value="толпа">толпа</option>
-			                            <option value="вагон">вагон</option>
-			                            <option value="100">100</option>
-			                        </select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="search__right">
-						<div class="input-wrap input-wrap_location">
-							<div class="input-wrap__title">
-								Место Проведения: 
-							</div>
-							<div class="input-wrap__body">
-								<div class="input-wrap input-wrap_half">
-									<input type="text" class="input" placeholder="Таллинн (мое местоположение)">
-									<a class="fa fa-location-arrow" href="#"></a>
-								</div>
-								<div class="input-wrap input-wrap_half">
-									<input type="text" class="input">
-								</div>
-							</div>
-							<div class="search__reset">
-								<button type="reset"><span>Очистить параметры</span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="filter__result js-filter-result">
-				<div class="filter__title">
-					<i class="fa fa-cogs"></i>Параметры моего праздника
-				</div>
-				<div class="filter__info">
-					<div>09.05.2014 (12:00) - 10.05.2014 (12:00)</div>
-					<div>Tallinn, Estonia, до 10 человек</div>
-				</div>
-				<div class="filter__change">
-					<a href="#" class="js-show-search">Изменить параметры праздника</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END filter -->
 	<!-- l-cols -->
 	<div class="l-cols has-left-sidebar">
 		<!-- l-col1 -->
@@ -225,47 +116,56 @@
 	                    </div>
 	                    <div class="sidebar__filter js-sidebar-filter">
 	                    	<div class="sidebar__item">
-		                    	<div class="sidebar__opt">
-		                        	<div class="sidebar__col">
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Банкетный зал</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Гостиница</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Экстрим</span>
-										</label>	
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Мыза</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Бар</span>
-										</label>	
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Ресторан</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Кафе</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Детские комнаты</span>
-										</label>
-										<label class="checkbox checkbox_bold">
-											<input type="checkbox">
-											<span>Боулинг</span>
-										</label>
-		                        	</div>
-		                        </div>
-		                    </div>
+		                        <div class="field">
+									<div class="input-wrap">
+										<input type="text" class="input input_s" placeholder="Расположение (город или район)">
+									</div>		
+								</div>
+								<div class="field">	
+									<div class="input-wrap">
+										<div class="input-wrap__title">Время работы:</div>
+										<div class="wrap">
+											<div class="input-wrap__left">	
+												<div class="input-date input-date_small">
+													<input type="text" class="input input_s js-date">
+													<i class="fa fa-calendar"></i>
+												</div>
+											</div>
+											<div class="input-wrap__right">
+												<div class="input-time input-time_small">
+													<select class="js-select-single">
+							                            <option value="10:00">10:00</option>
+							                            <option value="12:00">12:00</option>
+							                            <option value="13:00">13:00</option>
+							                            <option value="14:00">14:00</option>
+							                            <option value="15:00">15:00</option>
+							                            <option value="16:00">16:00</option>
+							                            <option value="17:00">17:00</option>
+							                            <option value="18:00">18:00</option>
+							                            <option value="19:00">19:00</option>
+							                            <option value="20:00">20:00</option>
+							                        </select>
+												</div>
+												<div class="input-sep">-</div>
+												<div class="input-time input-time_small">
+													<select class="js-select-single">
+							                            <option value="10:00">10:00</option>
+							                            <option value="12:00">12:00</option>
+							                            <option value="13:00">13:00</option>
+							                            <option value="14:00">14:00</option>
+							                            <option value="15:00">15:00</option>
+							                            <option value="16:00">16:00</option>
+							                            <option value="17:00">17:00</option>
+							                            <option value="18:00">18:00</option>
+							                            <option value="19:00">19:00</option>
+							                            <option value="20:00">20:00</option>
+							                        </select>
+												</div>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
 		                    <div class="sidebar__item">
 		                        <div class="sidebar__opt">
 		                        	<div class="sidebar__opt-title">Опции:</div>

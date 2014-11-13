@@ -68,6 +68,10 @@
 	//min-height: 48px
 	.checkbox_inline
 		margin-top: 16px
+	&__left
+		float: left
+	&__right
+		float: right
 .input-wrap_half
 	display: inline-block
 	vertical-align: middle
@@ -95,6 +99,7 @@
 	.fa
 		margin-right: 17px
 .input-wrap__title
+	margin: 0 0 6px 
 	font-size: 13px  
 	color: $gray
 	+ts
@@ -124,6 +129,12 @@
 	&.is-visible
 		visibility: visible
 		opacity: 1 
+.input-date_small
+	width: 106px
+	.fa-calendar
+		font-size: 13px
+		right: 10px
+		color: $blue 
 .input-time
 	position: relative
 	display: inline-block
@@ -136,6 +147,33 @@
 	&.is-visible
 		visibility: visible
 		opacity: 1 
+.input-time_small
+	width: 81px
+	.ui-multiselect
+		padding: 0 10px
+		height: 39px
+		font-size: 13px
+		text-align: center
+		+fr
+		color: #000 
+	.ui-icon
+		display: none
+	span
+		&:after
+			content: "\f107" 
+			display: inline-block
+			vertical-align: middle
+			margin-left: 6px
+			font-size: 13px
+			+fa
+.input-sep 
+	display: inline-block
+	vertical-align: middle
+	width: 18px
+	height: 39px
+	line-height: 39px
+	font-size: 13px
+	text-align: center
 .input-wrap_location
 	.input
 		padding-left: 38px
@@ -197,6 +235,7 @@
 	+placeholder
 		color: #808080 
 .input_s
+	padding: 0 10px 
 	height: 39px
 	font-size: 13px
 .input_inline

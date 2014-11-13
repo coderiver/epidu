@@ -48,6 +48,7 @@
 		font-size: 13px
 		text-align: left
 		+clr
+		table-layout: fixed
 		.link-save
 			float: right
 	&__descr
@@ -55,8 +56,32 @@
 		color: #606060
 		font-size: 12px
 		text-align: left 
+	&__table
+		display: table
+		margin: 12px 0 0 
+		width: 100%
+	&__cell
+		display: table-cell
+		vertical-align: middle
+		width: 28%
+		padding: 0 15px 
+		text-align: center
+		// .link-action
+		// 	display: inline-block
+		// 	max-width: 100px
+	&__event
+		text-align: left
+		strong
+			display: inline-block
+			font-weight: normal
+			font-size: 18px
+		span
+			font-size: 13px
+			color: #707070 
+			
 .item-head_mod
 	padding-left: 18px
+	margin-bottom: 25px
 	.item-head__col	
 		&:first-child	
 			padding-right: 30px
