@@ -596,47 +596,114 @@
 	</div>
 </div>
 <!-- END footer -->
-<div class="overlay js-overlay">
+<div class="overlay js-overlay" style="display:block">
 	<div class="popup js-popup js-popup-object">
-		<!-- BEGIN categ-wrap -->
-		<div class="categ-wrap">
-			<div class="categ-wrap__title">Сколько объектов вы хотите создать?</div>
-			<div class="wrap">	
-				<a href="#" class="categ js-categ categ_obj">
-					<span class="categ__icon">
-						1-2
-					</span>
-					<span class="categ__title">
-						<span>10 € в месяц <em>за все объекты</em></span>
-					</span>
-				</a>
-				<a href="#" class="categ js-categ categ_obj">
-					<span class="categ__icon">
-						3-5
-					</span>
-					<span class="categ__title">
-						<span>18 € в месяц <em>за все объекты</em></span>
-					</span>
-				</a>
-				<a href="#" class="categ js-categ categ_obj">
-					<span class="categ__icon">
-						6-10
-					</span>
-					<span class="categ__title">
-						<span>24 € в месяц <em>за все объекты</em></span>
-					</span>
-				</a>
-			</div>
+		<div class="popup__head to-center">
+			<div class="popup__title">Параметры вашего праздника</div>
 		</div>
-		<div class="popup__text">
-			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
-			<ul class="list list_blue">
-				<li>на 1 месяц</li>
-				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
-				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
-			</ul> 
+		<div class="popup__body">
+			<form>
+				<div class="wrap js-date-group">
+					<div class="field field_inline">
+						<div class="field__title"><span>Время проведения праздника</span></div>
+						<div class="field__body">
+							<div class="input-wrap input-wrap_vertical input-wrap_half">
+								<div class="input-wrap__title">Когда начнется ваш праздник?</div>
+								<div class="input-wrap__body">
+									<div class="input-date js-date-from">
+										<input type="text" class="input input_date">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<div class="input-time">
+										<select class="js-select-single">
+				                            <option value="10:00">10:00</option>
+				                            <option value="12:00">12:00</option>
+				                            <option value="13:00">13:00</option>
+				                            <option value="14:00">14:00</option>
+				                            <option value="15:00">15:00</option>
+				                            <option value="16:00">16:00</option>
+				                            <option value="17:00">17:00</option>
+				                            <option value="18:00">18:00</option>
+				                            <option value="19:00">19:00</option>
+				                            <option value="20:00">20:00</option>
+				                        </select>
+									</div>
+								</div>
+							</div>
+							<div class="input-wrap input-wrap_vertical input-wrap_half">
+								<div class="input-wrap__title">Когда закончится ваш праздник?</div>
+								<div class="input-wrap__body">
+									<div class="input-date js-date-to">
+										<input type="text" class="input input_date">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<div class="input-time">
+										<select class="js-select-single">
+				                            <option value="10:00">10:00</option>
+				                            <option value="12:00">12:00</option>
+				                            <option value="13:00">13:00</option>
+				                            <option value="14:00">14:00</option>
+				                            <option value="15:00">15:00</option>
+				                            <option value="16:00">16:00</option>
+				                            <option value="17:00">17:00</option>
+				                            <option value="18:00">18:00</option>
+				                            <option value="19:00">19:00</option>
+				                            <option value="20:00">20:00</option>
+				                        </select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field field_inline">
+					<div class="field__title"><span>Место проведения праздника</span></div>
+					<div class="field__body">
+						<div class="input-wrap input-wrap_vertical">
+							<div class="input-wrap__title">Где вы планируете устроить свой праздник?</div>
+							<div class="input-wrap__body wrap">
+								<div class="col col_400">
+									<input type="text" class="input" placeholder="Введите название грода или района">
+								</div>
+								<div class="col col_185 to-center">
+									<a href="#" class="location-link">
+										<i class="fa fa-location-arrow"></i>
+										<span>определить мое местоположение</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field field_inline">
+					<div class="field__title"><span>Количество гостей на празднике</span></div>
+					<div class="field__body">
+						<div class="input-wrap">
+							<div class="input-wrap__title has-top-margin col col_225">
+								Сколько человек вы планируете <br> пригласить на праздник?
+							</div>
+							<div class="input-wrap__body">
+								<div class="input-time">
+									<select class="js-select-single">
+			                            <option value="до 10">до 10</option>
+			                            <option value="толпа">толпа</option>
+			                            <option value="вагон">вагон</option>
+			                            <option value="100">100</option>
+			                        </select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field field_inline">
+					<div class="field__title"></div>
+					<div class="field__body">
+						<a href="#" class="btn-submit is-big-btn">Сохранить параметры праздника</a>
+						<button type="reset" class="btn-reset"><i class="fa fa-times"></i>Очистить все параметры</button>
+					</div>
+				</div>
+			</form>
 		</div>
-		<!-- END categ-wrap -->
 		<button class="btn-close js-popup-close" type="button"></button>
 	</div>
 </div>

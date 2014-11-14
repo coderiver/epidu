@@ -10,6 +10,25 @@
 	.to-right
 		padding: 5px 15px 0 0 
 		font-size: 13px
+.field_inline
+	position: relative 
+	margin-bottom: 22px
+	padding-left: 200px
+	.field__title
+		position: absolute
+		left: 0
+		bottom: 0
+		margin: 0
+		+vertical
+		width: 200px
+		height: 48px
+		padding: 0 10px 
+		+fr
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 16px
+			text-align: left
 .field_connect
 	margin: 20px 0  
 	.input-wrap
@@ -72,6 +91,10 @@
 		float: left
 	&__right
 		float: right
+.input-wrap_vertical
+	.input-wrap__title,
+	.input-wrap__body
+		display: block
 .input-wrap_half
 	display: inline-block
 	vertical-align: middle
@@ -81,6 +104,8 @@
 	text-align: left
 	.checkbox
 		vertical-align: middle
+	.input-time
+		margin-left: 10px
 	&:first-child
 		margin-left: 0
 	&.is-hidden
@@ -104,6 +129,8 @@
 	color: $gray
 	+ts
 	line-height: 1.2
+	&.has-top-margin 
+		margin-top: 10px
 .input-date
 	position: relative
 	display: inline-block

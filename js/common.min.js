@@ -59,6 +59,9 @@ head.ready(function() {
 	$(".js-popup").on("click", function(event){
 		event.stopPropagation();
 	});
+	$("body").on("click",".ui-multiselect-menu", function(event){
+		event.stopPropagation();
+	});
 
 	$(".js-categ").on("click", function(){
 		$(this).parent().find(".js-categ").removeClass("is-active");
@@ -181,7 +184,7 @@ head.ready(function() {
 			}
 		});
 	}
-
+	showDatePicker();
 	function inlineDatePicker() {
 		$.datepicker.regional['ru'] = {
 			closeText: 'Закрыть',
@@ -922,7 +925,7 @@ head.ready(function() {
 		$("."+el).fadeToggle(300);
 		return false; 
 	});
-	
+
 // hide any element
 	$(".js-hide-key").on("click", function(){
 		var el = $(this).attr("data-hide");
