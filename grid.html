@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="has-open-popup">
 <head>
 	<meta charset="utf-8">
 	<title>Setka</title>
@@ -98,7 +98,7 @@
 						<div class="item-head__cell">
 							<a href="#" class="link-action is-blue">
 								<i class="fa fa-cog"></i>
-								<span>изменить параметры моего праздника</span>
+								<span>ввести / изменить параметры праздника</span>
 							</a>
 						</div>
 						<div class="item-head__cell">
@@ -144,10 +144,10 @@
 								
 								<div class="to-right">
 									<div class="link-action-wrap">
-										<a href="#" class="link-action is-blue">
+										<span class="link-action is-blue">
 											<i class="fa fa-cog"></i>
 											<span>изменить параметры моего праздника</span>
-										</a>
+										</span>
 										
 									</div>
 									<i class="icon-arrow-right"></i>
@@ -172,11 +172,11 @@
 							</div>
 							<i class="icon-arrow-left"></i>
 							<div class="link-action-wrap">
-								<a href="#" class="link-action is-green">
+								<span class="link-action is-green">
 									<i class="fa fa-mail-forward"></i>
 									<span>отправить запрос на услуги</span>
-								</a>
-							</div>
+								</span>
+							</div> 
 							<div class="note-message">
 								<i class="fa fa-info-circle"></i>
 								  Вы так же можете делать заметки в вашем празднике, чтобы ничего не забыть и обсуждать предстоящий праздник с друзьями, приглашая их по e-mail.
@@ -701,5 +701,22 @@
 		</div>
 	</div>
 </div>
+<!-- BEGIN popup -->
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-object">
+		<!-- BEGIN categ-wrap -->
+		<div class="popup__text">
+			<div class="popup__title">Вы сможете опубликовать ваши объявления</div>
+			<ul class="list list_blue">
+				<li>на 1 месяц</li>
+				<li>на 6 месяцев и получить   <strong>скидку 10%</strong>   на весь срок публикации</li>
+				<li>на 1 год и получить   <strong>скидку 20%</strong>   на весь срок публикации</li>
+			</ul> 
+		</div>
+		<!-- END categ-wrap -->
+		<button class="btn-close js-popup-close" type="button"></button>
+	</div>
+</div>
+<!-- END popup -->
 </body>
 </html>
