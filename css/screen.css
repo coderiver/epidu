@@ -287,10 +287,11 @@ a:hover { color: #026073; }
 .link-action.is-blue { color: #00a6c9; }
 .link-action.is-green { color: #b0c400; }
 .link-action .fa, .link-action span { display: inline-block; vertical-align: middle; white-space: normal; text-align: left; }
+.link-action em { font-style: normal; }
 .link-action .fa { margin-right: 6px; font-size: 21px; }
 .link-action .fa-info-circle { color: #ffba00; }
 .link-action:hover { opacity: 0.8; }
-.link-action:hover span { text-decoration: underline; }
+.link-action:hover em { border-bottom: 1px solid; }
 
 .btn-reset { margin-left: 50px; color: #666666; background: none; font-family: "roboto-regular", Arial, sans-serif; font-size: 13px; text-shadow: 0 1px 0 white; }
 .btn-reset .fa { margin-right: 5px; }
