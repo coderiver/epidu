@@ -916,28 +916,18 @@ head.ready(function() {
     }
     accordion();
 
-    // $(".js-filter").swipe({
-    // 	tap:function(event, target) {
-    //     	//alert('tap');
-    //     },
-    //     hold:function(event, target) {
-    //     	alert('hold');
-    //     	$(this).addClass("is-active");
-    //     }
-    // });
-	// if ($("html").hasClass("desktop")) {
-		
-	// }
- //    $(".object").swipe({
- //    	tap:function(event, target) {
- //        	//alert('tap');
- //        },
- //        hold:function(event, target) {
- //        	//alert('hold');
- //        	$(this).addClass("js-draggable");
- //        	dragObject();
- //        	return false;
- //        }
- //    });
+// show/hide any element
+    $(".js-toggle-key").on("click", function(){
+		var el = $(this).attr("data-toggle");
+		$("."+el).fadeToggle(300);
+		return false; 
+	});
+	
+// hide any element
+	$(".js-hide-key").on("click", function(){
+		var el = $(this).attr("data-hide");
+		$("."+el).fadeOut(300);
+		return false; 
+	});
 
 });

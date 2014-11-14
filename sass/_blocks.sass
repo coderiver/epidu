@@ -402,8 +402,37 @@
 		&:first-child
 			border-radius: 5px 0 0 5px 
 			border-left: 0
-			
+
+.link-action-wrap
+	position: relative
+	display: inline-block
+	width: 213px
+	height: 67px
+	background: #fff
+	border: 2px solid #d1d1d1
+	border-radius: 6px
+	text-align: center	
+	line-height: 67px 
+	+box
+	.link-action
+		line-height: 1.2
+		vertical-align: middle
+		&.is-blue
+			width: 163px
+		&.is-green
+			width: 150px
+.icon-arrow-right
+	display: inline-block
+	position: relative
+	top: -10px
+	margin: -41px -33px 0 0
+	+s(arr3)
+.icon-arrow-left
+	display: inline-block
+	margin: -41px 10px 0 32px
+	+s(arr2)
 .link-action
+	display: inline-block
 	white-space: nowrap
 	will-change: opacity
 	color: #707070 

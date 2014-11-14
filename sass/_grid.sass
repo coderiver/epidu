@@ -1,3 +1,5 @@
+.grid-out
+	position: relative
 .grid-wrap
 	padding: 24px 0 0 0
 	background: #fff 
@@ -160,3 +162,68 @@
 				cursor: move
 	
 
+.help
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	padding: 10px 50px 50px 25px
+	background: #fff
+	overflow-y: auto
+	display: none
+	+scrollbar
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #d1d1d1
+	+scrollbar-thumb
+		background: $blue_d
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		+border-radius(4px)
+	&__title
+		margin: 0 0 22px 
+		font-size: 30px
+		text-transform: uppercase
+		color: #000
+		+fb
+	&__list
+		font-size: 13px
+		counter-reset: list-help
+		color: #000 
+		li
+			position: relative
+			margin: 0 0 35px 
+			padding-left: 45px
+			&:nth-child(3)
+				.link-action-wrap
+					margin-bottom: 30px
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: -7px
+				color: $green
+				+fb
+				font-size: 50px  
+				counter-increment: list-help  
+				content: counter(list-help)
+		p
+			margin-bottom: 22px
+		img
+			margin: 0 0 13px 
+			max-width: 100%
+			height: auto
+	&__info
+		padding-right: 90px
+	&__name
+		margin: 0 0 5px 
+		font-size: 20px
+		line-height: 1.4
+		span
+			padding: 0 5px
+			background: $blue
+			color: #fff   
+	.btn
+		min-width: 380px
