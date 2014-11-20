@@ -217,7 +217,9 @@ head.ready(function() {
 	$(".js-date-from .fa").on("click",function(){
 		$(this).parent().find(".input").focus();
 	});
-
+	$(".js-date-to .fa").on("click",function(){
+		$(this).parent().find(".input").focus();
+	});
 	$(".js-date").datepicker({
         dateFormat: 'yy-mm-dd',
         firstDay: 1, 
