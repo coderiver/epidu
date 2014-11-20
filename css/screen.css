@@ -798,7 +798,7 @@ a:hover { color: #026073; }
 .ui-slider__range .ui-slider__from { float: left; }
 .ui-slider__range .ui-slider__to { float: right; }
 
-.ui-datepicker { width: 255px; margin-top: 9px; display: none; background: whitesmoke; overflow: hidden; border-radius: 5px; z-index: 10 !important; box-shadow: 0 0 0 3px #00a6c9, 0 2px 12px rgba(0, 0, 0, 0.75); }
+.ui-datepicker { width: 255px; margin-top: 9px; display: none; background: whitesmoke; overflow: hidden; border-radius: 5px; z-index: 210 !important; box-shadow: 0 0 0 3px #00a6c9, 0 2px 12px rgba(0, 0, 0, 0.75); }
 .ui-datepicker .ui-datepicker-calendar { margin: 0; }
 
 .ui-datepicker-inline { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border-radius: 0; border: 0; }
