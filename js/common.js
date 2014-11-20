@@ -933,4 +933,15 @@ head.ready(function() {
 		return false; 
 	});
 
+	$(".js-open-help").on("click", function(){
+		$(".js-content").hide();
+		$(".js-help").show();
+		return false; 
+	});
+	$(".js-hide-help").on("click", function(){
+		$(".js-content").show();
+		$(".js-help").hide();
+		return false; 
+	});
+
 });

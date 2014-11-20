@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="has-open-popup">
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>Setka</title>
@@ -108,7 +108,7 @@
 							</a>
 						</div>
 						<div class="item-head__cell">
-							<a href="#" class="link-action js-toggle-key" data-toggle="js-help-toggle">
+							<a href="#" class="link-action js-open-help">
 								<i class="fa fa-info-circle"></i>
 								<span><em>помощь</em></span>
 							</a>
@@ -134,59 +134,58 @@
 						</li>
 					</ul>
 				</div>
-				<div class="help js-help-toggle">
-					<div class="help__title">Вы создали ваш первый праздник!</div>
-					<ol class="help__list">
-						<li>
-							<div class="help__info">
-								<div class="help__name">Введите параметры вашего правздника</div>
-								<p>Для того, чтобы мы могли наиболее точно найти подходящие вам услуги</p>
-								
-								<div class="to-right">
-									<div class="link-action-wrap">
-										<span class="link-action is-blue">
-											<i class="fa fa-cog"></i>
-											<span>изменить параметры моего праздника</span>
-										</span>
-										
-									</div>
-									<i class="icon-arrow-right"></i>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="help__info">
-								<div class="help__name">Ваш праздник состоит из нескольких частей: <span>место проведения,</span>  <span>еда,</span>  и так далее...</div>
-								<p>Наполните каждый блок (часть вашего праздника) предложениями из нашего каталога, чтобы они остались у вас под рукой</p>
-							</div>
-							<img src="img/help-img.png" alt="img">
-							<div class="note-message">
-								<i class="fa fa-info-circle"></i>
-								Вы так же можете делать заметки в вашем празднике, чтобы ничего не забыть и обсуждать предстоящий праздник с друзьями, приглашая их по e-mail.
-							</div>
-						</li>
-						<li>
-							<div class="help__info">
-								<div class="help__name">Когда праздник заполнен, отправьте запрос на услуги.</div>
-								<p>Нажмите одну кнопку и запрос отправится во все выбранные места и услуги без вашего участия. Если вы получите ответ, мы обязательно сообщим вам об этом.</p>
-							</div>
-							<i class="icon-arrow-left"></i>
-							<div class="link-action-wrap">
-								<span class="link-action is-green">
-									<i class="fa fa-mail-forward"></i>
-									<span>отправить запрос на услуги</span>
-								</span>
-							</div> 
-							<div class="note-message">
-								<i class="fa fa-info-circle"></i>
-								  Вы так же можете делать заметки в вашем празднике, чтобы ничего не забыть и обсуждать предстоящий праздник с друзьями, приглашая их по e-mail.
-							</div> 
-						</li>
-					</ol>
-					<div class="to-center"><a href="#" class="btn-action is-big-btn js-hide-key"data-hide="js-help-toggle">Все понятно. Перейти к празднику!</a></div>
-				</div>
 			</div>
-			
+			<div class="help js-help">
+				<div class="help__title">Вы создали ваш первый праздник!</div>
+				<ol class="help__list">
+					<li>
+						<div class="help__info">
+							<div class="help__name">Введите параметры вашего правздника</div>
+							<p>Для того, чтобы мы могли наиболее точно найти подходящие вам услуги</p>
+							
+							<div class="to-right">
+								<div class="link-action-wrap">
+									<span class="link-action is-blue">
+										<i class="fa fa-cog"></i>
+										<span>изменить параметры моего праздника</span>
+									</span>
+									
+								</div>
+								<i class="icon-arrow-right"></i>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="help__info">
+							<div class="help__name">Ваш праздник состоит из нескольких частей: <span>место проведения,</span>  <span>еда,</span>  и так далее...</div>
+							<p>Наполните каждый блок (часть вашего праздника) предложениями из нашего каталога, чтобы они остались у вас под рукой</p>
+						</div>
+						<img src="img/help-img.png" alt="img">
+						<div class="note-message">
+							<i class="fa fa-info-circle"></i>
+							Вы так же можете делать заметки в вашем празднике, чтобы ничего не забыть и обсуждать предстоящий праздник с друзьями, приглашая их по e-mail.
+						</div>
+					</li>
+					<li>
+						<div class="help__info">
+							<div class="help__name">Когда праздник заполнен, отправьте запрос на услуги.</div>
+							<p>Нажмите одну кнопку и запрос отправится во все выбранные места и услуги без вашего участия. Если вы получите ответ, мы обязательно сообщим вам об этом.</p>
+						</div>
+						<i class="icon-arrow-left"></i>
+						<div class="link-action-wrap">
+							<span class="link-action is-green">
+								<i class="fa fa-mail-forward"></i>
+								<span>отправить запрос на услуги</span>
+							</span>
+						</div> 
+						<div class="note-message">
+							<i class="fa fa-info-circle"></i>
+							  Вы так же можете делать заметки в вашем празднике, чтобы ничего не забыть и обсуждать предстоящий праздник с друзьями, приглашая их по e-mail.
+						</div> 
+					</li>
+				</ol>
+				<div class="to-center"><a href="#" class="btn-action is-big-btn js-hide-help">Все понятно. Перейти к празднику!</a></div>
+			</div>
 		</div>
 		<!-- END l-col2 -->
 		<!-- l-col1 -->

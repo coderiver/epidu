@@ -1664,7 +1664,7 @@ a:hover { color: #026073; }
 .ui-draggable:active .object__left { cursor: move; }
 .ui-draggable:active .object__left:hover { cursor: move; }
 
-.help { position: absolute; top: 0; right: 0; left: 0; bottom: 0; padding: 10px 50px 50px 25px; background: white; overflow-y: auto; display: none; }
+.help { padding: 10px 50px 50px 25px; background: white; display: none; }
 .help::-webkit-scrollbar { width: 6px; height: 6px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: #d1d1d1; }
 .help::-webkit-scrollbar-thumb { background: #016d84; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .help::-webkit-scrollbar-track-piece { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
