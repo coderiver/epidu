@@ -156,56 +156,56 @@ head.ready(function() {
 
 			if (date_from.length) {
 				date_from.datepicker({
-			        dateFormat: 'yy-mm-dd',
-			        firstDay: 1,
-			        changeMonth: true,
-			        changeYear: true,
-			        showOtherMonths: true,
-			        //showTimezone: true,
-			        selectOtherMonths: true,
-			        yearRange: '-10:+3',
-			        //showSecond: true,
-			        showButtonPanel: false,
-			        //timeFormat: 'HH:mm:ss z',
-			        //timeFormat: 'HH:mm:ss',
-			        onClose: function( selectedDate ) {
-				        date_to.datepicker( "option", "minDate", selectedDate );
-				    	},
-				    	beforeShow: function(e) {
-				    		stop(e);
-				    	},
-				    	onChangeMonthYear: function(e) {
-				    		stop(e);
-				    	}
-			    });
+						dateFormat: 'yy-mm-dd',
+						firstDay: 1,
+						changeMonth: true,
+						changeYear: true,
+						showOtherMonths: true,
+						//showTimezone: true,
+						selectOtherMonths: true,
+						yearRange: '-10:+3',
+						//showSecond: true,
+						showButtonPanel: false,
+						//timeFormat: 'HH:mm:ss z',
+						//timeFormat: 'HH:mm:ss',
+						onClose: function( selectedDate ) {
+						  date_to.datepicker( "option", "minDate", selectedDate );
+						},
+						beforeShow: function(e) {
+							stop(e);
+						},
+						onChangeMonthYear: function(e) {
+							stop(e);
+						}
+					});
 			}
 			if (date_to.length) {
 				date_to.datepicker({
-			        dateFormat: 'yy-mm-dd',
-			        firstDay: 1,
-			        changeMonth: true,
-			        changeYear: true,
-			        showOtherMonths: true,
-			        //showTimezone: true,
-			        selectOtherMonths: true,
-			        yearRange: '-10:+3',
-			        //showSecond: true,
-			        showButtonPanel: false,
-			        //timeFormat: 'HH:mm:ss z',
-			        //timeFormat: 'HH:mm:ss',
-			        //hour: 23,
-			       // minute: 59,
-			        //second: 59,
-			        onClose : function( selectedDate ) {
-				        date_from.datepicker( "option", "maxDate", selectedDate );
-				    	},
-				    	beforeShow: function(e) {
-				    		stop(e);
-				    	},
-				    	onChangeMonthYear: function(e) {
-				    		stop(e);
-				    	}
-			    });
+						dateFormat: 'yy-mm-dd',
+						firstDay: 1,
+						changeMonth: true,
+						changeYear: true,
+						showOtherMonths: true,
+						//showTimezone: true,
+						selectOtherMonths: true,
+						yearRange: '-10:+3',
+						//showSecond: true,
+						showButtonPanel: false,
+						//timeFormat: 'HH:mm:ss z',
+						//timeFormat: 'HH:mm:ss',
+						//hour: 23,
+						// minute: 59,
+						//second: 59,
+						onClose : function( selectedDate ) {
+							date_from.datepicker( "option", "maxDate", selectedDate );
+						},
+						beforeShow: function(e) {
+							stop(e);
+						},
+						onChangeMonthYear: function(e) {
+							stop(e);
+						}
+					});
 			}
 		});
 	}
