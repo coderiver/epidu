@@ -94,16 +94,28 @@
 		position: absolute
 		display: none
 		left: 0
+		bottom: 0
 		right: 5px 
 		top: 130px
-		bottom: 0
 		z-index: 11
 		padding: 10px 0
 		background: $light 
 		border-bottom: 1px solid $border 
-		overflow-y: auto
 		&.has-top-margin
 			margin-top: 10px
+		.to-center
+			padding: 19px 0 28px 
+	&__submit
+		position: absolute
+		left: 0
+		bottom: -77px
+		width: 100%
+		background: #f4f4f4 
+	&__filter-scroll
+		position: relative
+	&__filter-in
+		overflow-y: auto
+		height: 100%
 		+scrollbar
 			width: 6px
 			height: 6px
@@ -114,8 +126,6 @@
 			+border-radius(4px)
 		+scrollbar-track-piece     
 			+border-radius(4px) 
-		.to-center
-			padding: 19px 0 28px 
 	&__opt
 		padding: 0 10px 
 		+clr

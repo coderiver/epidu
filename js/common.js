@@ -631,10 +631,15 @@ head.ready(function() {
 		return false;
 	});
 	$(".js-show-filter").on("click",function() {
-		$(".js-sidebar-filter").slideDown(200)
+		var filterHeight = $(window).height() - $(this).offset().top - 143
+		$(".js-sidebar-filter .sidebar__filter-scroll").css({
+			height: filterHeight
+		});
+		$(".js-sidebar-filter").slideDown(200);
 		$(this).parents(".js-sidebar").addClass("has-open-filter");
+		
 		return false;
-	})
+	});
 	$(".js-sidebar-filter").on("click",function(event) {
 		event.stopPropagation();
 	})
