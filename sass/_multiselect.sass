@@ -81,6 +81,9 @@
 	height: auto
 	border-radius: 5px 
 	box-shadow: 0 0 0 3px $blue
+	&.has-small-scroll
+		.ui-multiselect-checkboxes
+			max-height: 200px
 	&.is-full-width
 		margin-left: -3px
 		+box
@@ -101,7 +104,8 @@
 	overflow-x: hidden
 	overflow-y: auto
 	padding: 0 9px 0 11px 
-	//max-height: 400px
+	&.has-scroll
+		max-height: 200px
 	+scrollbar
 		width: 6px
 		height: 6px

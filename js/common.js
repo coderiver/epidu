@@ -426,6 +426,9 @@ head.ready(function() {
 	 			if ($(this).hasClass("has-not-checkbox")) {
 	 				$(this).multiselect("widget").addClass("has-not-checkbox");
 	 			}
+	 			if ($(this).hasClass("js-has-scroll")) {
+	 				$(this).multiselect("widget").addClass("has-small-scroll");
+	 			}
 
 	 		},
 	 		close: function () {
